@@ -142,14 +142,17 @@
         ],
         "langues": [
             {
+                "id": "fr",
                 "langue": "Français",
                 "niveau": "Langue maternelle"
             },
             {
+                "id": "en",
                 "langue": "Anglais",
                 "niveau": "C1 : Bon niveau – TOEIC : 965\nSection Internationale Bilingue"
             },
             {
+                "id": "es",
                 "langue": "Espagnol",
                 "niveau": "B2 : Niveau moyen"
             }
@@ -158,6 +161,7 @@
     },
     "formations": [
         {
+            "id": "INSA",
             "formation": "Élève ingénieur",
             "ecole": "à l'Institut National des Sciences Appliquées (INSA) de Rouen",
             "departement": "Département ASI : Architecture des Systèmes d'Information",
@@ -169,6 +173,7 @@
             }
         },
         {
+            "id": "bac",
             "formation": "Baccalauréat Filière S",
             "ecole": "au lycée Pierre Corneille de Rouen",
             "specialite": "Spécialité Informatique et Sciences du Numérique (ISN)",
@@ -181,6 +186,7 @@
     ],
     "projets": [
         {
+            "id": "PIC",
             "projet": "Responsable Qualité, Concepteur et Développeur d'un service web de gestion de patients",
             "temps": "+18h/semaine",
             "contexte": "Projet INSA Certifié",
@@ -189,12 +195,14 @@
             "annee": 2020
         },
         {
+            "id": "Java",
             "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
             "contexte": "Informatique Répartie",
             "technos": ["API Rest", "Java"],
             "annee": 2020
         },
         {
+            "id": "Android Studio",
             "projet": "Concepteur et Développeur d'une amélioration d'un assistant virtuel sous Android",
             "temps": "+80h",
             "contexte": "Développement mobile",
@@ -202,60 +210,70 @@
             "annee": 2020
         },
         {
+            "id": "DBpedia",
             "projet": "Traitement de fichiers METS et ALTO, utilisation de DBpedia",
             "contexte": "Documents sémantiques",
             "technos": ["Python", "XML", "SPARQL"],
             "annee": 2020
         },
         {
+            "id": "Hackathon",
             "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
             "contexte": "Hackathon Hacking Health",
             "technos": ["Web Scrapping", "Python"],
             "annee": 2020
         },
         {
+            "id": "PostgreSQL",
             "projet": "Concepteur et Développeur d'un service web de gestion de cinémas et d'un réseau social associé",
             "contexte": "Développement Web",
             "technos": ["Java Servlet", "PostgreSQL"],
             "annee": 2019
         },
         {
+            "id": "Python",
             "projet": "Concepteur et Développeur d'un générateur de visage",
             "contexte": "Traitement des données",
             "technos": ["Python"],
             "annee": 2019
         },
         {
+            "id": "ADN",
             "projet": "Concepteur et Développeur d'un algorithme génétique",
             "contexte": "Machine Learning",
             "technos": ["Python"],
             "annee": 2019
         },
         {
+            "id": "Arduino",
             "projet": "Concepteur, Développeur et Assembleur d'un véhicule autonome miniature",
             "contexte": "Électronique",
             "technos": ["Arduino", "Langage C"],
             "annee": 2019
         },
         {
+            "id": "Serveur",
             "projet": "Développeur d'un mini serveur Web",
             "contexte": "Réseau informatique",
             "technos": ["HTTP", "Langage C"],
             "annee": 2019
         },
         {
+            "id": "JavaCC",
             "projet": "Développeur d'un interpréteur SQL",
             "contexte": "Théorie des languages",
             "technos": ["JavaCC"],
             "annee": 2019
         },
         {
+            "id": "Ruzzle",
             "projet": "Concepteur et Développeur d'un solutionneur du jeu Ruzzle",
             "contexte": "Algorithmique avancée",
             "technos": ["Langage C"],
             "annee": 2019
         },
         {
+            "id": "Student Simulator",
             "projet": "Concepteur et Développeur d'un petit jeu-vidéo pour smartphones sous Android",
             "temps": "+100h",
             "contexte": "Développement mobile",
@@ -264,6 +282,7 @@
             "annee": 2018
         },
         {
+            "id": "MATLAB",
             "projet": "Concepteur et Développeur d'un classifieur de Spam",
             "contexte": "Traitement des données",
             "technos": ["MATLAB"],
@@ -272,6 +291,7 @@
     ],
     "experiences": [
         {
+            "id": "Segafredo",
             "experience": "Rédaction de documents de spécifications et de conception pour un changement d'ERP\nAutomatisation et optimisation de tableaux Excel\nCréation de formulaires Microsoft Access (base de données, interfaces et macros)",
             "contexte": "Stage de 2 mois puis CDD de 8h/semaine",
             "employeur": "Segafredo Zanetti France",
@@ -279,6 +299,7 @@
             "annee": 2020
         },
         {
+            "id": "AJIR",
             "experience": "Rédaction d'un état de l'art sur les technologies de traçabilité",
             "durée": "2 mois",
             "contexte": "Étude réalisée au sein de la Junior Entreprise de l'INSA pour Normandie AeroEspace",
@@ -287,6 +308,7 @@
             "annee": 2019
         },
         {
+            "id": "Segafredo",
             "experience": "Immersion dans le travail quotidien d'un ouvrier",
             "durée": "1 mois",
             "contexte": "Stage d'exécution",
@@ -294,12 +316,14 @@
             "annee": 2017
         },
         {
+            "id": "Karate",
             "experience": "Professeur-assistant de Karaté",
             "contexte": "Bénévolat",
             "employeur": "Sandra Lecourt",
             "annee": 2017
         },
         {
+            "id": "Maths",
             "experience": "Cours particuliers de Mathématiques pour lycéens",
             "durée": "3 à +6h/semaine",
             "annees": {
@@ -308,6 +332,7 @@
             }
         },
         {
+            "id": "Turbulences",
             "experience": "Participations à des spectacles chorégraphiques",
             "employeur": "Opéra de Rouen / Zénith",
             "technos": ["Coulisses", "Figurations"],
