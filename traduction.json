@@ -1,0 +1,54 @@
+{
+    "@RECHERCHE/DUREE/UNITE": {
+        "fr": "semaines",
+        "en": "weeks"
+    },
+    "@RECHERCHE/TITRE": {
+        "fr": "Élève ingénieur",
+        "en": ""
+    },
+    "@RECHERCHE/OBJET": {
+        "fr": "Recherche stage ingénieur informatique",
+        "en": ""
+    },
+    "@RECHERCHE/CONTEXTE": {
+        "fr": "Fin de 5e année",
+        "en": ""
+    },
+    "@RECHERCHE/DATES/DEBUT": {
+        "fr": "17 Février",
+        "en": "February 17th"
+    },
+    "@RECHERCHE/DATES/FIN": {
+        "fr": "31 Août",
+        "en": "August 31st"
+    },
+    "@RECHERCHE/LIEUX/USA": {
+        "fr": "États-Unis d'Amérique",
+        "en": "USA"
+    },
+    "@RECHERCHE/LIEUX/EUROPE": {
+        "fr": "Europe",
+        "en": "Europe"
+    },
+    "@RECHERCHE/PERMIS/TEXTE": {
+        "fr": "Permis B",
+        "en": "Driver's License"
+    },
+    "@RECHERCHE/VEHICULE/TEXTE": {
+        "fr": "Véhiculé",
+        "en": "Car Owner"
+    },
+    "@COMPETENCES/TITRE": {
+        "fr": "Compétences",
+        "en": "Skills"
+    },
+    "@COMPETENCES/ENCOURS": {
+        "fr": "En cours",
+        "en": "In progress"
+    },
+    "ID": {
+        "fr": "",
+        "en": ""
+    }
+}
