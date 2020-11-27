@@ -8,32 +8,33 @@
         "ddn": "12/10/1998"
     },
     "recherche": {
-        "titre": "Élève ingénieur",
+        "titre": "@RECHERCHE/TITRE",
         "ecole": "INSA Rouen",
-        "objet": "Recherche stage ingénieur informatique",
+        "objet": "@RECHERCHE/OBJET",
         "interets": ["UX", "UI", "VR", "AR"],
-        "contexte": "Fin de 5e année",
+        "contexte": "@RECHERCHE/CONTEXTE",
         "durée": {
             "min": 21,
             "max": 23,
-            "unite": "semaines"
+            "unite": "@RECHERCHE/DUREE/UNITE"
         },
         "dates": {
-            "debut": "17 Février",
-            "fin": "31 Août",
+            "debut": "@RECHERCHE/DATES/DEBUT",
+            "fin": "@RECHERCHE/DATES/FIN",
             "année": "2021"
         },
-        "lieux": ["États-Unis d'Amérique", "Europe"],
+        "lieux": ["@RECHERCHE/LIEUX/USA", "@RECHERCHE/LIEUX/EUROPE"],
         "permis": {
             "possede": true,
-            "texte": "Permis B"
+            "texte": "@RECHERCHE/PERMIS/TEXTE"
         },
         "vehicule": {
             "possede": true,
-            "texte": "Véhiculé"
+            "texte": "@RECHERCHE/VEHICULE/TEXTE"
         }
     },
     "competences": {
+        "titre": "@COMPETENCES/TITRE",
         "personnelles": [
             "Passionné",
             "Pédagogue",
@@ -70,7 +71,7 @@
             },
             {
                 "langage": "C#",
-                "niveau": "En cours"
+                "niveau": "@COMPETENCES/ENCOURS"
             }
         ],
         "web": [
