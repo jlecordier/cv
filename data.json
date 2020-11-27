@@ -9,29 +9,29 @@
         "ddn": "12/10/1998"
     },
     "recherche": {
-        "titre": "@RECHERCHE/TITRE",
+        "titre": "@RECHERCHE.TITRE",
         "ecole": "INSA Rouen",
-        "objet": "@RECHERCHE/OBJET",
+        "objet": "@RECHERCHE.OBJET",
         "interets": ["UX", "UI", "VR", "AR"],
-        "contexte": "@RECHERCHE/CONTEXTE",
-        "durée": {
+        "contexte": "@RECHERCHE.CONTEXTE",
+        "duree": {
             "min": 21,
             "max": 23,
-            "unite": "@RECHERCHE/DUREE/UNITE"
+            "unite": "@RECHERCHE.DUREE.UNITE"
         },
         "dates": {
-            "debut": "@RECHERCHE/DATES/DEBUT",
-            "fin": "@RECHERCHE/DATES/FIN",
-            "année": "2021"
+            "debut": "@RECHERCHE.DATES.DEBUT",
+            "fin": "@RECHERCHE.DATES.FIN",
+            "annee": "2021"
         },
-        "lieux": ["@RECHERCHE/LIEUX/USA", "@RECHERCHE/LIEUX/EUROPE"],
+        "lieux": ["@RECHERCHE.LIEUX.USA", "@RECHERCHE.LIEUX.EUROPE"],
         "permis": {
             "possede": true,
-            "texte": "@RECHERCHE/PERMIS/TEXTE"
+            "texte": "@RECHERCHE.PERMIS.TEXTE"
         },
         "vehicule": {
             "possede": true,
-            "texte": "@RECHERCHE/VEHICULE/TEXTE"
+            "texte": "@RECHERCHE.VEHICULE.TEXTE"
         }
     },
     "competences": {
@@ -71,7 +71,7 @@
             },
             {
                 "langage": "C#",
-                "niveau": "@COMPETENCES/ENCOURS"
+                "niveau": "@COMPETENCES.ENCOURS"
             }
         ],
         "web": [
@@ -302,7 +302,7 @@
         {
             "id": "AJIR",
             "experience": "Rédaction d'un état de l'art sur les technologies de traçabilité",
-            "durée": "2 mois",
+            "duree": "2 mois",
             "contexte": "Étude réalisée au sein de la Junior Entreprise de l'INSA pour Normandie AeroEspace",
             "employeur": "Segafredo Zanetti France",
             "technos": ["Excel", "Access"],
@@ -311,7 +311,7 @@
         {
             "id": "Segafredo",
             "experience": "Immersion dans le travail quotidien d'un ouvrier",
-            "durée": "1 mois",
+            "duree": "1 mois",
             "contexte": "Stage d'exécution",
             "employeur": "Segafredo Zanetti France",
             "annee": 2017
@@ -326,7 +326,7 @@
         {
             "id": "Maths",
             "experience": "Cours particuliers de Mathématiques pour lycéens",
-            "durée": "3 à +6h/semaine",
+            "duree": "3 à +6h/semaine",
             "annees": {
                 "debut": 2016,
                 "fin": 2020
