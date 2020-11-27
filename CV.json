@@ -1,0 +1,366 @@
+{
+    "infos-perso": {
+        "prenom": "Jean",
+        "nom": "Lecordier",
+        "tel": "0668018166",
+        "email": "jeanlecordier@hotmail.fr",
+        "linkedin": "https://www.linkedin.com/in/jean-lecordier/",
+        "ddn": "12/10/1998"
+    },
+    "recherche": {
+        "titre": "Élève ingénieur",
+        "ecole": "INSA Rouen",
+        "objet": "Recherche stage ingénieur informatique",
+        "interets": ["UX", "UI", "VR", "AR"],
+        "contexte": "Fin de 5e année",
+        "durée": {
+            "min": 21,
+            "max": 23,
+            "unite": "semaines"
+        },
+        "dates": {
+            "debut": "17 Février",
+            "fin": "31 Août",
+            "année": "2021"
+        },
+        "lieux": ["États-Unis d'Amérique", "Europe"],
+        "permis": {
+            "possede": true,
+            "texte": "Permis B"
+        },
+        "vehicule": {
+            "possede": true,
+            "texte": "Véhiculé"
+        }
+    },
+    "competences": {
+        "personnelles": [
+            "Passionné",
+            "Pédagogue",
+            "Réfléchi",
+            "Sens de l'éthique",
+            "Rigoureux",
+            "Esprit d'équipe",
+            "Organisé"
+        ],
+        "dev": [
+            {
+                "langage": "Java",
+                "niveau": 4
+            },
+            {
+                "langage": "Python",
+                "niveau": 4
+            },
+            {
+                "langage": "C",
+                "niveau": 4
+            },
+            {
+                "langage": "SQL",
+                "niveau": 4
+            },
+            {
+                "langage": "Pascal",
+                "niveau": 3
+            },
+            {
+                "langage": "Prolog",
+                "niveau": 2
+            },
+            {
+                "langage": "C#",
+                "niveau": "En cours"
+            }
+        ],
+        "web": [
+            {
+                "technos": ["HTML", "CSS"],
+                "niveau": 4
+            },
+            {
+                "technos": ["JavaScript", "Node.js"],
+                "niveau": 4
+            },
+            {
+                "technos": ["PHP", "Laravel"],
+                "niveau": 3
+            },
+            {
+                "technos": ["XML", "DTD", "XSD", "XSLT"],
+                "niveau": 3
+            },
+            {
+                "technos": ["SPARQL", "Turtle"],
+                "niveau": 2
+            }
+        ],
+        "notions": [
+            {
+                "notion": "Réseau informatique",
+                "niveau": 4
+            },
+            {
+                "notion": "Traitement des données",
+                "niveau": 3
+            },
+            {
+                "notion": "Électronique",
+                "niveau": 3
+            },
+            {
+                "notion": "Traitement du signal",
+                "niveau": 2
+            },
+            {
+                "notion": "Méthodes Agiles",
+                "niveau": 2
+            },
+            {
+                "notion": "Machine Learning",
+                "niveau": 2
+            },
+            {
+                "notion": "Deep Learning",
+                "niveau": 1
+            }
+        ],
+        "outils": [
+            "Adobe Premiere Pro",
+            "Audacity",
+            "Gimp",
+            "Suite Libre Office",
+            "PostgreSQL",
+            "Git",
+            "Android Studio",
+            "LaTeX",
+            "MATLAB",
+            "Microsoft Access",
+            "Excel",
+            "Blender",
+            "Unity3D"
+        ],
+        "langues": [
+            {
+                "langue": "Français",
+                "niveau": "Langue maternelle"
+            },
+            {
+                "langue": "Anglais",
+                "niveau": "C1 : Bon niveau – TOEIC : 965\nSection Internationale Bilingue"
+            },
+            {
+                "langue": "Espagnol",
+                "niveau": "B2 : Niveau moyen"
+            }
+        ],
+        "os": ["Windows", "Linux"]
+    },
+    "formations": [
+        {
+            "formation": "Élève ingénieur",
+            "ecole": "à l'Institut National des Sciences Appliquées (INSA) de Rouen",
+            "departement": "Département ASI : Architecture des Systèmes d'Information",
+            "specialite": "Spécialisation : Ingénierie des données",
+            "cours": ["Réalité Virtuelle", "Interaction Homme-Machine Évoluée", "Web des Objets et des Services", "Document et Web Sémantique"],
+            "dates": {
+                "debut": 2016,
+                "fin": 2021
+            }
+        },
+        {
+            "formation": "Baccalauréat Filière S",
+            "ecole": "au lycée Pierre Corneille de Rouen",
+            "specialite": "Spécialité Informatique et Sciences du Numérique (ISN)",
+            "mention": "Mention Très Bien",
+            "dates": {
+                "debut": 2013,
+                "fin": 2016
+            }
+        }
+    ],
+    "projets": [
+        {
+            "projet": "Responsable Qualité, Concepteur et Développeur d'un service web de gestion de patients",
+            "temps": "+18h/semaine",
+            "contexte": "Projet INSA Certifié",
+            "employeur": "CH Eure-Seine",
+            "technos": ["Laravel", "PHP", "JavaScript"],
+            "annee": 2020
+        },
+        {
+            "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
+            "contexte": "Informatique Répartie",
+            "technos": ["API Rest", "Java"],
+            "annee": 2020
+        },
+        {
+            "projet": "Concepteur et Développeur d'une amélioration d'un assistant virtuel sous Android",
+            "temps": "+80h",
+            "contexte": "Développement mobile",
+            "technos": ["Android Studio", "Java"],
+            "annee": 2020
+        },
+        {
+            "projet": "Traitement de fichiers METS et ALTO, utilisation de DBpedia",
+            "contexte": "Documents sémantiques",
+            "technos": ["Python", "XML", "SPARQL"],
+            "annee": 2020
+        },
+        {
+            "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
+            "contexte": "Hackathon Hacking Health",
+            "technos": ["Web Scrapping", "Python"],
+            "annee": 2020
+        },
+        {
+            "projet": "Concepteur et Développeur d'un service web de gestion de cinémas et d'un réseau social associé",
+            "contexte": "Développement Web",
+            "technos": ["Java Servlet", "PostgreSQL"],
+            "annee": 2019
+        },
+        {
+            "projet": "Concepteur et Développeur d'un générateur de visage",
+            "contexte": "Traitement des données",
+            "technos": ["Python"],
+            "annee": 2019
+        },
+        {
+            "projet": "Concepteur et Développeur d'un algorithme génétique",
+            "contexte": "Machine Learning",
+            "technos": ["Python"],
+            "annee": 2019
+        },
+        {
+            "projet": "Concepteur, Développeur et Assembleur d'un véhicule autonome miniature",
+            "contexte": "Électronique",
+            "technos": ["Arduino", "Langage C"],
+            "annee": 2019
+        },
+        {
+            "projet": "Développeur d'un mini serveur Web",
+            "contexte": "Réseau informatique",
+            "technos": ["HTTP", "Langage C"],
+            "annee": 2019
+        },
+        {
+            "projet": "Développeur d'un interpréteur SQL",
+            "contexte": "Théorie des languages",
+            "technos": ["JavaCC"],
+            "annee": 2019
+        },
+        {
+            "projet": "Concepteur et Développeur d'un solutionneur du jeu Ruzzle",
+            "contexte": "Algorithmique avancée",
+            "technos": ["Langage C"],
+            "annee": 2019
+        },
+        {
+            "projet": "Concepteur et Développeur d'un petit jeu-vidéo pour smartphones sous Android",
+            "temps": "+100h",
+            "contexte": "Développement mobile",
+            "employeur": "Student Simulator",
+            "technos": ["Android Studio", "Java"],
+            "annee": 2018
+        },
+        {
+            "projet": "Concepteur et Développeur d'un classifieur de Spam",
+            "contexte": "Traitement des données",
+            "technos": ["MATLAB"],
+            "annee": 2018
+        }
+    ],
+    "experiences": [
+        {
+            "experience": "Rédaction de documents de spécifications et de conception pour un changement d'ERP\nAutomatisation et optimisation de tableaux Excel\nCréation de formulaires Microsoft Access (base de données, interfaces et macros)",
+            "contexte": "Stage de 2 mois puis CDD de 8h/semaine",
+            "employeur": "Segafredo Zanetti France",
+            "technos": ["Excel", "Access"],
+            "annee": 2020
+        },
+        {
+            "experience": "Rédaction d'un état de l'art sur les technologies de traçabilité",
+            "durée": "2 mois",
+            "contexte": "Étude réalisée au sein de la Junior Entreprise de l'INSA pour Normandie AeroEspace",
+            "employeur": "Segafredo Zanetti France",
+            "technos": ["Excel", "Access"],
+            "annee": 2019
+        },
+        {
+            "experience": "Immersion dans le travail quotidien d'un ouvrier",
+            "durée": "1 mois",
+            "contexte": "Stage d'exécution",
+            "employeur": "Segafredo Zanetti France",
+            "annee": 2017
+        },
+        {
+            "experience": "Professeur-assistant de Karaté",
+            "contexte": "Bénévolat",
+            "employeur": "Sandra Lecourt",
+            "annee": 2017
+        },
+        {
+            "experience": "Cours particuliers de Mathématiques pour lycéens",
+            "durée": "3 à +6h/semaine",
+            "annees": {
+                "debut": 2016,
+                "fin": 2020
+            }
+        },
+        {
+            "experience": "Participations à des spectacles chorégraphiques",
+            "employeur": "Opéra de Rouen / Zénith",
+            "technos": ["Coulisses", "Figurations"],
+            "annees": {
+                "debut": 2009,
+                "fin": 2019
+            }
+        }
+    ],
+    "interets": [
+        {
+            "interet": "Sports",
+            "liste": [
+                {
+                    "nom": "Karaté",
+                    "details": "Ceinture noire - 1er Dan"
+                },
+                {
+                    "nom": "Ski",
+                    "details": "Flèche de Vermeil"
+                },
+                {
+                    "nom": "Snowboard",
+                    "details": "Niveau 3"
+                },
+                {
+                    "nom": "Tennis",
+                    "details": "6 ans"
+                },
+                {
+                    "nom": "Volley-ball",
+                    "details": "6 ans - Compétitions inter-lycées et inter-collèges"
+                },
+                {
+                    "nom": "Badminton",
+                    "details": "6 ans - UNSS"
+                }
+            ]
+        },
+        {
+            "interet": "Loisirs",
+            "liste": [
+                {
+                    "nom": "Jeux-vidéo",
+                    "details": "Réalité Virtuelle"
+                },
+                {
+                    "nom": "Cinéma"
+                },
+                {
+                    "nom": "Musique"
+                }
+            ]
+        }
+    ]
+}
