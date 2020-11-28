@@ -5,15 +5,15 @@
     },
     "#RECHERCHE.TITRE": {
         "fr": "Élève ingénieur",
-        "en": ""
+        "en": "Engineering student"
     },
     "#RECHERCHE.OBJET": {
         "fr": "Recherche stage ingénieur informatique",
-        "en": ""
+        "en": "Searching for an engineering internship in computer science"
     },
     "#RECHERCHE.CONTEXTE": {
         "fr": "Fin de 5e année",
-        "en": ""
+        "en": "End of 5th year"
     },
     "#RECHERCHE.DATES.DEBUT": {
         "fr": "17 Février",
@@ -47,19 +47,43 @@
         "fr": "En cours",
         "en": "In progress"
     },
-    "age": {
+    "#age": {
         "fr": "ans",
         "en": "years old"
     },
-    "conjonction.a": {
+    "#conjonctions.a": {
         "fr": "à",
         "en": "to"
     },
-    "conjonction.au": {
+    "#conjonctions.au": {
         "fr": "au",
         "en": "to"
     },
-    "ID": {
+    "#competences": {
+        "fr": "Compétences",
+        "en": "Skills"
+    },
+    "#formation": {
+        "fr": "Formation",
+        "en": "Education"
+    },
+    "#projets": {
+        "fr": "Projets informatiques",
+        "en": "IT projects"
+    },
+    "#experiences": {
+        "fr": "Expériences professionnelles",
+        "en": "Work experience"
+    },
+    "#interets": {
+        "fr": "Centres d'intérêt",
+        "en": "Interets"
+    },
+    "#interesse": {
+        "fr": "Intéressé par",
+        "en": "Interested by"
+    },
+    "#ID": {
         "fr": "",
         "en": ""
     }
