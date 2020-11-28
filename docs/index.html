@@ -9,45 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <script type="application/javascript">
-        window.addEventListener("DOMContentLoaded", () => {
-            $.getJSON("data.json", data => {
-                console.log("succes");
-                console.log(data);
-                const body = document.getElementsByTagName("body")[0];
-                const template = Handlebars.compile(body.innerHTML);
-                const result = template(data);
-                body.innerHTML = result;
-            }).fail((err) => {
-                console.log("erreur");
-                console.log(err);
-            })
-        })
-    </script>
+    <link rel="stylesheet" href="cv.css">
+    <script src="cv.js"></script>
 
-    <style>
-        .rounded {
-            border-radius: 1rem !important;
-        }
-        .shadow {
-            box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,.075) !important;
-            background-color: white;
-        }
-        fieldset {
-            border: 0.2rem;
-            border-color: lightgray;
-            border-style: solid;
-            border-radius: 1rem;
-        }
-        legend {
-            margin-left: auto;
-            margin-right: auto;
-            width: auto;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-        }
-    </style>
-    
     <title>CV</title>
 </head>
 <body class="bg-light">
@@ -62,31 +26,31 @@
                         {{infos-perso.prenom}} {{infos-perso.nom}}
                         <table>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td>{{infos-perso.adresse}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td>{{sensible infos-perso.adresse}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td>{{infos-perso.tel}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td>{{sensible infos-perso.tel}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td>{{infos-perso.email}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td><a href="mailto:{{infos-perso.email}}">{{infos-perso.email}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{infos-perso.linkedin}}" style="color: inherit;">{{infos-perso.linkedin}}</a></td>
+                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{infos-perso.linkedin}}">{{infos-perso.linkedin}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{infos-perso.ddn}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{infos-perso.ddn}} ({{age infos-perso.ddn}} {{i18n translation.age}})</td>
                             </tr>
                         </table>
                     </div>
                     <div class="col-5">
                     {{#with recherche}}
-                        {{titre}} – {{ecole}}<br/>
-                        {{objet}}<br/>
+                        {{i18n titre}} – {{ecole}}<br/>
+                        {{i18n objet}}<br/>
                         {{interets}}<br/>
-                        {{contexte}}<br/>
-                        {{duree.min}} {{../conjonction.a}} {{duree.max}} {{duree.unite}} – {{dates.debut}} {{../conjonction.au}} {{dates.fin}} {{dates.annee}}<br/>
-                        {{lieux}}<br/>
-                        {{permis.texte}} – {{vehicule.texte}}
+                        {{i18n contexte}}<br/>
+                        {{duree.min}} {{../translation.conjonction.a}} {{duree.max}} {{i18n duree.unite}} – {{dates.debut}} {{../translation.conjonction.au}} {{dates.fin}} {{dates.annee}}<br/>
+                        {{i18n lieux}}<br/>
+                        {{i18n permis.texte}} – {{i18n vehicule.texte}}
                     {{/with}}
                     </div>
                 </div>
