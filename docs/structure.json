@@ -1,13 +1,24 @@
 {
-    "competences": "#competences",
-    "formation": "#formation",
-    "projets": "#projets",
-    "experiences": "#experiences",
-    "interets": "#interets",
+    "sections": {
+        "competences": "#sections.competences",
+        "formation": "#sections.formation",
+        "projets": "#sections.projets",
+        "experiences": "#sections.experiences",
+        "interets": "#sections.interets"
+    },
     "conjonctions": {
         "a": "#conjonctions.a",
         "au": "#conjonctions.au"
     },
     "age": "#age",
-    "interesse": "#interesse"
+    "interesse": "#interesse",
+    "competences": {
+        "personnelles": "#competences.personnelles",
+        "dev": "#competences.dev",
+        "web": "#competences.web",
+        "notions": "#competences.notions",
+        "outils": "#competences.outils",
+        "langues": "#competences.langues",
+        "os": "#competences.os"
+    }
 }
