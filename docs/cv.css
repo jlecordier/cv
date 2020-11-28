@@ -25,3 +25,9 @@ legend {
 a {
     color: inherit;
 }
+
+.section-header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1;
+}
