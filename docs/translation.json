@@ -59,29 +59,57 @@
         "fr": "au",
         "en": "to"
     },
-    "#competences": {
+    "#sections.competences": {
         "fr": "Compétences",
         "en": "Skills"
     },
-    "#formation": {
+    "#sections.formation": {
         "fr": "Formation",
         "en": "Education"
     },
-    "#projets": {
+    "#sections.projets": {
         "fr": "Projets informatiques",
         "en": "IT projects"
     },
-    "#experiences": {
+    "#sections.experiences": {
         "fr": "Expériences professionnelles",
         "en": "Work experience"
     },
-    "#interets": {
+    "#sections.interets": {
         "fr": "Centres d'intérêt",
         "en": "Interets"
     },
     "#interesse": {
         "fr": "Intéressé par",
         "en": "Interested by"
+    },
+    "#competences.personnelles": {
+        "fr": "Personnelles",
+        "en": "Soft skills"
+    },
+    "#competences.dev": {
+        "fr": "Dev",
+        "en": "Coding skills"
+    },
+    "#competences.web": {
+        "fr": "Web",
+        "en": "Web skills"
+    },
+    "#competences.notions": {
+        "fr": "Notions",
+        "en": "Notions"
+    },
+    "#competences.outils": {
+        "fr": "Outils",
+        "en": "Tools"
+    },
+    "#competences.langues": {
+        "fr": "Linguistiques",
+        "en": "Language skills"
+    },
+    "#competences.os": {
+        "fr": "Systèmes d'exploitation",
+        "en": "Operating systems"
     },
     "#ID": {
         "fr": "",
