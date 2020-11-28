@@ -85,6 +85,10 @@
             },
             {
                 "technos": ["PHP", "Laravel"],
+                "niveau": 4
+            },
+            {
+                "technos": ["Bootstrap", "SASS"],
                 "niveau": 3
             },
             {
