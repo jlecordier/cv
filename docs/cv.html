@@ -14,42 +14,52 @@
 
     <title>CV</title>
 </head>
-<body class="bg-light">
-    <div class="container-fluid">
+<body class="bg-light" hidden="hidden">
+{{#with data}}
+    <div class="container">
         <div class="row">
             <div class="col p-2">
                 <div class="row rounded shadow mx-0 p-3 align-items-center">
                     <div class="col-3 text-center">
-                        <img class="img-fluid rounded-pill shadow" src="images/profil.jpg" alt="photo de profil"/>
+                        <img class="img-fluid rounded-pill shadow w-75" src="images/profil.jpg" alt="photo de profil"/>
                     </div>
-                    <div class="col-4">
-                        {{infos-perso.prenom}} {{infos-perso.nom}}
+                    <div class="col-auto">
+                    {{#with infos-perso}}
+                        <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
                         <table>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td>{{sensible infos-perso.adresse}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td>{{sensible adresse}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td>{{sensible infos-perso.tel}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td>{{sensible tel}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td><a href="mailto:{{infos-perso.email}}">{{infos-perso.email}}</a></td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td><a href="mailto:{{email}}">{{email}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{infos-perso.linkedin}}">{{infos-perso.linkedin}}</a></td>
+                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{infos-perso.ddn}} ({{age infos-perso.ddn}} {{i18n translation.age}})</td>
+                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
                             </tr>
                         </table>
+                    {{/with}}
                     </div>
-                    <div class="col-5">
+                    <div class="col text-center">
                     {{#with recherche}}
-                        {{i18n titre}} – {{ecole}}<br/>
-                        {{i18n objet}}<br/>
-                        {{interets}}<br/>
+                        <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
+                        <h4 class="font-weight-bold">{{i18n objet}}</h4>
+                        <span class="text-muted font-italic">
+                            {{i18n ../../structure.interesse}} : 
+                            {{#list interets sep=" – "}}
+                                {{this}}
+                            {{/list}}
+                        </span><br/>
                         {{i18n contexte}}<br/>
-                        {{duree.min}} {{../translation.conjonction.a}} {{duree.max}} {{i18n duree.unite}} – {{dates.debut}} {{../translation.conjonction.au}} {{dates.fin}} {{dates.annee}}<br/>
-                        {{i18n lieux}}<br/>
+                        {{duree.min}} {{i18n ../../structure.conjonctions.a}} {{duree.max}} {{i18n duree.unite}} – {{i18n dates.debut}} {{i18n ../../structure.conjonctions.au}} {{i18n dates.fin}} {{dates.annee}}<br/>
+                        {{#list lieux sep=", "}}
+                            {{i18n this}}
+                        {{/list}}<br/>
                         {{i18n permis.texte}} – {{i18n vehicule.texte}}
                     {{/with}}
                     </div>
@@ -59,9 +69,9 @@
         <div class="row">
             <!-- corps -->
             <div class="col-3 p-2">
-                <div class="row rounded shadow mx-0">
+                <div class="row rounded shadow mx-0 h-100">
                     <div class="col p-3">
-                        <h1>COMPETENCES</h1>
+                        <span class="section-header">{{i18n ../structure.competences}}</span>
                         <div class="row">
                             <div class="col">
                                 <fieldset>
@@ -95,7 +105,7 @@
                     <div class="col p-2">
                         <div class="row rounded shadow mx-0">
                             <div class="col p-3">
-                                <h1>FORMATION</h1>
+                                <span class="section-header">{{i18n ../structure.formation}}</span>
                             </div>
                         </div>
                     </div>
@@ -104,7 +114,7 @@
                     <div class="col p-2">
                         <div class="row rounded shadow mx-0">
                             <div class="col p-3">
-                                <h1>PROJETS</h1>
+                                <span class="section-header">{{i18n ../structure.projets}}</span>
                             </div>
                         </div>
                     </div>
@@ -113,7 +123,7 @@
                     <div class="col p-2">
                         <div class="row rounded shadow mx-0">
                             <div class="col p-3">
-                                <h1>EXPERIENCES</h1>
+                                <span class="section-header">{{i18n ../structure.experiences}}</span>
                             </div>
                         </div>
                     </div>
@@ -122,7 +132,7 @@
                     <div class="col p-2">
                         <div class="row rounded shadow mx-0">
                             <div class="col p-3">
-                                <h1>INTERETS</h1>
+                                <span class="section-header">{{i18n ../structure.interets}}</span>
                             </div>
                         </div>
                     </div>
@@ -130,5 +140,6 @@
             </div>
         </div>
     </div>
+{{/with}}
 </body>
 </html>
