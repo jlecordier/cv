@@ -1,0 +1,13 @@
+{
+    "competences": "#competences",
+    "formation": "#formation",
+    "projets": "#projets",
+    "experiences": "#experiences",
+    "interets": "#interets",
+    "conjonctions": {
+        "a": "#conjonctions.a",
+        "au": "#conjonctions.au"
+    },
+    "age": "#age",
+    "interesse": "#interesse"
+}
