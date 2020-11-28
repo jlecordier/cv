@@ -64,13 +64,22 @@
         <div class="row">
             <!-- corps -->
             <div class="col-3 p-2">
+                {{#with competences}}
                 <div class="row rounded shadow mx-0 h-100">
                     <div class="col p-3" id="section-competences">
-                        <span class="section-header">{{i18n ../structure.sections.competences}}</span>
+                        <span class="section-header">{{i18n ../../structure.sections.competences}}</span>
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.personnelles}}</legend>
+                                    <legend>{{i18n ../../structure.competences.personnelles}}</legend>
+                                    {{#list personnelles sep=" • "}}{{this}}{{/list}}
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <fieldset>
+                                    <legend>{{i18n ../../structure.competences.dev}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
@@ -78,7 +87,7 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.dev}}</legend>
+                                    <legend>{{i18n ../../structure.competences.web}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
@@ -86,7 +95,7 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.web}}</legend>
+                                    <legend>{{i18n ../../structure.competences.notions}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
@@ -94,7 +103,7 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.notions}}</legend>
+                                    <legend>{{i18n ../../structure.competences.outils}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
@@ -102,7 +111,7 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.outils}}</legend>
+                                    <legend>{{i18n ../../structure.competences.langues}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
@@ -110,21 +119,14 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../structure.competences.langues}}</legend>
-                                    CONTENU
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../structure.competences.os}}</legend>
+                                    <legend>{{i18n ../../structure.competences.os}}</legend>
                                     CONTENU
                                 </fieldset>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{/with}}
             </div>
             <div class="col">
                 <!-- reste -->
