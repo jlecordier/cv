@@ -12,10 +12,15 @@
     <script type="application/javascript">
         window.addEventListener("DOMContentLoaded", () => {
             $.getJSON("data.json", data => {
+                console.log("succes");
+                console.log(data);
                 const body = document.getElementsByTagName("body")[0];
                 const template = Handlebars.compile(body.innerHTML);
                 const result = template(data);
-                html.innerHTML = result;
+                body.innerHTML = result;
+            }).fail((err) => {
+                console.log("erreur");
+                console.log(err);
             })
         })
     </script>
@@ -66,7 +71,7 @@
                                 <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td>{{infos-perso.email}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td>{{infos-perso.linkedin}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{infos-perso.linkedin}}" style="color: inherit;">{{infos-perso.linkedin}}</a></td>
                             </tr>
                             <tr>
                                 <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{infos-perso.ddn}}</td>
