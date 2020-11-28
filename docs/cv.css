@@ -12,12 +12,13 @@ fieldset {
     border-color: lightgray;
     border-style: solid;
     border-radius: 1rem;
+    padding: 0.5rem;
 }
 
 legend {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: -0.5rem;
     width: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
