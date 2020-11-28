@@ -50,16 +50,11 @@
                         <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
                         <h4 class="font-weight-bold">{{i18n objet}}</h4>
                         <span class="text-muted font-italic">
-                            {{i18n ../../structure.interesse}} : 
-                            {{#list interets sep=" – "}}
-                                {{this}}
-                            {{/list}}
+                            {{i18n ../../structure.interesse}} : {{#list interets sep=" – "}}{{this}}{{/list}}
                         </span><br/>
                         {{i18n contexte}}<br/>
                         {{duree.min}} {{i18n ../../structure.conjonctions.a}} {{duree.max}} {{i18n duree.unite}} – {{i18n dates.debut}} {{i18n ../../structure.conjonctions.au}} {{i18n dates.fin}} {{dates.annee}}<br/>
-                        {{#list lieux sep=", "}}
-                            {{i18n this}}
-                        {{/list}}<br/>
+                        {{#list lieux sep=", "}}{{i18n this}}{{/list}}<br/>
                         {{i18n permis.texte}} – {{i18n vehicule.texte}}
                     {{/with}}
                     </div>
