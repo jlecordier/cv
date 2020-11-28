@@ -9,29 +9,29 @@
         "ddn": "1998-10-12"
     },
     "recherche": {
-        "titre": "@RECHERCHE.TITRE",
+        "titre": "#RECHERCHE.TITRE",
         "ecole": "INSA Rouen",
-        "objet": "@RECHERCHE.OBJET",
+        "objet": "#RECHERCHE.OBJET",
         "interets": ["UX", "UI", "VR", "AR"],
-        "contexte": "@RECHERCHE.CONTEXTE",
+        "contexte": "#RECHERCHE.CONTEXTE",
         "duree": {
             "min": 21,
             "max": 23,
-            "unite": "@RECHERCHE.DUREE.UNITE"
+            "unite": "#RECHERCHE.DUREE.UNITE"
         },
         "dates": {
-            "debut": "@RECHERCHE.DATES.DEBUT",
-            "fin": "@RECHERCHE.DATES.FIN",
+            "debut": "#RECHERCHE.DATES.DEBUT",
+            "fin": "#RECHERCHE.DATES.FIN",
             "annee": "2021"
         },
-        "lieux": ["@RECHERCHE.LIEUX.USA", "@RECHERCHE.LIEUX.EUROPE"],
+        "lieux": ["#RECHERCHE.LIEUX.USA", "#RECHERCHE.LIEUX.EUROPE"],
         "permis": {
             "possede": true,
-            "texte": "@RECHERCHE.PERMIS.TEXTE"
+            "texte": "#RECHERCHE.PERMIS.TEXTE"
         },
         "vehicule": {
             "possede": true,
-            "texte": "@RECHERCHE.VEHICULE.TEXTE"
+            "texte": "#RECHERCHE.VEHICULE.TEXTE"
         }
     },
     "competences": {
@@ -71,7 +71,7 @@
             },
             {
                 "langage": "C#",
-                "niveau": "@COMPETENCES.ENCOURS"
+                "niveau": "#COMPETENCES.ENCOURS"
             }
         ],
         "web": [
