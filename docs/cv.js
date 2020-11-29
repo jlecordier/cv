@@ -39,6 +39,10 @@ Handlebars.registerHelper("sensible", function (info) {
     return info;
 });
 
+Handlebars.registerHelper("progress", function (value) {
+    return 100*value/5;
+});
+
 Handlebars.registerHelper("list", function (items, options) {
     return items.map(item => options.fn(item)).join(options.hash["sep"]).replace(" ,", ",");
 });
