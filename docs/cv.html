@@ -78,9 +78,14 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <fieldset>
+                                <fieldset class="text-center">
                                     <legend>{{i18n ../../structure.competences.dev}}</legend>
-                                    CONTENU
+                                    {{#each dev}}
+                                        {{langage}}<br/>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: {{progress niveau}}%">{{}}</div>
+                                        </div>
+                                    {{/each}}
                                 </fieldset>
                             </div>
                         </div>
