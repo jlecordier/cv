@@ -166,7 +166,14 @@
                                                 <img class="img-fluid" src="images/{{code_iso}}.svg" alt="{{langue}}">
                                             </div>
                                             <div class="ml-2">
-                                                {{#each niveau}}{{this}}<br/>{{/each}}
+                                                {{#each niveau}}
+                                                    {{#if @first}}
+                                                        {{this}}
+                                                    {{else}}
+                                                        <span class="font-italic">{{this}}</span>
+                                                    {{/if}}
+                                                    <br/>
+                                                {{/each}}
                                             </div>
                                         </div>
                                     {{/each}}
