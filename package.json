@@ -1,0 +1,25 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Mon CV",
+  "main": "cv.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "firefox docs/cv.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlecordier/cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlecordier/cv/issues"
+  },
+  "homepage": "https://github.com/jlecordier/cv#readme",
+  "dependencies": {
+    "svg-country-flags": "^1.2.9"
+  }
+}
