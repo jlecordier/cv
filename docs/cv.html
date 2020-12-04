@@ -85,12 +85,16 @@
                                             <div class="mr-2">
                                                 {{langage}}
                                             </div>
-                                            <div class="progress {{progress-visibility niveau}} w-75">
-                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                            </div>
-                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
-                                                {{i18n niveau}}
-                                            </div>
+                                            {{#if niveau}}
+                                                <div class="progress w-75">
+                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                                </div>
+                                            {{/if}}
+                                            {{#if remarque}}
+                                                <div class="text-center font-italic text-muted w-75">
+                                                    {{i18n remarque}}
+                                                </div>
+                                            {{/if}}
                                         </div>
                                     {{/each}}
                                 </fieldset>
@@ -105,12 +109,16 @@
                                             <div>
                                                 {{#list technos sep=" • "}}{{this}}{{/list}}
                                             </div>
-                                            <div class="progress {{progress-visibility niveau}} ml-auto mr-auto w-75">
-                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                            </div>
-                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
-                                                {{i18n niveau}}
-                                            </div>
+                                            {{#if niveau}}
+                                                <div class="progress ml-auto mr-auto w-75">
+                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                                </div>
+                                            {{/if}}
+                                            {{#if remarque}}
+                                                <div class="text-center font-italic text-muted w-75">
+                                                    {{i18n remarque}}
+                                                </div>
+                                            {{/if}}
                                         </div>
                                     {{/each}}
                                 </fieldset>
@@ -125,12 +133,16 @@
                                             <div>
                                                 {{notion}}
                                             </div>
-                                            <div class="progress {{progress-visibility niveau}} ml-auto mr-auto w-75">
-                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                            </div>
-                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
-                                                {{i18n niveau}}
-                                            </div>
+                                            {{#if niveau}}
+                                                <div class="progress ml-auto mr-auto w-75">
+                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                                </div>
+                                            {{/if}}
+                                            {{#if remarque}}
+                                                <div class="text-center font-italic text-muted w-75">
+                                                    {{i18n remarque}}
+                                                </div>
+                                            {{/if}}
                                         </div>
                                     {{/each}}
                                 </fieldset>

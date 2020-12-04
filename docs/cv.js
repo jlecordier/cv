@@ -37,20 +37,6 @@ Handlebars.registerHelper("progress-width", function (value) {
     return 0;
 });
 
-Handlebars.registerHelper("progress-visibility", function (value) {
-    if (isNaN(value)) {
-        return "d-none";
-    }
-    return "";
-});
-
-Handlebars.registerHelper("alt-progress-visibility", function (value) {
-    if (isNaN(value)) {
-        return "";
-    }
-    return "d-none";
-});
-
 Handlebars.registerHelper("list", function (items, options) {
     return items.map(item => options.fn(item)).join(options.hash["sep"]).replace(" ,", ",");
 });

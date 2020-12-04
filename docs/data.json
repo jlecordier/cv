@@ -71,7 +71,7 @@
             },
             {
                 "langage": "C#",
-                "niveau": "#COMPETENCES.ENCOURS"
+                "remarque": "#COMPETENCES.ENCOURS"
             }
         ],
         "web": [
