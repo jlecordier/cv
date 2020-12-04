@@ -28,19 +28,19 @@
                         <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
                         <table>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td>{{sensible adresse}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td class="pl-1">{{sensible adresse}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td>{{sensible tel}}</td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td class="pl-1">{{sensible tel}}</td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td><a href="mailto:{{email}}">{{email}}</a></td>
+                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td class="pl-1"><a href="mailto:{{email}}">{{email}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
+                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
                             </tr>
                             <tr>
-                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td>{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
+                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
                             </tr>
                         </table>
                     {{/with}}
@@ -63,7 +63,7 @@
         </div>
         <div class="row">
             <!-- corps -->
-            <div class="col-3 p-2">
+            <div class="col-4 p-2" style="max-width: 30%;">
                 {{#with competences}}
                 <div class="row rounded shadow mx-0 h-100">
                     <div class="col p-3" id="section-competences">
@@ -81,9 +81,56 @@
                                 <fieldset class="text-center">
                                     <legend>{{i18n ../../structure.competences.dev}}</legend>
                                     {{#each dev}}
-                                        {{langage}}<br/>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: {{progress niveau}}%"></div>
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <div class="mr-2">
+                                                {{langage}}
+                                            </div>
+                                            <div class="progress {{progress-visibility niveau}} w-75">
+                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                            </div>
+                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
+                                                {{i18n niveau}}
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <fieldset class="text-center">
+                                    <legend>{{i18n ../../structure.competences.web}}</legend>
+                                    {{#each web}}
+                                        <div class="mb-2">
+                                            <div>
+                                                {{#list technos sep=" • "}}{{this}}{{/list}}
+                                            </div>
+                                            <div class="progress {{progress-visibility niveau}} ml-auto mr-auto w-75">
+                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                            </div>
+                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
+                                                {{i18n niveau}}
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <fieldset class="text-center">
+                                    <legend>{{i18n ../../structure.competences.notions}}</legend>
+                                    {{#each notions}}
+                                        <div class="mb-2">
+                                            <div>
+                                                {{notion}}
+                                            </div>
+                                            <div class="progress {{progress-visibility niveau}} ml-auto mr-auto w-75">
+                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                            </div>
+                                            <div class="text-center font-italic text-muted {{alt-progress-visibility niveau}} w-75">
+                                                {{i18n niveau}}
+                                            </div>
                                         </div>
                                     {{/each}}
                                 </fieldset>
@@ -92,24 +139,8 @@
                         <div class="row">
                             <div class="col">
                                 <fieldset>
-                                    <legend>{{i18n ../../structure.competences.web}}</legend>
-                                    CONTENU
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../../structure.competences.notions}}</legend>
-                                    CONTENU
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
                                     <legend>{{i18n ../../structure.competences.outils}}</legend>
-                                    CONTENU
+                                    {{#list outils sep=" • "}}{{this}}{{/list}}
                                 </fieldset>
                             </div>
                         </div>
@@ -117,7 +148,16 @@
                             <div class="col">
                                 <fieldset>
                                     <legend>{{i18n ../../structure.competences.langues}}</legend>
-                                    CONTENU
+                                    {{#each langues}}
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div style="width: 15%;">
+                                                <img class="img-fluid" src="images/{{code_iso}}.svg" alt="{{langue}}">
+                                            </div>
+                                            <div class="ml-2">
+                                                {{#each niveau}}{{this}}<br/>{{/each}}
+                                            </div>
+                                        </div>
+                                    {{/each}}
                                 </fieldset>
                             </div>
                         </div>
@@ -125,7 +165,13 @@
                             <div class="col">
                                 <fieldset>
                                     <legend>{{i18n ../../structure.competences.os}}</legend>
-                                    CONTENU
+                                    <div class="d-flex justify-content-around">
+                                        {{#each os}}
+                                            <div class="text-center" style="width: 20%;">
+                                                <img class="img-fluid" src="images/{{this}}.svg" alt="{{this}}">
+                                            </div>
+                                        {{/each}}
+                                    </div>
                                 </fieldset>
                             </div>
                         </div>
