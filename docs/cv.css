@@ -38,4 +38,8 @@ a {
 
 .progress {
     height: 0.5rem;
-} 
+}
+
+.progress-bar {
+    border-radius: 50rem;
+}
