@@ -9,20 +9,11 @@ var censored = true;
 Handlebars.registerHelper("age", function (ddn) {
     const date = new Date(ddn);
     const today = new Date();
-    console.log(today);
-    console.log(date);
-    console.log(today-date);
-    const age = new Date(today-date).getYear();
-    console.log(new Date(today-date));
-    console.log(age);
+    const age = new Date(today-date).getFullYear()-1970;
     return age;
 });
 
 const getTranslation = function (key) {
-    console.log("key");
-    console.log(key);
-    console.log(lang);
-    console.log(translations[key]);
     try {
         return translations[key][lang];
     } catch (TypeError) {
@@ -39,8 +30,25 @@ Handlebars.registerHelper("sensible", function (info) {
     return info;
 });
 
-Handlebars.registerHelper("progress", function (value) {
-    return 100*value/5;
+Handlebars.registerHelper("progress-width", function (value) {
+    if (!isNaN(value)) {
+        return 100*value/5;
+    }
+    return 0;
+});
+
+Handlebars.registerHelper("progress-visibility", function (value) {
+    if (isNaN(value)) {
+        return "d-none";
+    }
+    return "";
+});
+
+Handlebars.registerHelper("alt-progress-visibility", function (value) {
+    if (isNaN(value)) {
+        return "";
+    }
+    return "d-none";
 });
 
 Handlebars.registerHelper("list", function (items, options) {
