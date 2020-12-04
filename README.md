@@ -1,3 +1,3 @@
 Mon CV
 
-[Mon CV](cv.html)
+[Mon CV](https://jlecordier.github.io/cv/)
