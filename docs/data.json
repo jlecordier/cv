@@ -58,11 +58,11 @@
                 "niveau": 4
             },
             {
-                "langage": "SQL",
-                "niveau": 4
+                "langage": "Pascal",
+                "niveau": 3
             },
             {
-                "langage": "Pascal",
+                "langage": "SQL",
                 "niveau": 3
             },
             {
@@ -147,19 +147,19 @@
         ],
         "langues": [
             {
-                "id": "fr",
+                "code_iso": "fr",
                 "langue": "Français",
-                "niveau": "Langue maternelle"
+                "niveau": ["Langue maternelle"]
             },
             {
-                "id": "en",
+                "code_iso": "gb",
                 "langue": "Anglais",
-                "niveau": "C1 : Bon niveau – TOEIC : 965\nSection Internationale Bilingue"
+                "niveau": ["C1 : Bon niveau – TOEIC : 965", "Section Internationale Bilingue"]
             },
             {
-                "id": "es",
+                "code_iso": "es",
                 "langue": "Espagnol",
-                "niveau": "B2 : Niveau moyen"
+                "niveau": ["B2 : Niveau moyen"]
             }
         ],
         "os": ["Windows", "Linux"]
