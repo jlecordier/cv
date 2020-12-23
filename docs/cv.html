@@ -15,6 +15,34 @@
     <title>CV</title>
 </head>
 <body class="bg-light">
+    <div id="print" class="row justify-content-center" hidden="hidden">
+        <div class="col-auto">
+            <table class="shadow-sm">
+                <thead>
+                    <tr>
+                        <th>CV</th>
+                        <th>FR</th>
+                        <th>EN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Censuré</strong></td>
+                        <td><a href="?lang=fr&censored=on">FR-Censuré</a></td>
+                        <td><a href="?lang=en&censored=on">EN-Censuré</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Complet</strong></td>
+                        <td><a href="?lang=fr&censored=off">FR-Complet</a></td>
+                        <td><a href="?lang=en&censored=off">EN-Complet</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="cv">
+
+    </div>
 </body>
 <script id="template" type="text/x-handlebars-template">
 {{#with data}}
@@ -82,23 +110,27 @@
                             <div class="col">
                                 <fieldset class="text-center">
                                     <legend>{{i18n ../../structure.competences.dev}}</legend>
+                                    <table>
                                     {{#each dev}}
-                                        <div class="d-flex align-items-center justify-content-end">
-                                            <div class="mr-2">
+                                        <tr>
+                                            <td style="text-align: right;">
                                                 {{langage}}
-                                            </div>
-                                            {{#if niveau}}
-                                                <div class="progress w-75">
-                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                                </div>
-                                            {{/if}}
-                                            {{#if remarque}}
-                                                <div class="text-center font-italic text-muted w-75">
-                                                    {{i18n remarque}}
-                                                </div>
-                                            {{/if}}
-                                        </div>
+                                            </td>
+                                            <td class="w-100 pl-2">
+                                                {{#if niveau}}
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                                    </div>
+                                                {{/if}}
+                                                {{#if remarque}}
+                                                    <div class="text-center font-italic text-muted">
+                                                        {{i18n remarque}}
+                                                    </div>
+                                                {{/if}}
+                                            </td>
+                                        </tr>
                                     {{/each}}
+                                    </table>
                                 </fieldset>
                             </div>
                         </div>
@@ -162,12 +194,13 @@
                             <div class="col">
                                 <fieldset>
                                     <legend>{{i18n ../../structure.competences.langues}}</legend>
+                                    <table>
                                     {{#each langues}}
-                                        <div class="d-flex align-items-center justify-content-start">
-                                            <div style="width: 15%;">
-                                                <img class="img-fluid" src="images/{{code_iso}}.svg" alt="{{langue}}">
-                                            </div>
-                                            <div class="ml-2">
+                                        <tr>
+                                            <td style="width: 20%;" class="pr-2">
+                                                <img src="images/{{code_iso}}.svg" alt="{{langue}}" style="width: 100%;">
+                                            </td>
+                                            <td>
                                                 {{#each niveau}}
                                                     {{#if @first}}
                                                         {{this}}
@@ -176,9 +209,10 @@
                                                     {{/if}}
                                                     <br/>
                                                 {{/each}}
-                                            </div>
-                                        </div>
+                                            </td>
+                                        </tr>
                                     {{/each}}
+                                    </table>
                                 </fieldset>
                             </div>
                         </div>

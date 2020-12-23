@@ -4,7 +4,7 @@ var data;
 var translations;
 var structure;
 var lang = "fr";
-var censored = true;
+var censored = false;
 
 Handlebars.registerHelper("age", function (ddn) {
     const date = new Date(ddn);
@@ -68,7 +68,7 @@ const compile = async function() {
         structure: structure,
         translations: translations
     };
-    const body = document.getElementsByTagName("body")[0];
+    const body = document.getElementById("cv");
     const htmlTemplate = document.getElementById("template");
     const template = Handlebars.compile(htmlTemplate.innerHTML);
     const result = template(templateData);
@@ -84,9 +84,9 @@ const getParam = function(name, defaultValue) {
     return param;
 }
 
-const getCensored = function(defaultValue) {
-    const censoredParam = getParam("censored", undefined);
-    switch (censoredParam) {
+const getOnOffParam = function(name, defaultValue) {
+    const onOffParam = getParam(name, undefined);
+    switch (onOffParam) {
         case "on":
             return true;
         case "off":
@@ -98,6 +98,10 @@ const getCensored = function(defaultValue) {
 
 window.addEventListener("DOMContentLoaded", () => {
     lang = getParam("lang", "fr");
-    censored = getCensored(true);
+    censored = getOnOffParam("censored", false);
+    const printMode = getOnOffParam("print", true);
+    if (!printMode) {
+        document.getElementById("print").removeAttribute("hidden");
+    }
     compile().catch(err => console.error(err));
 });
