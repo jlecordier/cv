@@ -143,7 +143,7 @@
             "Microsoft Access",
             "Excel",
             "Blender",
-            "Unity3D"
+            "Unity"
         ],
         "langues": [
             {
@@ -171,7 +171,7 @@
             "ecole": "à l'Institut National des Sciences Appliquées (INSA) de Rouen",
             "departement": "Département ASI : Architecture des Systèmes d'Information",
             "specialite": "Spécialisation : Ingénierie des données",
-            "cours": ["Réalité Virtuelle", "Interaction Homme-Machine Évoluée", "Web des Objets et des Services", "Document et Web Sémantique"],
+            "cours": ["Réalité Virtuelle", "Interactions Homme-Machine Évoluées", "Web des Objets et des Services", "Document et Web Sémantique"],
             "dates": {
                 "debut": 2016,
                 "fin": 2021
@@ -191,6 +191,27 @@
     ],
     "projets": [
         {
+            "id": "VR",
+            "projet": "Concepteur de Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
+            "contexte": "Réalité Virtuelle",
+            "technos": ["Unity", "Blender", "C#"],
+            "annee": 2020
+        },
+        {
+            "id": "Spotify",
+            "projet": "Concepteur et Développeur d'un lecteur de musique connecté à Spotify et Discord",
+            "contexte": "Web des Objets et des Services",
+            "technos": ["Raspberry Pi", "Spotify", "Discord", "Node.js", "API REST"],
+            "annee": 2020
+        },
+        {
+            "id": "Twitter",
+            "projet": "Concepteur et Développeur d'un annotateur automatique de sentiments",
+            "contexte": "Interactions Homme-Machine Évoluées",
+            "technos": ["Machine Learning", "Python"],
+            "annee": 2020
+        },
+        {
             "id": "PIC",
             "projet": "Responsable Qualité, Concepteur et Développeur d'un service web de gestion de patients",
             "temps": "+18h/semaine",
@@ -203,7 +224,7 @@
             "id": "Java",
             "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
             "contexte": "Informatique Répartie",
-            "technos": ["API Rest", "Java"],
+            "technos": ["API REST", "Java"],
             "annee": 2020
         },
         {
