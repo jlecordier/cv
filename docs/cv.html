@@ -241,6 +241,36 @@
                         <div class="row rounded shadow mx-0">
                             <div class="col p-3">
                                 <span class="section-header">{{i18n ../structure.sections.formation}}</span>
+                                <table>
+                                {{#each formations}}
+                                    <tr>
+                                        <td class="font-weight-bold" valign="top">
+                                            {{this.dates.fin}}
+                                        </td>
+                                        <td rowspan="2" class="px-2">
+                                            <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm">
+                                        </td>
+                                        <td rowspan="2">
+                                            {{this.formation}} {{this.ecole}}<br/>
+                                            {{#if this.departement}}
+                                                {{this.departement}}<br/>
+                                            {{/if}}
+                                            {{this.specialite}}<br/>
+                                            {{#if this.cours}}
+                                                <span class="font-italic">{{#list this.cours sep=" – "}}{{this}}{{/list}}</span><br/>
+                                            {{/if}}
+                                            {{#if this.mention}}
+                                                {{this.mention}}<br/>
+                                            {{/if}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" valign="bottom">
+                                            {{this.dates.debut}}
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                                </table>
                             </div>
                         </div>
                     </div>
