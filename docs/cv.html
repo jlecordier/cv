@@ -40,265 +40,290 @@
             </table>
         </div>
     </div>
-    <div id="cv">
+    <div id="cv" class="container-fluid" style="max-width: 1200px;">
 
     </div>
 </body>
 <script id="template" type="text/x-handlebars-template">
 {{#with data}}
-    <div class="container-xl">
-        <div class="row">
-            <div class="col p-2">
-                <div class="row rounded shadow mx-0 p-3 align-items-center">
-                    <div class="col-3 text-center">
-                        <img class="img-fluid rounded-pill shadow w-75" src="images/profil.jpg" alt="photo de profil"/>
-                    </div>
-                    <div class="col-auto">
-                    {{#with infos-perso}}
-                        <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
-                        <table>
-                            <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td class="pl-1">{{sensible adresse}}</td>
-                            </tr>
-                            <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td class="pl-1">{{sensible tel}}</td>
-                            </tr>
-                            <tr>
-                                <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td class="pl-1"><a href="mailto:{{email}}">{{email}}</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
-                            </tr>
-                        </table>
-                    {{/with}}
-                    </div>
-                    <div class="col text-center">
-                    {{#with recherche}}
-                        <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
-                        <h4 class="font-weight-bold">{{i18n objet}}</h4>
-                        <span class="text-muted font-italic">
-                            {{i18n ../../structure.interesse}} : {{#list interets sep=" – "}}{{this}}{{/list}}
-                        </span><br/>
-                        {{i18n contexte}}<br/>
-                        {{duree.min}} {{i18n ../../structure.conjonctions.a}} {{duree.max}} {{i18n duree.unite}} – {{i18n dates.debut}} {{i18n ../../structure.conjonctions.au}} {{i18n dates.fin}} {{dates.annee}}<br/>
-                        {{#list lieux sep=", "}}{{i18n this}}{{/list}}<br/>
-                        {{i18n permis.texte}} – {{i18n vehicule.texte}}
-                    {{/with}}
-                    </div>
+    <div class="row">
+        <div class="col p-2">
+            <div class="row rounded shadow mx-0 p-3 align-items-center">
+                <div class="col-3 text-center">
+                    <img class="img-fluid rounded-pill shadow w-75" src="images/profil.jpg" alt="photo de profil"/>
+                </div>
+                <div class="col-auto">
+                {{#with infos-perso}}
+                    <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
+                    <table>
+                        <tr>
+                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td class="pl-1">{{sensible adresse}}</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td class="pl-1">{{sensible tel}}</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td class="pl-1"><a href="mailto:{{email}}">{{email}}</a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
+                        </tr>
+                    </table>
+                {{/with}}
+                </div>
+                <div class="col text-center">
+                {{#with recherche}}
+                    <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
+                    <h4 class="font-weight-bold">{{i18n objet}}</h4>
+                    <span class="text-muted font-italic">
+                        {{i18n ../../structure.interesse}} : {{#list interets sep=" – "}}{{this}}{{/list}}
+                    </span><br/>
+                    {{i18n contexte}}<br/>
+                    {{duree.min}} {{i18n ../../structure.conjonctions.a}} {{duree.max}} {{i18n duree.unite}} – {{i18n dates.debut}} {{i18n ../../structure.conjonctions.au}} {{i18n dates.fin}} {{dates.annee}}<br/>
+                    {{#list lieux sep=", "}}{{i18n this}}{{/list}}<br/>
+                    {{i18n permis.texte}} – {{i18n vehicule.texte}}
+                {{/with}}
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!-- corps -->
-            <div class="col-4 p-2" style="max-width: 30%;">
-                {{#with competences}}
-                <div class="row rounded shadow mx-0 h-100">
-                    <div class="col p-3" id="section-competences">
-                        <span class="section-header">{{i18n ../../structure.sections.competences}}</span>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../../structure.competences.personnelles}}</legend>
-                                    {{#list personnelles sep=" • "}}{{this}}{{/list}}
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset class="text-center">
-                                    <legend>{{i18n ../../structure.competences.dev}}</legend>
-                                    <table>
-                                    {{#each dev}}
-                                        <tr>
-                                            <td style="text-align: right;">
-                                                {{langage}}
-                                            </td>
-                                            <td class="w-100 pl-2">
-                                                {{#if niveau}}
-                                                    <div class="progress">
-                                                        <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                                    </div>
-                                                {{/if}}
-                                                {{#if remarque}}
-                                                    <div class="text-center font-italic text-muted">
-                                                        {{i18n remarque}}
-                                                    </div>
-                                                {{/if}}
-                                            </td>
-                                        </tr>
-                                    {{/each}}
-                                    </table>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset class="text-center">
-                                    <legend>{{i18n ../../structure.competences.web}}</legend>
-                                    {{#each web}}
-                                        <div class="mb-2">
-                                            <div>
-                                                {{#list technos sep=" • "}}{{this}}{{/list}}
-                                            </div>
-                                            {{#if niveau}}
-                                                <div class="progress ml-auto mr-auto w-75">
-                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                                </div>
-                                            {{/if}}
-                                            {{#if remarque}}
-                                                <div class="text-center font-italic text-muted w-75">
-                                                    {{i18n remarque}}
-                                                </div>
-                                            {{/if}}
-                                        </div>
-                                    {{/each}}
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset class="text-center">
-                                    <legend>{{i18n ../../structure.competences.notions}}</legend>
-                                    {{#each notions}}
-                                        <div class="mb-2">
-                                            <div>
-                                                {{notion}}
-                                            </div>
-                                            {{#if niveau}}
-                                                <div class="progress ml-auto mr-auto w-75">
-                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
-                                                </div>
-                                            {{/if}}
-                                            {{#if remarque}}
-                                                <div class="text-center font-italic text-muted w-75">
-                                                    {{i18n remarque}}
-                                                </div>
-                                            {{/if}}
-                                        </div>
-                                    {{/each}}
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../../structure.competences.outils}}</legend>
-                                    {{#list outils sep=" • "}}{{this}}{{/list}}
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../../structure.competences.langues}}</legend>
-                                    <table>
-                                    {{#each langues}}
-                                        <tr>
-                                            <td style="width: 20%;" class="pr-2">
-                                                <img src="images/{{code_iso}}.svg" alt="{{langue}}" style="width: 100%;">
-                                            </td>
-                                            <td>
-                                                {{#each niveau}}
-                                                    {{#if @first}}
-                                                        {{this}}
-                                                    {{else}}
-                                                        <span class="font-italic">{{this}}</span>
-                                                    {{/if}}
-                                                    <br/>
-                                                {{/each}}
-                                            </td>
-                                        </tr>
-                                    {{/each}}
-                                    </table>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset>
-                                    <legend>{{i18n ../../structure.competences.os}}</legend>
-                                    <div class="d-flex justify-content-around">
-                                        {{#each os}}
-                                            <div class="text-center" style="width: 20%;">
-                                                <img class="img-fluid" src="images/{{this}}.svg" alt="{{this}}">
-                                            </div>
-                                        {{/each}}
-                                    </div>
-                                </fieldset>
-                            </div>
+    </div>
+    <div class="row">
+        <!-- corps -->
+        <div class="col-4 p-2" style="max-width: 30%;">
+            {{#with competences}}
+            <div class="row rounded shadow mx-0 h-100">
+                <div class="col p-3" id="section-competences">
+                    <span class="section-header">{{i18n ../../structure.sections.competences}}</span>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset>
+                                <legend>{{i18n ../../structure.competences.personnelles}}</legend>
+                                {{#list personnelles sep=" • "}}{{this}}{{/list}}
+                            </fieldset>
                         </div>
                     </div>
-                </div>
-                {{/with}}
-            </div>
-            <div class="col">
-                <!-- reste -->
-                <div class="row">
-                    <div class="col p-2">
-                        <div class="row rounded shadow mx-0">
-                            <div class="col p-3">
-                                <span class="section-header">{{i18n ../structure.sections.formation}}</span>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset class="text-center">
+                                <legend>{{i18n ../../structure.competences.dev}}</legend>
                                 <table>
-                                {{#each formations}}
+                                {{#each dev}}
                                     <tr>
-                                        <td class="font-weight-bold" valign="top">
-                                            {{this.dates.fin}}
+                                        <td style="text-align: right;">
+                                            {{langage}}
                                         </td>
-                                        <td rowspan="2" class="px-2">
-                                            <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm">
-                                        </td>
-                                        <td rowspan="2">
-                                            {{this.formation}} {{this.ecole}}<br/>
-                                            {{#if this.departement}}
-                                                {{this.departement}}<br/>
+                                        <td class="w-100 pl-2">
+                                            {{#if niveau}}
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                                </div>
                                             {{/if}}
-                                            {{this.specialite}}<br/>
-                                            {{#if this.cours}}
-                                                <span class="font-italic">{{#list this.cours sep=" – "}}{{this}}{{/list}}</span><br/>
+                                            {{#if remarque}}
+                                                <div class="text-center font-italic text-muted">
+                                                    {{i18n remarque}}
+                                                </div>
                                             {{/if}}
-                                            {{#if this.mention}}
-                                                {{this.mention}}<br/>
-                                            {{/if}}
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-weight-bold" valign="bottom">
-                                            {{this.dates.debut}}
                                         </td>
                                     </tr>
                                 {{/each}}
                                 </table>
-                            </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset class="text-center">
+                                <legend>{{i18n ../../structure.competences.web}}</legend>
+                                {{#each web}}
+                                    <div class="mb-2">
+                                        <div>
+                                            {{#list technos sep=" • "}}{{this}}{{/list}}
+                                        </div>
+                                        {{#if niveau}}
+                                            <div class="progress ml-auto mr-auto w-75">
+                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%"></div>
+                                            </div>
+                                        {{/if}}
+                                        {{#if remarque}}
+                                            <div class="text-center font-italic text-muted w-75">
+                                                {{i18n remarque}}
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                {{/each}}
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset class="text-center">
+                                <legend>{{i18n ../../structure.competences.notions}}</legend>
+                                {{#each notions}}
+                                    <div class="mb-2">
+                                        <div>
+                                            {{notion}}
+                                        </div>
+                                        {{#if niveau}}
+                                            <div class="progress ml-auto mr-auto w-75">
+                                                <div class="progress-bar" role="progressbar" style="width: {{progress-width niveau}}%;"></div>
+                                            </div>
+                                        {{/if}}
+                                        {{#if remarque}}
+                                            <div class="text-center font-italic text-muted w-75">
+                                                {{i18n remarque}}
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                {{/each}}
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset>
+                                <legend>{{i18n ../../structure.competences.outils}}</legend>
+                                {{#list outils sep=" • "}}{{this}}{{/list}}
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset>
+                                <legend>{{i18n ../../structure.competences.langues}}</legend>
+                                <table style="margin-left: auto; margin-right: auto;">
+                                {{#each langues}}
+                                    <tr>
+                                        <td style="width: 20%;" class="pr-2">
+                                            <img src="images/{{code_iso}}.svg" alt="{{langue}}" style="width: 100%;"/>
+                                        </td>
+                                        <td>
+                                            {{#each niveau}}
+                                                {{#if @first}}
+                                                    {{this}}
+                                                {{else}}
+                                                    <span class="font-italic">{{this}}</span>
+                                                {{/if}}
+                                                <br/>
+                                            {{/each}}
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                                </table>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset>
+                                <legend>{{i18n ../../structure.competences.os}}</legend>
+                                <div class="d-flex justify-content-around">
+                                    {{#each os}}
+                                        <div class="text-center" style="width: 20%;">
+                                            <img class="img-fluid" src="images/{{this}}.svg" alt="{{this}}"/>
+                                        </div>
+                                    {{/each}}
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col p-2">
-                        <div class="row rounded shadow mx-0">
-                            <div class="col p-3">
-                                <span class="section-header">{{i18n ../structure.sections.projets}}</span>
-                            </div>
+            </div>
+            {{/with}}
+        </div>
+        <div class="col">
+            <!-- reste -->
+            <div class="row">
+                <div class="col p-2">
+                    <div class="row rounded shadow mx-0">
+                        <div class="col p-3">
+                            <span class="section-header">{{i18n ../structure.sections.formation}}</span>
+                            <table>
+                            {{#each formations}}
+                                <tr>
+                                    <td class="font-weight-bold" valign="top">
+                                        {{this.dates.fin}}
+                                    </td>
+                                    <td rowspan="2" class="px-2">
+                                        <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
+                                    </td>
+                                    <td rowspan="2">
+                                        {{this.formation}} {{this.ecole}}<br/>
+                                        {{#if this.departement}}
+                                            {{this.departement}}<br/>
+                                        {{/if}}
+                                        {{this.specialite}}<br/>
+                                        {{#if this.cours}}
+                                            <span class="font-italic">{{#list this.cours sep=" – "}}{{this}}{{/list}}</span><br/>
+                                        {{/if}}
+                                        {{#if this.mention}}
+                                            {{this.mention}}<br/>
+                                        {{/if}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold" valign="bottom">
+                                        {{this.dates.debut}}
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col p-2">
-                        <div class="row rounded shadow mx-0">
-                            <div class="col p-3">
-                                <span class="section-header">{{i18n ../structure.sections.experiences}}</span>
-                            </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="row rounded shadow mx-0">
+                        <div class="col p-3">
+                            <span class="section-header">{{i18n ../structure.sections.projets}}</span>
+                            <table>
+                            {{#each projets}}
+                                <tr>
+                                    <td class="font-weight-bold">
+                                        {{this.annee}}
+                                    </td>
+                                    <td class="px-2">
+                                        <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
+                                    </td>
+                                    <td class="py-1">
+                                        {{this.projet}}<br/>
+                                        <span class="font-italic">
+                                            {{#if this.temps}}
+                                                {{this.temps}} – 
+                                            {{/if}}
+                                            {{#if this.contexte}}
+                                                {{this.contexte}} – 
+                                            {{/if}}
+                                            {{#if this.employeur}}
+                                                {{this.employeur}} – 
+                                            {{/if}}
+                                            {{#list this.technos sep=" – "}}{{this}}{{/list}}
+                                        </span><br/>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col p-2">
-                        <div class="row rounded shadow mx-0">
-                            <div class="col p-3">
-                                <span class="section-header">{{i18n ../structure.sections.interets}}</span>
-                            </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="row rounded shadow mx-0">
+                        <div class="col p-3">
+                            <span class="section-header">{{i18n ../structure.sections.experiences}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="row rounded shadow mx-0">
+                        <div class="col p-3">
+                            <span class="section-header">{{i18n ../structure.sections.interets}}</span>
                         </div>
                     </div>
                 </div>
