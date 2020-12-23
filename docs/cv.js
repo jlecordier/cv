@@ -69,10 +69,10 @@ const compile = async function() {
         translations: translations
     };
     const body = document.getElementsByTagName("body")[0];
-    const template = Handlebars.compile(body.innerHTML);
+    const htmlTemplate = document.getElementById("template");
+    const template = Handlebars.compile(htmlTemplate.innerHTML);
     const result = template(templateData);
     body.innerHTML = result;
-    body.removeAttribute("hidden");
 };
 
 const getParam = function(name, defaultValue) {
