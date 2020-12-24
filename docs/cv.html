@@ -48,11 +48,11 @@
 {{#with data}}
     <div class="row">
         <div class="col p-2">
-            <div class="row rounded shadow mx-0 p-3 align-items-center">
-                <div class="col-3 text-center">
+            <div class="row rounded shadow mx-0 p-3 align-items-center justify-content-center">
+                <div class="col-12 col-sm-auto text-center">
                     <img class="img-fluid rounded-pill shadow w-75" src="images/profil.jpg" alt="photo de profil"/>
                 </div>
-                <div class="col-auto">
+                <div class="col-12 col-sm-auto py-3">
                 {{#with infos-perso}}
                     <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
                     <table>
@@ -74,7 +74,7 @@
                     </table>
                 {{/with}}
                 </div>
-                <div class="col text-center">
+                <div class="col-12 col-lg text-center">
                 {{#with recherche}}
                     <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
                     <h4 class="font-weight-bold">{{i18n objet}}</h4>
@@ -92,7 +92,7 @@
     </div>
     <div class="row">
         <!-- corps -->
-        <div class="col-4 p-2" style="max-width: 30%;">
+        <div class="col-12 col-lg-4 p-2">
             {{#with competences}}
             <div class="row rounded shadow mx-0 h-100">
                 <div class="col p-3 d-flex flex-column justify-content-between" id="section-competences">
@@ -138,7 +138,7 @@
                             <fieldset class="text-center">
                                 <legend>{{i18n ../../structure.competences.web}}</legend>
                                 {{#each web}}
-                                    <div class="mb-2">
+                                    <div class="mb-2 niveau">
                                         <div>
                                             {{#list technos sep=" • "}}{{this}}{{/list}}
                                         </div>
@@ -162,7 +162,7 @@
                             <fieldset class="text-center">
                                 <legend>{{i18n ../../structure.competences.notions}}</legend>
                                 {{#each notions}}
-                                    <div class="mb-2">
+                                    <div class="mb-2 niveau">
                                         <div>
                                             {{notion}}
                                         </div>
@@ -197,7 +197,7 @@
                                 {{#each langues}}
                                     <tr>
                                         <td style="width: 20%;" class="pr-2">
-                                            <img src="images/{{code_iso}}.png" alt="{{langue}}" class="rounded-pill shadow-sm" style="width: 100%;"/>
+                                            <img src="images/{{code_iso}}.png" alt="{{langue}}" class="rounded-pill shadow-sm" style="width: 100%; max-width: 3rem;"/>
                                         </td>
                                         <td>
                                             {{#each niveau}}
@@ -222,7 +222,7 @@
                                 <div class="d-flex justify-content-around">
                                     {{#each os}}
                                         <div class="text-center" style="width: 20%;">
-                                            <img class="img-fluid rounded-pill shadow-sm" src="images/{{this}}.png" alt="{{this}}"/>
+                                            <img class="img-fluid rounded-pill shadow-sm" src="images/{{this}}.png" alt="{{this}}" style="max-width: 4rem;"/>
                                         </div>
                                     {{/each}}
                                 </div>
