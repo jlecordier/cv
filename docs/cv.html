@@ -40,7 +40,7 @@
             </table>
         </div>
     </div>
-    <div id="cv" class="container-fluid" style="max-width: 1150px;">
+    <div id="cv" class="container-fluid" style="max-width: 1160px;">
 
     </div>
 </body>
@@ -57,19 +57,19 @@
                     <h1 class="font-weight-bold">{{prenom}} {{nom}}</h1>
                     <table>
                         <tr>
-                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td class="pl-1">{{sensible adresse}}</td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/bootstrap-icons/envelope-fill.svg" alt="adresse"></td><td class="pl-1">{{sensible adresse}}</td>
                         </tr>
                         <tr>
-                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td class="pl-1">{{sensible tel}}</td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/bootstrap-icons/telephone-fill.svg" alt="telephone"></td><td class="pl-1">{{sensible tel}}</td>
                         </tr>
                         <tr>
-                            <td><img class="img-fluid mx-auto" src="images/bootstrap-icons/at.svg" alt="email"></td><td class="pl-1"><a href="mailto:{{email}}">{{email}}</a></td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/bootstrap-icons/at.svg" alt="email"></td><td class="pl-1"><a href="mailto:{{email}}">{{email}}</a></td>
                         </tr>
                         <tr>
-                            <td><img class="img-fluid mx-auto" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
                         </tr>
                         <tr>
-                            <td><img class="img-fluid mx-auto" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
                         </tr>
                     </table>
                 {{/with}}
@@ -197,7 +197,7 @@
                                 {{#each langues}}
                                     <tr>
                                         <td style="width: 20%;" class="pr-2">
-                                            <img src="images/{{code_iso}}.svg" alt="{{langue}}" style="width: 100%;"/>
+                                            <img src="images/{{code_iso}}.png" alt="{{langue}}" class="rounded-pill shadow-sm" style="width: 100%;"/>
                                         </td>
                                         <td>
                                             {{#each niveau}}
@@ -282,7 +282,7 @@
                             <table>
                             {{#each projets}}
                                 <tr>
-                                    <td class="pr-2">
+                                    <td class="pr-3">
                                         <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
                                     </td>
                                     <td class="py-1">
@@ -315,6 +315,42 @@
                     <div class="row rounded shadow mx-0">
                         <div class="col p-3">
                             <span class="section-header">{{i18n ../structure.sections.experiences}}</span>
+                            <table>
+                            {{#each experiences}}
+                                <tr>
+                                    <td class="font-weight-bold">
+                                        {{#if this.annee}}
+                                            {{this.annee}}
+                                        {{/if}}
+                                        {{#if this.annees}}
+                                            {{this.annees.fin}}<br/>
+                                            {{this.annees.debut}}
+                                        {{/if}}
+                                    </td>
+                                    <td class="px-2">
+                                        <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
+                                    </td>
+                                    <td class="py-1">
+                                        {{#list this.experience sep="<br/>"}}{{this}}{{/list}}<br/>
+                                        <span class="font-italic">
+                                            {{#if this.duree}}
+                                                {{this.duree}}
+                                                {{#if this.contexte}} – {{/if}}
+                                            {{/if}}
+                                            {{#if this.contexte}}
+                                                {{this.contexte}} – 
+                                            {{/if}}
+                                            {{#if this.employeur}}
+                                                {{this.employeur}}
+                                            {{/if}}
+                                            {{#if this.technos}}
+                                                 – {{#list this.technos sep=" – "}}{{this}}{{/list}}
+                                            {{/if}}
+                                        </span><br/>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </table>
                         </div>
                     </div>
                 </div>

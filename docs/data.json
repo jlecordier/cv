@@ -320,7 +320,7 @@
     "experiences": [
         {
             "id": "Segafredo",
-            "experience": "Rédaction de documents de spécifications et de conception pour un changement d'ERP\nAutomatisation et optimisation de tableaux Excel\nCréation de formulaires Microsoft Access (base de données, interfaces et macros)",
+            "experience": ["Rédaction de documents de spécifications et de conception pour un changement d'ERP", "Automatisation et optimisation de tableaux Excel", "Création de formulaires Microsoft Access (base de données, interfaces et macros)"],
             "contexte": "Stage de 2 mois puis CDD de 8h/semaine",
             "employeur": "Segafredo Zanetti France",
             "technos": ["Excel", "Access"],
@@ -328,16 +328,16 @@
         },
         {
             "id": "AJIR",
-            "experience": "Rédaction d'un état de l'art sur les technologies de traçabilité",
+            "experience": ["Rédaction d'un état de l'art sur les technologies de traçabilité"],
             "duree": "2 mois",
-            "contexte": "Étude réalisée au sein de la Junior Entreprise de l'INSA pour Normandie AeroEspace",
-            "employeur": "Segafredo Zanetti France",
+            "contexte": "Étude réalisée au sein de la Junior Entreprise de l'INSA",
+            "employeur": "Normandie AeroEspace",
             "technos": ["Excel", "Access"],
             "annee": 2019
         },
         {
             "id": "Segafredo",
-            "experience": "Immersion dans le travail quotidien d'un ouvrier",
+            "experience": ["Immersion dans le travail quotidien d'un ouvrier"],
             "duree": "1 mois",
             "contexte": "Stage d'exécution",
             "employeur": "Segafredo Zanetti France",
@@ -345,14 +345,14 @@
         },
         {
             "id": "Karate",
-            "experience": "Professeur-assistant de Karaté",
+            "experience": ["Professeur-assistant de Karaté"],
             "contexte": "Bénévolat",
             "employeur": "Sandra Lecourt",
             "annee": 2017
         },
         {
             "id": "Maths",
-            "experience": "Cours particuliers de Mathématiques pour lycéens",
+            "experience": ["Cours particuliers de Mathématiques pour lycéens"],
             "duree": "3 à +6h/semaine",
             "annees": {
                 "debut": 2016,
@@ -361,7 +361,7 @@
         },
         {
             "id": "Turbulences",
-            "experience": "Participations à des spectacles chorégraphiques",
+            "experience": ["Participations à des spectacles chorégraphiques"],
             "employeur": "Opéra de Rouen / Zénith",
             "technos": ["Coulisses", "Figurations"],
             "annees": {
