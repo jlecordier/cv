@@ -23,9 +23,9 @@
         "fr": "31 Août",
         "en": "August 31st"
     },
-    "#RECHERCHE.LIEUX.USA": {
-        "fr": "États-Unis d'Amérique",
-        "en": "USA"
+    "#RECHERCHE.LIEUX.NA": {
+        "fr": "Amérique du Nord",
+        "en": "North America"
     },
     "#RECHERCHE.LIEUX.EUROPE": {
         "fr": "Europe",

@@ -24,7 +24,7 @@
             "fin": "#RECHERCHE.DATES.FIN",
             "annee": "2021"
         },
-        "lieux": ["#RECHERCHE.LIEUX.USA", "#RECHERCHE.LIEUX.EUROPE"],
+        "lieux": ["#RECHERCHE.LIEUX.NA", "#RECHERCHE.LIEUX.EUROPE"],
         "permis": {
             "possede": true,
             "texte": "#RECHERCHE.PERMIS.TEXTE"
