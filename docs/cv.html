@@ -78,7 +78,7 @@
                 {{#with recherche}}
                     <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
                     <h4 class="font-weight-bold">{{i18n objet}}</h4>
-                    <span class="text-muted font-italic">
+                    <span class="text-muted font-weight-light font-italic">
                         {{i18n ../../structure.interesse}} : {{#list interets sep=" – "}}{{this}}{{/list}}
                     </span><br/>
                     {{i18n contexte}}<br/>
@@ -122,7 +122,7 @@
                                                 </div>
                                             {{/if}}
                                             {{#if remarque}}
-                                                <div class="text-center font-italic text-muted">
+                                                <div class="text-center font-italic text-muted font-weight-light">
                                                     {{i18n remarque}}
                                                 </div>
                                             {{/if}}
@@ -148,7 +148,7 @@
                                             </div>
                                         {{/if}}
                                         {{#if remarque}}
-                                            <div class="text-center font-italic text-muted w-75">
+                                            <div class="text-center font-italic text-muted font-weight-light w-75">
                                                 {{i18n remarque}}
                                             </div>
                                         {{/if}}
@@ -172,7 +172,7 @@
                                             </div>
                                         {{/if}}
                                         {{#if remarque}}
-                                            <div class="text-center font-italic text-muted w-75">
+                                            <div class="text-center font-italic text-muted font-weight-light w-75">
                                                 {{i18n remarque}}
                                             </div>
                                         {{/if}}
@@ -243,10 +243,10 @@
                             <table>
                             {{#each formations}}
                                 <tr>
-                                    <td class="font-weight-bold" valign="top">
+                                    <td class="font-weight-bold py-1" valign="top">
                                         {{this.dates.fin}}
                                     </td>
-                                    <td rowspan="2" class="px-2">
+                                    <td rowspan="2" class="px-2 py-2" valign="top">
                                         <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
                                     </td>
                                     <td rowspan="2">
@@ -303,7 +303,7 @@
                                 </tr>
                             {{/each}}
                             </table>
-                            <div class="font-italic text-muted">
+                            <div class="font-italic text-muted font-weight-light">
                                 Et plein d'autres encore...
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                             <table>
                             {{#each experiences}}
                                 <tr>
-                                    <td class="font-weight-bold">
+                                    <td class="font-weight-bold py-1" valign="top">
                                         {{#if this.annee}}
                                             {{this.annee}}
                                         {{/if}}
@@ -327,7 +327,7 @@
                                             {{this.annees.debut}}
                                         {{/if}}
                                     </td>
-                                    <td class="px-2">
+                                    <td class="px-2 py-2" valign="top">
                                         <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
                                     </td>
                                     <td class="py-1">
@@ -360,6 +360,22 @@
                     <div class="row rounded shadow mx-0">
                         <div class="col p-3">
                             <span class="section-header">{{i18n ../structure.sections.interets}}</span>
+                            <table>
+                                {{#each interets}}
+                                    <tr>
+                                        <td class="font-weight-bold pr-3" valign="top">
+                                            {{this.interet}}
+                                        </td>
+                                        <td>
+                                            {{#list this.liste sep=" • "}}{{this.nom}}
+                                                {{#if this.details}}
+                                                    <span class="font-italic text-muted font-weight-light">({{this.details}})</span>
+                                                {{/if}}
+                                            {{/list}}
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                            </table>
                         </div>
                     </div>
                 </div>
