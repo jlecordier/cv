@@ -263,7 +263,7 @@
                                         {{/if}}
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr {{#unless @last}} style="border-bottom: 2px dotted lightgrey;" {{/unless}}>
                                     <td class="font-weight-bold" valign="bottom">
                                         {{this.dates.debut}}
                                     </td>
@@ -282,7 +282,7 @@
                             <table>
                             {{#each projets}}
                                 <tr>
-                                    <td class="px-2">
+                                    <td class="pr-2">
                                         <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
                                     </td>
                                     <td class="py-1">
