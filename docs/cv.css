@@ -48,3 +48,9 @@ a {
 .section-header+table {
     margin-top: 0.5rem;
 }
+
+fieldset > table, fieldset > .niveau {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
