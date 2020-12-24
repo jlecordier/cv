@@ -44,3 +44,7 @@ a {
 .progress-bar {
     border-radius: 50rem;
 }
+
+.section-header+table {
+    margin-top: 0.5rem;
+}
