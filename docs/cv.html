@@ -95,18 +95,16 @@
         <div class="col-12 col-lg-4 p-2">
             {{#with competences}}
             <div class="row rounded shadow mx-0 h-100">
-                <div class="col p-3 d-flex flex-column justify-content-between" id="section-competences">
+                <div class="col d-flex flex-column p-3" id="section-competences">
                     <span class="section-header">{{i18n ../../structure.sections.competences}}</span>
-                    <div class="row">
-                        <div class="col">
+                    <div class="row flex-grow-1">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset>
                                 <legend>{{i18n ../../structure.competences.personnelles}}</legend>
                                 {{#list personnelles sep=" • "}}{{this}}{{/list}}
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset class="text-center">
                                 <legend>{{i18n ../../structure.competences.dev}}</legend>
                                 <table>
@@ -132,9 +130,7 @@
                                 </table>
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset class="text-center">
                                 <legend>{{i18n ../../structure.competences.web}}</legend>
                                 {{#each web}}
@@ -156,9 +152,7 @@
                                 {{/each}}
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset class="text-center">
                                 <legend>{{i18n ../../structure.competences.notions}}</legend>
                                 {{#each notions}}
@@ -180,17 +174,13 @@
                                 {{/each}}
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset>
                                 <legend>{{i18n ../../structure.competences.outils}}</legend>
                                 {{#list outils sep=" • "}}{{this}}{{/list}}
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset>
                                 <legend>{{i18n ../../structure.competences.langues}}</legend>
                                 <table style="margin-left: auto; margin-right: auto;">
@@ -214,9 +204,7 @@
                                 </table>
                             </fieldset>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <fieldset>
                                 <legend>{{i18n ../../structure.competences.os}}</legend>
                                 <div class="d-flex justify-content-around">
