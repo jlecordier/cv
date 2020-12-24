@@ -15,9 +15,9 @@
     <title>CV</title>
 </head>
 <body class="bg-light">
-    <div id="print" class="row justify-content-center" hidden="hidden">
-        <div class="col-auto">
-            <table class="shadow-sm">
+    <div id="print" class="row justify-content-center my-3" hidden="hidden">
+        <div class="col-auto shadow p-3 rounded">
+            <table>
                 <thead>
                     <tr>
                         <th scope="col">CV</th>
@@ -222,7 +222,7 @@
                                 <div class="d-flex justify-content-around">
                                     {{#each os}}
                                         <div class="text-center" style="width: 20%;">
-                                            <img class="img-fluid" src="images/{{this}}.svg" alt="{{this}}"/>
+                                            <img class="img-fluid rounded-pill shadow-sm" src="images/{{this}}.png" alt="{{this}}"/>
                                         </div>
                                     {{/each}}
                                 </div>
