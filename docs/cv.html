@@ -40,7 +40,7 @@
             </table>
         </div>
     </div>
-    <div id="cv" class="container-fluid" style="max-width: 1200px;">
+    <div id="cv" class="container-fluid" style="max-width: 1150px;">
 
     </div>
 </body>
@@ -282,9 +282,6 @@
                             <table>
                             {{#each projets}}
                                 <tr>
-                                    <td class="font-weight-bold">
-                                        {{this.annee}}
-                                    </td>
                                     <td class="px-2">
                                         <img src="images/{{this.id}}.png" alt="{{this.id}}" width="40" class="rounded-pill shadow-sm"/>
                                     </td>
@@ -306,6 +303,9 @@
                                 </tr>
                             {{/each}}
                             </table>
+                            <div class="font-italic text-muted">
+                                Et plein d'autres encore...
+                            </div>
                         </div>
                     </div>
                 </div>

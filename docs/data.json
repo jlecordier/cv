@@ -192,7 +192,7 @@
     "projets": [
         {
             "id": "VR",
-            "projet": "Concepteur de Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
+            "projet": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
             "contexte": "Réalité Virtuelle",
             "technos": ["Unity", "Blender", "C#"],
             "annee": 2020
@@ -221,13 +221,6 @@
             "annee": 2020
         },
         {
-            "id": "Java",
-            "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
-            "contexte": "Informatique Répartie",
-            "technos": ["API REST", "Java"],
-            "annee": 2020
-        },
-        {
             "id": "Android Studio",
             "projet": "Concepteur et Développeur d'une amélioration d'un assistant virtuel sous Android",
             "temps": "+80h",
@@ -240,13 +233,6 @@
             "projet": "Traitement de fichiers METS et ALTO, utilisation de DBpedia",
             "contexte": "Documents sémantiques",
             "technos": ["Python", "XML", "SPARQL"],
-            "annee": 2020
-        },
-        {
-            "id": "Hackathon",
-            "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
-            "contexte": "Hackathon Hacking Health",
-            "technos": ["Web Scrapping", "Python"],
             "annee": 2020
         },
         {
@@ -276,6 +262,22 @@
             "contexte": "Électronique",
             "technos": ["Arduino", "Langage C"],
             "annee": 2019
+        }
+    ],
+    "vieux_projets": [
+        {
+            "id": "Java",
+            "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
+            "contexte": "Informatique Répartie",
+            "technos": ["API REST", "Java"],
+            "annee": 2020
+        },
+        {
+            "id": "Hackathon",
+            "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
+            "contexte": "Hackathon Hacking Health",
+            "technos": ["Web Scrapping", "Python"],
+            "annee": 2020
         },
         {
             "id": "Serveur",
