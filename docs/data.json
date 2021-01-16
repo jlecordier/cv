@@ -16,7 +16,7 @@
         "contexte": "#RECHERCHE.CONTEXTE",
         "duree": {
             "min": 21,
-            "max": 23,
+            "max": 26,
             "unite": "#RECHERCHE.DUREE.UNITE"
         },
         "dates": {
