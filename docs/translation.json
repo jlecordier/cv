@@ -47,6 +47,50 @@
         "fr": "En cours",
         "en": "In progress"
     },
+    "#NOTIONS.RESEAU": {
+        "fr": "Réseau informatique",
+        "en": "Computer network"
+    },
+    "#NOTIONS.DONNEES": {
+        "fr": "Traitement des données",
+        "en": "Data processing"
+    },
+    "#NOTIONS.ELECTRO": {
+        "fr": "Électronique",
+        "en": "Electronics"
+    },
+    "#NOTIONS.SIGNAL": {
+        "fr": "Traitement du signal",
+        "en": "Signal processing"
+    },
+    "#NOTIONS.AGILES": {
+        "fr": "Méthodes Agiles",
+        "en": "Agile methodologies"
+    },
+    "#NOTIONS.ML": {
+        "fr": "Machine Learning",
+        "en": "Machine Learning"
+    },
+    "#NOTIONS.DEEP": {
+        "fr": "Deep Learning",
+        "en": "Deep Learning"
+    },
+    "#LANGUES.FR.NIVEAU": {
+        "fr": "Langue maternelle",
+        "en": "Native language"
+    },
+    "#LANGUES.EN.NIVEAU1": {
+        "fr": "C1 : Bon niveau – TOEIC : 965",
+        "en": "C1 : Good level – TOEIC : 965"
+    },
+    "#LANGUES.EN.NIVEAU2": {
+        "fr": "Section Internationale Bilingue",
+        "en": "International Bilingual Section"
+    },
+    "#LANGUES.ES.NIVEAU": {
+        "fr": "B2 : Niveau moyen",
+        "en": "B2 : Average level"
+    },
     "#age": {
         "fr": "ans",
         "en": "years old"

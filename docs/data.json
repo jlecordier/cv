@@ -102,31 +102,31 @@
         ],
         "notions": [
             {
-                "notion": "Réseau informatique",
+                "notion": "#NOTIONS.RESEAU",
                 "niveau": 4
             },
             {
-                "notion": "Traitement des données",
+                "notion": "#NOTIONS.DONNEES",
                 "niveau": 3
             },
             {
-                "notion": "Électronique",
+                "notion": "#NOTIONS.ELECTRO",
                 "niveau": 3
             },
             {
-                "notion": "Traitement du signal",
+                "notion": "#NOTIONS.SIGNAL",
                 "niveau": 2
             },
             {
-                "notion": "Méthodes Agiles",
+                "notion": "#NOTIONS.AGILES",
                 "niveau": 2
             },
             {
-                "notion": "Machine Learning",
+                "notion": "#NOTIONS.ML",
                 "niveau": 2
             },
             {
-                "notion": "Deep Learning",
+                "notion": "#NOTIONS.DEEP",
                 "niveau": 1
             }
         ],
@@ -149,17 +149,17 @@
             {
                 "code_iso": "fr",
                 "langue": "Français",
-                "niveau": ["Langue maternelle"]
+                "niveau": ["#LANGUES.FR.NIVEAU"]
             },
             {
                 "code_iso": "gb",
                 "langue": "Anglais",
-                "niveau": ["C1 : Bon niveau – TOEIC : 965", "Section Internationale Bilingue"]
+                "niveau": ["#LANGUES.EN.NIVEAU1", "#LANGUES.EN.NIVEAU2"]
             },
             {
                 "code_iso": "es",
                 "langue": "Espagnol",
-                "niveau": ["B2 : Niveau moyen"]
+                "niveau": ["#LANGUES.ES.NIVEAU"]
             }
         ],
         "os": ["Windows", "Linux"]
