@@ -4,16 +4,16 @@
         "en": "weeks"
     },
     "#RECHERCHE.TITRE": {
-        "fr": "Élève ingénieur",
-        "en": "Engineering student"
+        "fr": "Ingénieur INSA en informatique",
+        "en": "Software engineer"
     },
     "#RECHERCHE.OBJET": {
-        "fr": "Recherche stage ingénieur informatique",
-        "en": "Searching for an engineering internship in computer science"
+        "fr": "Recherche poste de concepteur développeur",
+        "en": "Searching for a software engineer job"
     },
     "#RECHERCHE.CONTEXTE": {
-        "fr": "Fin de 5e année",
-        "en": "End of 5th year"
+        "fr": "À l'écoute de nouvelles opportunités",
+        "en": "Open to new opportunities"
     },
     "#RECHERCHE.DATES.DEBUT": {
         "fr": "17 Février",
@@ -22,6 +22,14 @@
     "#RECHERCHE.DATES.FIN": {
         "fr": "31 Août",
         "en": "August 31st"
+    },
+    "#RECHERCHE.LIEUX.ILE-DE-FRANCE": {
+        "fr": "Île-de-France",
+        "en": "Île-de-France"
+    },
+    "#RECHERCHE.LIEUX.HAUTE-NORMANDIE": {
+        "fr": "Haute-Normandie",
+        "en": "Haute-Normandie"
     },
     "#RECHERCHE.LIEUX.NA": {
         "fr": "Amérique du Nord",
@@ -102,6 +110,10 @@
     "#conjonctions.au": {
         "fr": "au",
         "en": "to"
+    },
+    "#conjonctions.des": {
+        "fr": "Dès le",
+        "en": "Starting"
     },
     "#sections.competences": {
         "fr": "Compétences",

@@ -69,20 +69,20 @@
                             <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/linkedin-brands.svg" alt="linkedin"></td><td class="pl-1"><a href="http://www.{{linkedin}}">{{linkedin}}</a></td>
                         </tr>
                         <tr>
-                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn}} ({{age ddn}} {{i18n ../../structure.age}})</td>
+                            <td><img class="img-fluid mx-auto rounded-sm shadow-sm" src="images/birthday-cake-solid.svg" alt="date de naissance"></td><td class="pl-1">{{date ddn dateStyle="long"}} ({{age ddn}} {{i18n ../../structure.age}})</td>
                         </tr>
                     </table>
                 {{/with}}
                 </div>
                 <div class="col-12 col-lg col-print text-center">
                 {{#with recherche}}
-                    <h3 class="font-weight-bold">{{i18n titre}} – {{ecole}}</h3>
+                    <h3 class="font-weight-bold">{{i18n titre}}</h3>
                     <h4 class="font-weight-bold">{{i18n objet}}</h4>
                     <span class="text-muted font-weight-light font-italic">
-                        {{i18n ../../structure.interesse}} : {{#list interets sep=" – "}}{{this}}{{/list}}
+                        {{#list interets sep=" – "}}{{this}}{{/list}}
                     </span><br/>
                     {{i18n contexte}}<br/>
-                    {{duree.min}} {{i18n ../../structure.conjonctions.a}} {{duree.max}} {{i18n duree.unite}} – {{i18n dates.debut}} {{i18n ../../structure.conjonctions.au}} {{i18n dates.fin}} {{dates.annee}}<br/>
+                    {{i18n ../../structure.conjonctions.des}} {{date dates.debut dateStyle="long"}}<br/>
                     {{#list lieux sep=", "}}{{i18n this}}{{/list}}<br/>
                     {{i18n permis.texte}} – {{i18n vehicule.texte}}
                 {{/with}}
@@ -97,7 +97,7 @@
             <div class="row rounded shadow mx-0 h-100">
                 <div class="col d-flex flex-column p-3" id="section-competences">
                     <span class="section-header">{{i18n ../../structure.sections.competences}}</span>
-                    <div class="row flex-grow-1">
+                    <div class="row flex-grow-1 align-content-between">
                         <div class="col-12 col-sm-6 col-lg-12 col-print-12">
                             <fieldset>
                                 <legend>{{i18n ../../structure.competences.personnelles}}</legend>

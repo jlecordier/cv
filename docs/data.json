@@ -12,11 +12,11 @@
         "titre": "#RECHERCHE.TITRE",
         "ecole": "INSA Rouen",
         "objet": "#RECHERCHE.OBJET",
-        "interets": ["UX", "UI", "VR", "AR"],
+        "interets": ["UX/UI", "VR/AR/MR/XR", "3D Web"],
         "contexte": "#RECHERCHE.CONTEXTE",
         "dates": {
-            "debut": "#RECHERCHE.DATES.DEBUT",
-            "annee": "2021"
+            "debut": "2022-06-30",
+            "annee": "2022"
         },
         "lieux": ["#RECHERCHE.LIEUX.HAUTE-NORMANDIE", "#RECHERCHE.LIEUX.ILE-DE-FRANCE"],
         "permis": {
@@ -31,10 +31,12 @@
     "competences": {
         "personnelles": [
             "Passionné",
-            "Pédagogue",
+            "Curieux",
             "Réfléchi",
-            "Sens de l'éthique",
+            "Pédagogue",
             "Rigoureux",
+            "Combattant",
+            "Sens de l'éthique",
             "Esprit d'équipe",
             "Organisé"
         ],
@@ -164,7 +166,7 @@
                 "niveau": ["#LANGUES.ES.NIVEAU"]
             }
         ],
-        "os": ["Windows", "Linux"]
+        "os": ["Windows", "macOS", "Linux"]
     },
     "formations": [
         {

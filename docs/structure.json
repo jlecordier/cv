@@ -8,7 +8,8 @@
     },
     "conjonctions": {
         "a": "#conjonctions.a",
-        "au": "#conjonctions.au"
+        "au": "#conjonctions.au",
+        "des": "#conjonctions.des"
     },
     "age": "#age",
     "interesse": "#interesse",
