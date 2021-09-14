@@ -14,17 +14,11 @@
         "objet": "#RECHERCHE.OBJET",
         "interets": ["UX", "UI", "VR", "AR"],
         "contexte": "#RECHERCHE.CONTEXTE",
-        "duree": {
-            "min": 21,
-            "max": 26,
-            "unite": "#RECHERCHE.DUREE.UNITE"
-        },
         "dates": {
             "debut": "#RECHERCHE.DATES.DEBUT",
-            "fin": "#RECHERCHE.DATES.FIN",
             "annee": "2021"
         },
-        "lieux": ["#RECHERCHE.LIEUX.NA", "#RECHERCHE.LIEUX.EUROPE"],
+        "lieux": ["#RECHERCHE.LIEUX.HAUTE-NORMANDIE", "#RECHERCHE.LIEUX.ILE-DE-FRANCE"],
         "permis": {
             "possede": true,
             "texte": "#RECHERCHE.PERMIS.TEXTE"
@@ -76,7 +70,7 @@
         ],
         "web": [
             {
-                "technos": ["HTML", "CSS"],
+                "technos": ["TypeScript", "Angular"],
                 "niveau": 4
             },
             {
@@ -86,6 +80,14 @@
             {
                 "technos": ["PHP", "Laravel"],
                 "niveau": 4
+            },
+            {
+                "technos": ["HTML", "SCSS", "CSS"],
+                "niveau": 4
+            },
+            {
+                "technos": ["A-Frame", "three.js"],
+                "niveau": 3
             },
             {
                 "technos": ["Bootstrap", "SASS"],
@@ -102,6 +104,10 @@
         ],
         "notions": [
             {
+                "notion": "#NOTIONS.AGILES",
+                "niveau": 4
+            },
+            {
                 "notion": "#NOTIONS.RESEAU",
                 "niveau": 4
             },
@@ -115,10 +121,6 @@
             },
             {
                 "notion": "#NOTIONS.SIGNAL",
-                "niveau": 2
-            },
-            {
-                "notion": "#NOTIONS.AGILES",
                 "niveau": 2
             },
             {
@@ -191,11 +193,20 @@
     ],
     "projets": [
         {
+            "id": "KVT",
+            "projet": "Concepteur et Développeur d'un éditeur de visite virtuelle",
+            "temps": "6 mois",
+            "contexte": "Stage ingénieur",
+            "employeur": "Keyveo",
+            "technos": ["Angular", "Node.js", "A-Frame", "three.js", "TypeScript"],
+            "annee": 2021
+        },
+        {
             "id": "VR",
             "projet": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
             "contexte": "Réalité Virtuelle",
             "technos": ["Unity", "Blender", "C#"],
-            "annee": 2020
+            "annee": 2021
         },
         {
             "id": "Spotify",
@@ -319,8 +330,20 @@
     ],
     "experiences": [
         {
+            "id": "Keyveo",
+            "experience": ["Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle"],
+            "contexte": "Stage ingénieur de 6 mois",
+            "employeur": "Keyveo",
+            "technos": ["Angular", "A-Frame", "three.js", "Express", "Node.js", "SQL Server"],
+            "annee": 2021
+        },
+        {
             "id": "Segafredo",
-            "experience": ["Rédaction de documents de spécifications et de conception pour un changement d'ERP", "Automatisation et optimisation de tableaux Excel", "Création de formulaires Microsoft Access (base de données, interfaces et macros)"],
+            "experience": [
+                "Rédaction de documents de spécifications et de conception pour un changement d'ERP",
+                "Automatisation et optimisation de tableaux Excel",
+                "Création de formulaires Microsoft Access (base de données, interfaces et macros)"
+            ],
             "contexte": "Stage de 2 mois puis CDD de 8h/semaine",
             "employeur": "Segafredo Zanetti France",
             "technos": ["Excel", "Access"],
