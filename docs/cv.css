@@ -132,3 +132,9 @@ fieldset>.niveau {
     max-width: 100%;
   }
 }
+
+@media screen {
+  body {
+    background-image: linear-gradient(to right top, #126fff, #8961ee, #bb53d6, #dc46bb, #f0419e, #f9498b, #fe557a, #ff636b, #ff7563, #ff875d, #ff995b, #ffaa5c);
+  }
+}
