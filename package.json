@@ -21,5 +21,8 @@
   "homepage": "https://github.com/jlecordier/cv#readme",
   "dependencies": {
     "svg-country-flags": "^1.2.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0"
   }
 }
