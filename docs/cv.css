@@ -351,6 +351,12 @@ fieldset > .niveau {
   }
 }
 
+@media screen and (max-width: 399px) {
+  #cv {
+    padding: 0;
+  }
+}
+
 @media print {
   .bg-light {
     background-color: #fff !important;
