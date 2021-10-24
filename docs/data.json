@@ -32,7 +32,7 @@
         "personnelles": [
             "Passionné",
             "Curieux",
-            "Réfléchi",
+            "Perspicace",
             "Pédagogue",
             "Rigoureux",
             "Combattant",
@@ -135,19 +135,19 @@
             }
         ],
         "outils": [
+            "Git",
+            "PostgreSQL",
+            "Unity",
+            "Blender",
+            "Android Studio",
+            "MATLAB",
+            "Gimp",
             "Adobe Premiere Pro",
             "Audacity",
-            "Gimp",
-            "Suite Libre Office",
-            "PostgreSQL",
-            "Git",
-            "Android Studio",
-            "LaTeX",
-            "MATLAB",
-            "Microsoft Access",
             "Excel",
-            "Blender",
-            "Unity"
+            "Suite Libre Office",
+            "Microsoft Access",
+            "LaTeX"
         ],
         "langues": [
             {
