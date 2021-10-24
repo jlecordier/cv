@@ -50,24 +50,24 @@
                 "niveau": 4
             },
             {
-                "langage": "C",
+                "langage": "SQL",
                 "niveau": 4
+            },
+            {
+                "langage": "C",
+                "niveau": 3
             },
             {
                 "langage": "Pascal",
                 "niveau": 3
             },
             {
-                "langage": "SQL",
-                "niveau": 3
+                "langage": "C#",
+                "niveau": 2
             },
             {
                 "langage": "Prolog",
                 "niveau": 2
-            },
-            {
-                "langage": "C#",
-                "remarque": "#COMPETENCES.ENCOURS"
             }
         ],
         "web": [
@@ -412,16 +412,16 @@
                     "details": "Niveau 3"
                 },
                 {
+                    "nom": "Badminton",
+                    "details": "6 ans - UNSS"
+                },
+                {
                     "nom": "Tennis",
                     "details": "6 ans"
                 },
                 {
                     "nom": "Volley-ball",
                     "details": "6 ans - Compétitions inter-lycées et inter-collèges"
-                },
-                {
-                    "nom": "Badminton",
-                    "details": "6 ans - UNSS"
                 }
             ]
         },
