@@ -263,6 +263,10 @@ h6 {
   width: 2rem;
 }
 
+#projects .icon-data-grid {
+  margin-bottom: 1rem;
+}
+
 #jobs img {
   width: 2rem;
 }
