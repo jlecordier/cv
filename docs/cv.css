@@ -309,7 +309,7 @@ fieldset > .niveau {
 
 @media (min-width: 800px), print {
   * {
-    font-size: 0.6em;
+    font-size: 0.69rem;
   }
 
   #cv {
@@ -325,14 +325,22 @@ fieldset > .niveau {
       "skills interests";
   }
 
+  #skills {
+    display: flex;
+    flex-direction: column;
+  }
+
   #skills .skills {
-    grid-template-columns: 1fr;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 799px) {
   * {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   #cv {
@@ -347,7 +355,8 @@ fieldset > .niveau {
   }
 
   #skills .skills {
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
 
