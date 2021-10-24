@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -59,9 +59,7 @@ h6 {
 
 .shadow,
 .shadow-sm {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
-    0 4px 4px rgba(0, 0, 0, 0.06), 0 6px 8px rgba(0, 0, 0, 0.06),
-    0 8px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06);
 }
 
 .text-center {
@@ -157,6 +155,10 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+}
+
+#skills h4 {
+  margin-bottom: 0;
 }
 
 .horizontal-skills-levels {
@@ -326,7 +328,13 @@ fieldset > .niveau {
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
-    box-shadow: none !important;
+    box-shadow: none;
+  }
+  .block {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    box-shadow: none;
   }
 }
 
