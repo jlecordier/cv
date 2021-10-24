@@ -1,10 +1,268 @@
-.rounded {
-  border-radius: 1rem !important;
+* {
+  box-sizing: border-box;
+  font-size: 0.7em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.shadow {
-  /* box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,.075) !important; */
+body {
+  display: grid;
+  place-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-light {
+  font-weight: lighter;
+  color: grey;
+}
+
+.block {
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 4px 4px rgba(0, 0, 0, 0.06), 0 6px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.block .block-header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.rounded-sm {
+  border-radius: 0.2rem;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.shadow,
+.shadow-sm {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 4px 4px rgba(0, 0, 0, 0.06), 0 6px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.text-center {
+  text-align: center;
+}
+
+#cv {
+  padding: 10px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "skills education"
+    "skills projects"
+    "skills jobs"
+    "skills interests";
+
+  width: 21cm;
+  height: 29.7cm;
+}
+
+#header {
+  grid-area: header;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#education {
+  grid-area: education;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#jobs {
+  grid-area: jobs;
+}
+
+#interests {
+  grid-area: interests;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+#header > img {
+  width: 10rem;
+}
+
+#header .info-grid {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+#header .info-grid .icon {
+  width: 1rem;
+  padding: 2px;
+  grid-column: 1/2;
+}
+
+#header .info-grid .info {
+  grid-column: 2/3;
+}
+
+#header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#header h2 {
+  font-size: 1.5rem;
+}
+
+#header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.horizontal-skills-levels {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 0px 5px;
+  align-items: center;
+}
+
+.horizontal-skills-levels .skill {
+  grid-column: 1/2;
+}
+
+.horizontal-skills-levels .level {
+  grid-column: 2/3;
+}
+
+.vertical-skills-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.icon-data-grid {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1rem 2ch;
+  align-items: center;
+}
+
+.icon-data-grid .icon {
+  width: 2rem;
+  grid-column: 1/2;
+}
+
+.icon-data-grid .data {
+  grid-column: 2/3;
+}
+
+.title-data-grid {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1rem 2ch;
+  align-items: center;
+}
+
+.title-data-grid .icon {
+  grid-column: 1/2;
+}
+
+.title-data-grid .data {
+  grid-column: 2/3;
+}
+
+.date-icon-data-grid {
+  display: grid;
+  grid-template-columns: min-content min-content auto;
+  gap: 1rem 2ch;
+  align-items: center;
+}
+
+#education .date-icon-data-grid {
+  align-items: stretch;
+}
+
+.date-icon-data-grid .date {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date-icon-data-grid .icon {
+  width: 2rem;
+  grid-column: 2/3;
+}
+
+.date-icon-data-grid .data {
+  grid-column: 3/4;
+}
+
+#languages-skills .icon-data-grid {
+  gap: 0.5rem 1ch;
+}
+
+#languages-skills .icon-data-grid .icon {
+  width: 1.5rem;
+}
+
+#os {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#os img {
+  padding: 2px;
+  width: 2rem;
+}
+
+#education img {
+  width: 2rem;
+}
+
+#jobs img {
+  width: 2rem;
 }
 
 fieldset {
@@ -12,7 +270,10 @@ fieldset {
   border-color: lightgray;
   border-style: solid;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
+
+  display: grid;
+  place-content: center;
 }
 
 legend {
@@ -45,12 +306,12 @@ a {
   border-radius: 50rem;
 }
 
-.section-header+table {
+.section-header + table {
   margin-top: 0.5rem;
 }
 
-fieldset>table,
-fieldset>.niveau {
+fieldset > table,
+fieldset > .niveau {
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -60,78 +321,8 @@ fieldset>.niveau {
   .bg-light {
     background-color: #fff !important;
   }
-  .col-print-1 {
-    width: 8%;
-    max-width: 8%;
-    float: left;
-  }
-  .col-print-2 {
-    width: 16%;
-    max-width: 16%;
-    float: left;
-  }
-  .col-print-3 {
-    width: 25%;
-    max-width: 25%;
-    float: left;
-  }
-  .col-print-4 {
-    width: 33%;
-    max-width: 33%;
-    float: left;
-  }
-  .col-print-5 {
-    width: 42%;
-    max-width: 42%;
-    float: left;
-  }
-  .col-print-6 {
-    width: 50%;
-    max-width: 50%;
-    float: left;
-  }
-  .col-print-7 {
-    width: 58%;
-    max-width: 58%;
-    float: left;
-  }
-  .col-print-8 {
-    width: 66%;
-    max-width: 66%;
-    float: left;
-  }
-  .col-print-9 {
-    width: 75%;
-    max-width: 75%;
-    float: left;
-  }
-  .col-print-10 {
-    width: 83%;
-    max-width: 83%;
-    float: left;
-  }
-  .col-print-11 {
-    width: 92%;
-    max-width: 92%;
-    float: left;
-  }
-  .col-print-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    width: 100% !important;
-    max-width: 100%;
-    float: left;
-  }
-  .col-print-auto {
-    width: auto;
-    float: left;
-  }
-  .col-print {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .shadow, .shadow-sm {
+  .shadow,
+  .shadow-sm {
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
@@ -141,6 +332,20 @@ fieldset>.niveau {
 
 @media screen {
   body {
-    background-image: linear-gradient(to right top, #126fff, #8961ee, #bb53d6, #dc46bb, #f0419e, #f9498b, #fe557a, #ff636b, #ff7563, #ff875d, #ff995b, #ffaa5c);
+    background-image: linear-gradient(
+      to right top,
+      #126fff,
+      #8961ee,
+      #bb53d6,
+      #dc46bb,
+      #f0419e,
+      #f9498b,
+      #fe557a,
+      #ff636b,
+      #ff7563,
+      #ff875d,
+      #ff995b,
+      #ffaa5c
+    );
   }
 }
