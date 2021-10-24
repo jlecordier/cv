@@ -101,6 +101,7 @@
                     {{#if niveau}}
                     <progress class="" max="100" value="{{progress-width niveau}}"></progress>
                     {{/if}}
+                    
                     {{#if remarque}}
                     <div class="text-center font-italic font-light">
                         {{i18n remarque}}
@@ -118,9 +119,11 @@
                     <div>
                         {{#list technos sep=" • "}}{{this}}{{/list}}
                     </div>
+                    
                     {{#if niveau}}
                     <progress class="" max="100" value="{{progress-width niveau}}"></progress>
                     {{/if}}
+                    
                     {{#if remarque}}
                     <div class="text-center font-italic font-light">
                         {{i18n remarque}}
@@ -201,15 +204,19 @@
                 </div>
                 <div class="data">
                     {{this.formation}} {{this.ecole}}<br />
+                    
                     {{#if this.departement}}
                     {{this.departement}}<br />
                     {{/if}}
+                    
                     {{this.specialite}}<br />
+                    
                     {{#if this.cours}}
                     <span class="font-italic">
                         {{#list this.cours sep=" – "}}{{this}}{{/list}}
                     </span><br />
                     {{/if}}
+                    
                     {{#if this.mention}}
                     {{this.mention}}<br />
                     {{/if}}
@@ -256,6 +263,7 @@
                     {{this.annee}}
                 </div>
                 {{/if}}
+                
                 {{#if this.annees}}
                 {{this.annees.fin}}<br />
                 {{this.annees.debut}}
