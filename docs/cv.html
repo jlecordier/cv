@@ -86,105 +86,107 @@
     <section id="skills" class="block">
         {{#with competences}}
         <h4 class="block-header">{{i18n ../../structure.sections.competences}}</h4>
-        <fieldset class="text-center">
-            <legend>{{i18n ../../structure.competences.personnelles}}</legend>
-            {{#list personnelles sep=" • "}}{{this}}{{/list}}
-        </fieldset>
-        <fieldset class="text-center">
-            <legend>{{i18n ../../structure.competences.dev}}</legend>
-            <div class="horizontal-skills-levels">
-                {{#each dev}}
-                <div class="language skill" style="text-align: right">
-                    {{langage}}
-                </div>
-                <div class="level">
-                    {{#if niveau}}
-                    <progress class="" max="100" value="{{progress-width niveau}}"></progress>
-                    {{/if}}
-                    
-                    {{#if remarque}}
-                    <div class="text-center font-italic font-light">
-                        {{i18n remarque}}
+        <div class="skills">
+            <fieldset class="text-center">
+                <legend>{{i18n ../../structure.competences.personnelles}}</legend>
+                {{#list personnelles sep=" • "}}{{this}}{{/list}}
+            </fieldset>
+            <fieldset class="text-center">
+                <legend>{{i18n ../../structure.competences.dev}}</legend>
+                <div class="horizontal-skills-levels">
+                    {{#each dev}}
+                    <div class="language skill" style="text-align: right">
+                        {{langage}}
                     </div>
-                    {{/if}}
-                </div>
-                {{/each}}
-            </div>
-        </fieldset>
-        <fieldset class="text-center">
-            <legend>{{i18n ../../structure.competences.web}}</legend>
-            <div class="vertical-skills-levels">
-                {{#each web}}
-                <div class="niveau">
-                    <div>
-                        {{#list technos sep=" • "}}{{this}}{{/list}}
+                    <div class="level">
+                        {{#if niveau}}
+                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
+                        {{/if}}
+                        
+                        {{#if remarque}}
+                        <div class="text-center font-italic font-light">
+                            {{i18n remarque}}
+                        </div>
+                        {{/if}}
                     </div>
-                    
-                    {{#if niveau}}
-                    <progress class="" max="100" value="{{progress-width niveau}}"></progress>
-                    {{/if}}
-                    
-                    {{#if remarque}}
-                    <div class="text-center font-italic font-light">
-                        {{i18n remarque}}
-                    </div>
-                    {{/if}}
-                </div>
-                {{/each}}
-            </div>
-        </fieldset>
-        <fieldset class="text-center">
-            <legend>{{i18n ../../structure.competences.notions}}</legend>
-            <div class="vertical-skills-levels">
-                {{#each notions}}
-                <div class="niveau">
-                    <div>
-                        {{i18n notion}}
-                    </div>
-                    {{#if niveau}}
-                    <progress class="" max="100" value="{{progress-width niveau}}"></progress>
-                    {{/if}}
-                    {{#if remarque}}
-                    <div class="text-center font-italic font-light">
-                        {{i18n remarque}}
-                    </div>
-                    {{/if}}
-                </div>
-                {{/each}}
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>{{i18n ../../structure.competences.outils}}</legend>
-            <div style="text-align: center;">
-                {{#list outils sep=" • "}}{{this}}{{/list}}
-            </div>
-        </fieldset>
-        <fieldset id="languages-skills">
-            <legend>{{i18n ../../structure.competences.langues}}</legend>
-            <div class="icon-data-grid">
-                {{#each langues}}
-                <img class="icon round shadow-sm" src="images/{{code_iso}}.png" alt="{{langue}}" />
-                <div class="data">
-                    {{#each niveau}}
-                    {{#if @first}}
-                    {{i18n this}}
-                    {{else}}
-                    <span class="font-italic">{{i18n this}}</span>
-                    {{/if}}
-                    <br />
                     {{/each}}
                 </div>
-                {{/each}}
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>{{i18n ../../structure.competences.os}}</legend>
-            <div id="os">
-                {{#each os}}
-                <img class="round shadow-sm" src="images/{{this}}.png" alt="{{this}}" />
-                {{/each}}
-            </div>
-        </fieldset>
+            </fieldset>
+            <fieldset class="text-center">
+                <legend>{{i18n ../../structure.competences.web}}</legend>
+                <div class="vertical-skills-levels">
+                    {{#each web}}
+                    <div class="niveau">
+                        <div>
+                            {{#list technos sep=" • "}}{{this}}{{/list}}
+                        </div>
+                        
+                        {{#if niveau}}
+                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
+                        {{/if}}
+                        
+                        {{#if remarque}}
+                        <div class="text-center font-italic font-light">
+                            {{i18n remarque}}
+                        </div>
+                        {{/if}}
+                    </div>
+                    {{/each}}
+                </div>
+            </fieldset>
+            <fieldset class="text-center">
+                <legend>{{i18n ../../structure.competences.notions}}</legend>
+                <div class="vertical-skills-levels">
+                    {{#each notions}}
+                    <div class="niveau">
+                        <div>
+                            {{i18n notion}}
+                        </div>
+                        {{#if niveau}}
+                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
+                        {{/if}}
+                        {{#if remarque}}
+                        <div class="text-center font-italic font-light">
+                            {{i18n remarque}}
+                        </div>
+                        {{/if}}
+                    </div>
+                    {{/each}}
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>{{i18n ../../structure.competences.outils}}</legend>
+                <div style="text-align: center;">
+                    {{#list outils sep=" • "}}{{this}}{{/list}}
+                </div>
+            </fieldset>
+            <fieldset id="languages-skills">
+                <legend>{{i18n ../../structure.competences.langues}}</legend>
+                <div class="icon-data-grid">
+                    {{#each langues}}
+                    <img class="icon round shadow-sm" src="images/{{code_iso}}.png" alt="{{langue}}" />
+                    <div class="data">
+                        {{#each niveau}}
+                        {{#if @first}}
+                        {{i18n this}}
+                        {{else}}
+                        <span class="font-italic">{{i18n this}}</span>
+                        {{/if}}
+                        <br />
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>{{i18n ../../structure.competences.os}}</legend>
+                <div id="os">
+                    {{#each os}}
+                    <img class="round shadow-sm" src="images/{{this}}.png" alt="{{this}}" />
+                    {{/each}}
+                </div>
+            </fieldset>
+        </div>
         {{/with}}
     </section>
     <section id="education" class="block">
