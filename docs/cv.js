@@ -41,12 +41,15 @@ Handlebars.registerHelper('progress-width', value => {
 });
 
 Handlebars.registerHelper('list', (items, options) => {
-  return items.map(item => options.fn(item)).join(options.hash['sep']).replace(' ,', ',');
+  return items
+    .map(item => options.fn(item))
+    .join(options.hash['sep'])
+    .replace(' ,', ',');
 });
 
 Handlebars.registerHelper('date', (dateISO, options) => {
   const date = new Date(dateISO);
-  const dateString = date.toLocaleDateString(lang ? lang : 'en', {dateStyle: lang ? options?.hash['dateStyle'] || 'medium' : 'short'});
+  const dateString = date.toLocaleDateString(lang ? lang : 'en', { dateStyle: lang ? options?.hash['dateStyle'] || 'medium' : 'short' });
   return dateString;
 });
 
@@ -72,7 +75,7 @@ const compile = async () => {
     translations: translations
   };
   const body = document.getElementById('cv');
-  const htmlTemplate = document.getElementById('template');
+  const htmlTemplate = document.querySelector('#template');
   const template = Handlebars.compile(htmlTemplate.innerHTML);
   const result = template(templateData);
   body.innerHTML = result;
@@ -104,7 +107,7 @@ window.addEventListener('DOMContentLoaded', () => {
   censored = getOnOffParam('censored', false);
   const printMode = getOnOffParam('print', true);
   if (!printMode) {
-    document.getElementById('print').removeAttribute('hidden');
+    document.querySelector('#print').removeAttribute('hidden');
   }
   compile().catch(err => console.error(err));
 });
