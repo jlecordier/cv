@@ -16,7 +16,7 @@
     <title>CV</title>
 </head>
 
-<body class="bg-light">
+<body>
     <div id="print" class="block" hidden="hidden">
         <table>
             <thead>
@@ -186,6 +186,7 @@
                     {{/each}}
                 </div>
             </fieldset>
+
             <fieldset>
                 <legend>{{i18n ../../structure.competences.os}}</legend>
                 <div id="os">
@@ -197,6 +198,7 @@
         </div>
         {{/with}}
     </section>
+
     <section id="education" class="block">
         <h4 class="block-header">{{i18n ../structure.sections.formation}}</h4>
         <div class="date-icon-data-grid">
@@ -209,9 +211,11 @@
                         {{this.dates.debut}}
                     </div>
                 </div>
-                <div>
-                    <img src="images/{{this.id}}.png" alt="{{this.id}}" class="icon round shadow-sm" />
+
+                <div class="icon">
+                    <img src="images/{{this.id}}.png" alt="{{this.id}}" class="round shadow-sm" />
                 </div>
+                
                 <div class="data">
                     {{this.formation}} {{this.ecole}}<br />
                     
@@ -234,11 +238,13 @@
             {{/each}}
         </div>
     </section>
+
     <section id="projects" class="block">
         <h4 class="block-header">{{i18n ../structure.sections.projets}}</h4>
         <div class="icon-data-grid">
             {{#each projets}}
             <img src="images/{{this.id}}.png" alt="{{this.id}}" class="icon round shadow-sm" />
+
             <div class="data">
                 {{this.projet}}<br />
                 <span class="font-italic">
@@ -263,6 +269,7 @@
             Et plein d'autres encore...
         </div>
     </section>
+
     <section id="jobs" class="block">
         <h4 class="block-header">{{i18n ../structure.sections.experiences}}</h4>
         <div class="date-icon-data-grid">
@@ -279,7 +286,9 @@
                 {{this.annees.debut}}
                 {{/if}}
             </div>
+
             <img src="images/{{this.id}}.png" alt="{{this.id}}" class="icon round shadow-sm" />
+            
             <div class="data">
                 {{#list this.experience sep="<br />"}}{{this}}{{/list}}<br />
                 <span class="font-italic">
@@ -304,6 +313,7 @@
             {{/each}}
         </div>
     </section>
+
     <section id="interests" class="block">
         <h4 class="block-header">{{i18n ../structure.sections.interets}}</h4>
         <div class="title-data-grid">
@@ -311,6 +321,7 @@
             <div class="title font-bold">
                 {{this.interet}}
             </div>
+
             <div class="data">
                 {{#list this.liste sep=" • "}}{{this.nom}}
                 {{#if this.details}}

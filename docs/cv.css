@@ -370,7 +370,7 @@ a {
 }
 
 /* @media print {
-  .bg-light {
+  body {
     background-color: #fff !important;
   }
   .shadow,
