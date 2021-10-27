@@ -87,46 +87,49 @@
         {{#with competences}}
         <h4 class="block-header">{{i18n ../../structure.sections.competences}}</h4>
         <div class="skills">
-            <fieldset class="text-center">
+            <fieldset id="soft-skills">
                 <legend>{{i18n ../../structure.competences.personnelles}}</legend>
-                {{#list personnelles sep=" • "}}{{this}}{{/list}}
+                <div class="text-center">
+                    {{#list personnelles sep=" • "}}{{this}}{{/list}}
+                </div>
             </fieldset>
-            <fieldset class="text-center">
+
+            <fieldset id="dev-skills">
                 <legend>{{i18n ../../structure.competences.dev}}</legend>
                 <div class="horizontal-skills-levels">
                     {{#each dev}}
                     <div class="language skill" style="text-align: right">
                         {{langage}}
                     </div>
-                    <div class="level">
-                        {{#if niveau}}
-                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
-                        {{/if}}
-                        
-                        {{#if remarque}}
-                        <div class="text-center font-italic font-light">
-                            {{i18n remarque}}
-                        </div>
-                        {{/if}}
+
+                    {{#if niveau}}
+                    <progress class="level" max="100" value="{{progress-width niveau}}"></progress>
+                    {{/if}}
+                    
+                    {{#if remarque}}
+                    <div class="level text-center font-italic font-light">
+                        {{i18n remarque}}
                     </div>
+                    {{/if}}
                     {{/each}}
                 </div>
             </fieldset>
-            <fieldset class="text-center">
+
+            <fieldset id="web-skills">
                 <legend>{{i18n ../../structure.competences.web}}</legend>
                 <div class="vertical-skills-levels">
                     {{#each web}}
-                    <div class="niveau">
+                    <div class="skill">
                         <div>
                             {{#list technos sep=" • "}}{{this}}{{/list}}
                         </div>
                         
                         {{#if niveau}}
-                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
+                        <progress class="level" max="100" value="{{progress-width niveau}}"></progress>
                         {{/if}}
                         
                         {{#if remarque}}
-                        <div class="text-center font-italic font-light">
+                        <div class="level font-italic font-light">
                             {{i18n remarque}}
                         </div>
                         {{/if}}
@@ -134,19 +137,22 @@
                     {{/each}}
                 </div>
             </fieldset>
-            <fieldset class="text-center">
+
+            <fieldset id="notions">
                 <legend>{{i18n ../../structure.competences.notions}}</legend>
                 <div class="vertical-skills-levels">
                     {{#each notions}}
-                    <div class="niveau">
+                    <div class="skill">
                         <div>
                             {{i18n notion}}
                         </div>
+
                         {{#if niveau}}
-                        <progress class="" max="100" value="{{progress-width niveau}}"></progress>
+                        <progress class="level" max="100" value="{{progress-width niveau}}"></progress>
                         {{/if}}
+                        
                         {{#if remarque}}
-                        <div class="text-center font-italic font-light">
+                        <div class="level font-italic font-light">
                             {{i18n remarque}}
                         </div>
                         {{/if}}
@@ -154,12 +160,14 @@
                     {{/each}}
                 </div>
             </fieldset>
-            <fieldset>
+
+            <fieldset id="tools">
                 <legend>{{i18n ../../structure.competences.outils}}</legend>
-                <div style="text-align: center;">
+                <div class="text-center">
                     {{#list outils sep=" • "}}{{this}}{{/list}}
                 </div>
             </fieldset>
+
             <fieldset id="languages-skills">
                 <legend>{{i18n ../../structure.competences.langues}}</legend>
                 <div class="icon-data-grid">

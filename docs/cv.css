@@ -99,7 +99,7 @@ h6 {
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -147,7 +147,7 @@ h6 {
 
 .horizontal-skills-levels {
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: min-content auto;
   gap: 0px 5px;
   align-items: center;
 }
@@ -164,6 +164,13 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.vertical-skills-levels .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
 }
 
 .icon-data-grid {
@@ -266,7 +273,7 @@ fieldset {
   place-content: center;
 }
 
-legend {
+fieldset legend {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -0.5rem;
@@ -286,25 +293,6 @@ a {
   font-size: 1.7rem;
   font-weight: bold;
   line-height: 1;
-}
-
-.progress {
-  height: 0.5rem;
-}
-
-.progress-bar {
-  border-radius: 50rem;
-}
-
-.section-header + table {
-  margin-top: 0.5rem;
-}
-
-fieldset > table,
-fieldset > .niveau {
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width: 800px), print {
@@ -332,9 +320,22 @@ fieldset > .niveau {
 
   #skills .skills {
     flex-grow: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  fieldset progress {
+    width: 100px;
+  }
+}
+
+/* TODO : solve these hacks */
+@media print {
+  #dev-skills,
+  #languages-skills {
+    padding-left: 15px;
   }
 }
 
@@ -366,7 +367,7 @@ fieldset > .niveau {
   }
 }
 
-@media print {
+/* @media print {
   .bg-light {
     background-color: #fff !important;
   }
@@ -383,24 +384,24 @@ fieldset > .niveau {
     border-color: lightgray;
     box-shadow: none;
   }
-}
+} */
 
-@media screen {
-  body {
-    background-image: linear-gradient(
-      to right top,
-      #126fff,
-      #8961ee,
-      #bb53d6,
-      #dc46bb,
-      #f0419e,
-      #f9498b,
-      #fe557a,
-      #ff636b,
-      #ff7563,
-      #ff875d,
-      #ff995b,
-      #ffaa5c
-    );
-  }
+/* @media screen { */
+body {
+  background-image: linear-gradient(
+    to right top,
+    #126fff,
+    #8961ee,
+    #bb53d6,
+    #dc46bb,
+    #f0419e,
+    #f9498b,
+    #fe557a,
+    #ff636b,
+    #ff7563,
+    #ff875d,
+    #ff995b,
+    #ffaa5c
+  );
 }
+/* } */
