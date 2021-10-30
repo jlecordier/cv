@@ -203,19 +203,21 @@
         <h4 class="block-header">{{i18n ../structure.sections.formation}}</h4>
         <div class="date-icon-data-grid">
             {{#each formations}}
-                <div class="date font-bold">
-                    <div>
-                        {{this.dates.fin}}
+            <div class="date-icon-data-cell">
+                <div class="header">
+                    <div class="date font-bold">
+                        <div>
+                            {{this.dates.fin}}
+                        </div>
+                        <div>
+                            {{this.dates.debut}}
+                        </div>
                     </div>
-                    <div>
-                        {{this.dates.debut}}
+    
+                    <div class="icon">
+                        <img src="images/{{this.id}}.png" alt="{{this.id}}" class="round shadow-sm" />
                     </div>
                 </div>
-
-                <div class="icon">
-                    <img src="images/{{this.id}}.png" alt="{{this.id}}" class="round shadow-sm" />
-                </div>
-                
                 <div class="data">
                     {{this.formation}} {{this.ecole}}<br />
                     
@@ -235,6 +237,7 @@
                     {{this.mention}}<br />
                     {{/if}}
                 </div>
+            </div>
             {{/each}}
         </div>
     </section>
@@ -274,41 +277,51 @@
         <h4 class="block-header">{{i18n ../structure.sections.experiences}}</h4>
         <div class="date-icon-data-grid">
             {{#each experiences}}
-            <div class="date font-bold">
-                {{#if this.annee}}
-                <div class="">
-                    {{this.annee}}
-                </div>
-                {{/if}}
-                
-                {{#if this.annees}}
-                {{this.annees.fin}}<br />
-                {{this.annees.debut}}
-                {{/if}}
-            </div>
+            <div class="date-icon-data-cell {{#if this.annee}}single-date{{/if}}">
+                <div class="header">
+                    <div class="date font-bold">
+                        {{#if this.annee}}
+                        <div class="">
+                            {{this.annee}}
+                        </div>
+                        {{/if}}
 
-            <img src="images/{{this.id}}.png" alt="{{this.id}}" class="icon round shadow-sm" />
-            
-            <div class="data">
-                {{#list this.experience sep="<br />"}}{{this}}{{/list}}<br />
-                <span class="font-italic">
-                    {{#if this.duree}}
-                    {{this.duree}}
-                    {{#if this.contexte}} – {{/if}}
-                    {{/if}}
-                    
-                    {{#if this.contexte}}
-                    {{this.contexte}} –
-                    {{/if}}
-                    
-                    {{#if this.employeur}}
-                    {{this.employeur}}
-                    {{/if}}
-                    
-                    {{#if this.technos}}
-                    – {{#list this.technos sep=" – "}}{{this}}{{/list}}
-                    {{/if}}
-                </span><br />
+                        {{#if this.annees}}
+                        <div>
+                            {{this.annees.fin}}
+                        </div>
+                        <div>
+                            {{this.annees.debut}}
+                        </div>
+                        {{/if}}
+                    </div>
+        
+                    <div class="icon">
+                        <img src="images/{{this.id}}.png" alt="{{this.id}}" class="round shadow-sm" />
+                    </div>
+                </div>
+                
+                <div class="data">
+                    {{#list this.experience sep="<br />"}}{{this}}{{/list}}<br />
+                    <span class="font-italic">
+                        {{#if this.duree}}
+                        {{this.duree}}
+                        {{#if this.contexte}} – {{/if}}
+                        {{/if}}
+                        
+                        {{#if this.contexte}}
+                        {{this.contexte}} –
+                        {{/if}}
+                        
+                        {{#if this.employeur}}
+                        {{this.employeur}}
+                        {{/if}}
+                        
+                        {{#if this.technos}}
+                        – {{#list this.technos sep=" – "}}{{this}}{{/list}}
+                        {{/if}}
+                    </span><br />
+                </div>
             </div>
             {{/each}}
         </div>

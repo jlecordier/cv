@@ -205,30 +205,36 @@ h6 {
 }
 
 .date-icon-data-grid {
-  display: grid;
-  grid-template-columns: min-content min-content auto;
-  gap: 1rem 2ch;
-  align-items: center;
-}
-
-#education .date-icon-data-grid {
-  align-items: stretch;
-}
-
-.date-icon-data-grid .date {
-  grid-column: 1/2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
 }
 
-.date-icon-data-grid .icon {
+.date-icon-data-grid .date-icon-data-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2ch;
+}
+
+.date-icon-data-grid .date-icon-data-cell .header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2ch;
+}
+
+.date-icon-data-grid .date-icon-data-cell .date {
+  display: flex;
+}
+
+.date-icon-data-grid .date-icon-data-cell .icon {
   width: 2rem;
-  grid-column: 2/3;
 }
 
-.date-icon-data-grid .data {
-  grid-column: 3/4;
+.date-icon-data-grid .date-icon-data-cell .data {
+  flex-grow: 1;
 }
 
 #languages-skills .icon-data-grid {
@@ -331,6 +337,19 @@ a {
   fieldset progress {
     width: 100px;
   }
+
+  .date-icon-data-grid .date-icon-data-cell.single-date {
+    align-items: center;
+  }
+
+  .date-icon-data-grid .date-icon-data-cell.single-date .header {
+    align-items: center;
+  }
+
+  .date-icon-data-grid .date-icon-data-cell .date {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 /* TODO : solve these hacks */
@@ -360,6 +379,29 @@ a {
   #skills .skills {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .date-icon-data-grid {
+    gap: 2rem;
+  }
+
+  .date-icon-data-grid .date-icon-data-cell {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .date-icon-data-grid .date-icon-data-cell .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .date-icon-data-grid .date {
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 
