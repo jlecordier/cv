@@ -12,7 +12,7 @@
         "titre": "#RECHERCHE.TITRE",
         "ecole": "INSA Rouen",
         "objet": "#RECHERCHE.OBJET",
-        "interets": ["UX/UI", "VR/AR/MR/XR", "3D Web"],
+        "interets": ["VR/AR/MR/XR", "3D", "UX/UI"],
         "contexte": "#RECHERCHE.CONTEXTE",
         "dates": {
             "debut": "2022-06-30",
@@ -98,6 +98,10 @@
             {
                 "technos": ["XML", "DTD", "XSD", "XSLT"],
                 "niveau": 3
+            },
+            {
+                "technos": ["Svelte"],
+                "niveau": 2
             },
             {
                 "technos": ["SPARQL", "Turtle"],
