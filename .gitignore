@@ -1,3 +1,4 @@
-images/bootstrap-icons/*
 node_modules/
 package-lock.json
+
+/public/build/

@@ -2,27 +2,63 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "Mon CV",
-  "main": "cv.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "firefox docs/cv.html"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlecordier/cv.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jean LECORDIER",
+  "license": "The Unlicensed",
   "bugs": {
     "url": "https://github.com/jlecordier/cv/issues"
   },
-  "homepage": "https://github.com/jlecordier/cv#readme",
-  "dependencies": {
-    "svg-country-flags": "^1.2.9"
+  "homepage": "https://jlecordier.github.io/cv/cv.html",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "eslint": "^7.31.0"
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "eslint": "^7.31.0",
+    "eslint-plugin-html": "^6.2.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "standard": "^16.0.4",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "svg-country-flags": "^1.2.9",
+    "ts-standard": "^10.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.0"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json"
+  },
+  "standard.validate": [
+    "javascript",
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "standard.options": {
+    "plugins": [
+      "html"
+    ]
+  },
+  "files.associations": {
+    "*.svelte": "html"
   }
 }
