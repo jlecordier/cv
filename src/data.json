@@ -88,20 +88,20 @@
                 "niveau": 4
             },
             {
-                "technos": ["A-Frame", "three.js"],
+                "technos": ["A-Frame", "Three.js"],
                 "niveau": 3
             },
             {
-                "technos": ["Bootstrap", "SASS"],
+                "technos": ["Svelte"],
+                "niveau": 3
+            },
+            {
+                "technos": ["Bootstrap"],
                 "niveau": 3
             },
             {
                 "technos": ["XML", "DTD", "XSD", "XSLT"],
                 "niveau": 3
-            },
-            {
-                "technos": ["Svelte"],
-                "niveau": 2
             },
             {
                 "technos": ["SPARQL", "Turtle"],
@@ -204,7 +204,7 @@
             "temps": "6 mois",
             "contexte": "Stage ingénieur",
             "employeur": "Keyveo",
-            "technos": ["Angular", "Node.js", "A-Frame", "three.js", "TypeScript"],
+            "technos": ["Angular", "Node.js", "A-Frame", "Three.js", "TypeScript"],
             "annee": 2021
         },
         {
@@ -340,7 +340,7 @@
             "experience": ["Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle"],
             "contexte": "Stage ingénieur de 6 mois",
             "employeur": "Keyveo",
-            "technos": ["Angular", "A-Frame", "three.js", "Express", "Node.js", "SQL Server"],
+            "technos": ["Angular", "A-Frame", "Three.js", "Express", "Node.js", "SQL Server"],
             "annee": 2021
         },
         {
