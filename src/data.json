@@ -18,7 +18,10 @@
             "debut": "2022-06-30",
             "annee": "2022"
         },
-        "lieux": ["#RECHERCHE.LIEUX.HAUTE-NORMANDIE", "#RECHERCHE.LIEUX.ILE-DE-FRANCE"],
+        "lieux": {
+            "presentiel": ["#RECHERCHE.LIEUX.HAUTE-NORMANDIE"],
+            "remote": ["#RECHERCHE.LIEUX.EUROPE"]
+        },
         "permis": {
             "possede": true,
             "texte": "#RECHERCHE.PERMIS.TEXTE"
@@ -30,15 +33,15 @@
     },
     "competences": {
         "personnelles": [
-            "Passionné",
-            "Curieux",
-            "Perspicace",
-            "Pédagogue",
-            "Rigoureux",
-            "Combattant",
-            "Sens de l'éthique",
-            "Esprit d'équipe",
-            "Organisé"
+            "#COMPETENCES.PERSONNELLES.PASSIONNE",
+            "#COMPETENCES.PERSONNELLES.CURIEUX",
+            "#COMPETENCES.PERSONNELLES.PERSPICACE",
+            "#COMPETENCES.PERSONNELLES.PEDAGOGUE",
+            "#COMPETENCES.PERSONNELLES.RIGOUREUX",
+            "#COMPETENCES.PERSONNELLES.COMBATTANT",
+            "#COMPETENCES.PERSONNELLES.ETHIQUE",
+            "#COMPETENCES.PERSONNELLES.EQUIPE",
+            "#COMPETENCES.PERSONNELLES.ORGANISE"
         ],
         "dev": [
             {
@@ -175,11 +178,11 @@
     "formations": [
         {
             "id": "INSA",
-            "formation": "Élève ingénieur",
-            "ecole": "à l'Institut National des Sciences Appliquées (INSA) de Rouen",
-            "departement": "Département ASI : Architecture des Systèmes d'Information",
-            "specialite": "Spécialisation : Ingénierie des données",
-            "cours": ["Réalité Virtuelle", "Interactions Homme-Machine Évoluées", "Web des Objets et des Services", "Document et Web Sémantique"],
+            "formation": "#FORMATIONS.INSA.FORMATION",
+            "ecole": "#FORMATIONS.INSA.ECOLE",
+            "departement": "#FORMATIONS.INSA.DEPARTEMENT",
+            "specialite": "#FORMATIONS.INSA.SPECIALITE",
+            "cours": ["#FORMATIONS.INSA.VR", "#FORMATIONS.INSA.IHME", "#FORMATIONS.INSA.WOS", "#FORMATIONS.INSA.DOC"],
             "dates": {
                 "debut": 2016,
                 "fin": 2021
@@ -187,10 +190,10 @@
         },
         {
             "id": "bac",
-            "formation": "Baccalauréat Filière S",
-            "ecole": "au lycée Pierre Corneille de Rouen",
-            "specialite": "Spécialité Informatique et Sciences du Numérique (ISN)",
-            "mention": "Mention Très Bien",
+            "formation": "#FORMATIONS.BAC.FORMATION",
+            "ecole": "#FORMATIONS.BAC.ECOLE",
+            "specialite": "#FORMATIONS.BAC.SPECIALITE",
+            "mention": "#FORMATIONS.BAC.MENTION",
             "dates": {
                 "debut": 2013,
                 "fin": 2016
@@ -200,84 +203,84 @@
     "projets": [
         {
             "id": "KVT",
-            "projet": "Concepteur et Développeur d'un éditeur de visite virtuelle",
-            "temps": "6 mois",
-            "contexte": "Stage ingénieur",
+            "projet": "#PROJETS.KVT.PROJET",
+            "temps": "#PROJETS.KVT.TEMPS",
+            "contexte": "#PROJETS.KVT.CONTEXTE",
             "employeur": "Keyveo",
-            "technos": ["Angular", "Node.js", "A-Frame", "Three.js", "TypeScript"],
+            "technos": ["Angular", "A-Frame", "Three.js", "TypeScript", "Node.js"],
             "annee": 2021
         },
         {
             "id": "VR",
-            "projet": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
-            "contexte": "Réalité Virtuelle",
+            "projet": "#PROJETS.VR.PROJET",
+            "contexte": "#PROJETS.VR.CONTEXTE",
             "technos": ["Unity", "Blender", "C#"],
             "annee": 2021
         },
         {
             "id": "Spotify",
-            "projet": "Concepteur et Développeur d'un lecteur de musique connecté à Spotify et Discord",
-            "contexte": "Web des Objets et des Services",
+            "projet": "#PROJETS.SPOTIFY.PROJET",
+            "contexte": "#PROJETS.SPOTIFY.CONTEXTE",
             "technos": ["Raspberry Pi", "Spotify", "Discord", "Node.js", "API REST"],
             "annee": 2020
         },
         {
             "id": "Twitter",
-            "projet": "Concepteur et Développeur d'un annotateur automatique de sentiments",
-            "contexte": "Interactions Homme-Machine Évoluées",
+            "projet": "#PROJETS.TWITTER.PROJET",
+            "contexte": "#PROJETS.TWITTER.CONTEXTE",
             "technos": ["Machine Learning", "Python"],
             "annee": 2020
         },
         {
             "id": "PIC",
-            "projet": "Responsable Qualité, Concepteur et Développeur d'un service web de gestion de patients",
-            "temps": "+18h/semaine",
-            "contexte": "Projet INSA Certifié",
+            "projet": "#PROJETS.PIC.PROJET",
+            "temps": "#PROJETS.PIC.TEMPS",
+            "contexte": "#PROJETS.PIC.CONTEXTE",
             "employeur": "CH Eure-Seine",
             "technos": ["Laravel", "PHP", "JavaScript"],
             "annee": 2020
         },
         {
             "id": "Android Studio",
-            "projet": "Concepteur et Développeur d'une amélioration d'un assistant virtuel sous Android",
-            "temps": "+80h",
-            "contexte": "Développement mobile",
+            "projet": "#PROJETS.COMPAGNON.PROJET",
+            "temps": "#PROJETS.COMPAGNON.TEMPS",
+            "contexte": "#PROJETS.COMPAGNON.CONTEXTE",
             "technos": ["Android Studio", "Java"],
             "annee": 2020
         },
         {
             "id": "DBpedia",
-            "projet": "Traitement de fichiers METS et ALTO, utilisation de DBpedia",
-            "contexte": "Documents sémantiques",
+            "projet": "#PROJETS.DBPEDIA.PROJET",
+            "contexte": "#PROJETS.DBPEDIA.CONTEXTE",
             "technos": ["Python", "XML", "SPARQL"],
             "annee": 2020
         },
         {
             "id": "PostgreSQL",
-            "projet": "Concepteur et Développeur d'un service web de gestion de cinémas et d'un réseau social associé",
-            "contexte": "Développement Web",
+            "projet": "#PROJETS.POSTGRESQL.PROJET",
+            "contexte": "#PROJETS.POSTGRESQL.CONTEXTE",
             "technos": ["Java Servlet", "PostgreSQL"],
             "annee": 2019
         },
         {
             "id": "Python",
-            "projet": "Concepteur et Développeur d'un générateur de visage",
-            "contexte": "Traitement des données",
+            "projet": "#PROJETS.VISAGE.PROJET",
+            "contexte": "#PROJETS.VISAGE.CONTEXTE",
             "technos": ["Python"],
             "annee": 2019
         },
         {
             "id": "ADN",
-            "projet": "Concepteur et Développeur d'un algorithme génétique",
-            "contexte": "Machine Learning",
+            "projet": "#PROJETS.GENETIQUE.PROJET",
+            "contexte": "#PROJETS.GENETIQUE.CONTEXTE",
             "technos": ["Python"],
             "annee": 2019
         },
         {
             "id": "Arduino",
-            "projet": "Concepteur, Développeur et Assembleur d'un véhicule autonome miniature",
-            "contexte": "Électronique",
-            "technos": ["Arduino", "Langage C"],
+            "projet": "#PROJETS.ARDUINO.PROJET",
+            "contexte": "#PROJETS.ARDUINO.CONTEXTE",
+            "technos": ["Arduino", "C"],
             "annee": 2019
         }
     ],
@@ -300,7 +303,7 @@
             "id": "Serveur",
             "projet": "Développeur d'un mini serveur Web",
             "contexte": "Réseau informatique",
-            "technos": ["HTTP", "Langage C"],
+            "technos": ["HTTP", "C"],
             "annee": 2019
         },
         {
@@ -314,7 +317,7 @@
             "id": "Ruzzle",
             "projet": "Concepteur et Développeur d'un solutionneur du jeu Ruzzle",
             "contexte": "Algorithmique avancée",
-            "technos": ["Langage C"],
+            "technos": ["C"],
             "annee": 2019
         },
         {
@@ -337,8 +340,8 @@
     "experiences": [
         {
             "id": "Keyveo",
-            "experience": ["Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle"],
-            "contexte": "Stage ingénieur de 6 mois",
+            "experience": ["#EXPERIENCES.KVT.EXPERIENCE"],
+            "contexte": "#EXPERIENCES.KVT.CONTEXTE",
             "employeur": "Keyveo",
             "technos": ["Angular", "A-Frame", "Three.js", "Express", "Node.js", "SQL Server"],
             "annee": 2021
@@ -346,53 +349,57 @@
         {
             "id": "Segafredo",
             "experience": [
-                "Rédaction de documents de spécifications et de conception pour un changement d'ERP",
-                "Automatisation et optimisation de tableaux Excel",
-                "Création de formulaires Microsoft Access (base de données, interfaces et macros)"
+                "#EXPERIENCES.SEGAFREDO.EXPERIENCE.1",
+                "#EXPERIENCES.SEGAFREDO.EXPERIENCE.2",
+                "#EXPERIENCES.SEGAFREDO.EXPERIENCE.3"
             ],
-            "contexte": "Stage de 2 mois puis CDD de 8h/semaine",
+            "contexte": "#EXPERIENCES.SEGAFREDO.CONTEXTE",
             "employeur": "Segafredo Zanetti France",
             "technos": ["Excel", "Access"],
             "annee": 2020
         },
         {
             "id": "AJIR",
-            "experience": ["Rédaction d'un état de l'art sur les technologies de traçabilité"],
-            "duree": "2 mois",
-            "contexte": "Consultant Junior Entreprise",
+            "experience": ["#EXPERIENCES.AJIR.EXPERIENCE"],
+            "duree": "#EXPERIENCES.AJIR.DUREE",
+            "contexte": "#EXPERIENCES.AJIR.CONTEXTE",
             "employeur": "Normandie AeroEspace",
             "technos": ["LaTeX"],
             "annee": 2019
         },
         {
             "id": "Segafredo",
-            "experience": ["Immersion dans le travail quotidien d'un ouvrier"],
-            "duree": "1 mois",
-            "contexte": "Stage d'exécution",
+            "experience": ["#EXPERIENCES.EXECUTION.EXPERIENCE"],
+            "duree": "#EXPERIENCES.EXECUTION.DUREE",
+            "contexte": "#EXPERIENCES.EXECUTION.CONTEXTE",
             "employeur": "Segafredo Zanetti France",
             "annee": 2017
         },
         {
             "id": "Karate",
-            "experience": ["Professeur-assistant de Karaté"],
-            "contexte": "Bénévolat",
+            "experience": ["#EXPERIENCES.KARATE.EXPERIENCE"],
+            "contexte": "#EXPERIENCES.KARATE.CONTEXTE",
             "employeur": "Sandra Lecourt",
             "annee": 2017
         },
         {
             "id": "Maths",
-            "experience": ["Cours particuliers de Mathématiques pour lycéens"],
-            "duree": "3 à +6h/semaine",
+            "experience": ["#EXPERIENCES.MATHS.EXPERIENCE"],
+            "duree": "#EXPERIENCES.MATHS.DUREE",
             "annees": {
                 "debut": 2016,
-                "fin": 2020
+                "fin": 2022
             }
         },
         {
             "id": "Turbulences",
-            "experience": ["Participations à des spectacles chorégraphiques"],
+            "experience": ["#EXPERIENCES.TURBULENCES.EXPERIENCE"],
             "employeur": "Opéra de Rouen / Zénith",
-            "technos": ["Coulisses", "Figurations"],
+            "technos": [
+                "#EXPERIENCES.TURBULENCES.COULISSES",
+                "#EXPERIENCES.TURBULENCES.FIGURATIONS",
+                "#EXPERIENCES.TURBULENCES.DOUBLAGE"
+            ],
             "annees": {
                 "debut": 2009,
                 "fin": 2019
@@ -405,42 +412,42 @@
             "liste": [
                 {
                     "nom": "Karaté",
-                    "details": "Ceinture noire - 1er Dan"
+                    "details": "#INTERETS.SPORTS.KARATE"
                 },
                 {
                     "nom": "Ski",
-                    "details": "Flèche de Vermeil"
+                    "details": "#INTERETS.SPORTS.SKI"
                 },
                 {
                     "nom": "Snowboard",
-                    "details": "Niveau 3"
+                    "details": "#INTERETS.SPORTS.SNOWBOARD"
                 },
                 {
                     "nom": "Badminton",
-                    "details": "6 ans - UNSS"
+                    "details": "#INTERETS.SPORTS.BADMINTON"
                 },
                 {
                     "nom": "Tennis",
-                    "details": "6 ans"
+                    "details": "#INTERETS.SPORTS.TENNIS"
                 },
                 {
                     "nom": "Volley-ball",
-                    "details": "6 ans - Compétitions inter-lycées et inter-collèges"
+                    "details": "#INTERETS.SPORTS.VOLLEY"
                 }
             ]
         },
         {
-            "interet": "Loisirs",
+            "interet": "#INTERETS.LOISIRS",
             "liste": [
                 {
-                    "nom": "Jeux-vidéo",
-                    "details": "Réalité Virtuelle"
+                    "nom": "#INTERETS.LOISIRS.JEUXVIDEO",
+                    "details": "#INTERETS.LOISIRS.JEUXVIDEO.DETAILS"
                 },
                 {
-                    "nom": "Cinéma"
+                    "nom": "#INTERETS.LOISIRS.CINEMA"
                 },
                 {
-                    "nom": "Musique"
+                    "nom": "#INTERETS.LOISIRS.MUSIQUE"
                 }
             ]
         }

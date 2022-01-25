@@ -4,9 +4,6 @@
   import structure from "./structure.json";
   import translations from "./translation.json";
 
-  const censored = false;
-  const lang = "fr";
-
   const getAgeFromBirthday = (birthday: string) => {
     const date = new Date(birthday);
     const today = new Date();
@@ -17,8 +14,10 @@
   const getTranslation = (key: string) => {
     try {
       return translations[key][lang];
-    } catch (TypeError) {
-      return key;
+    } catch (error) {
+      if (error instanceof TypeError) {
+        return key;
+      }
     }
   };
 
@@ -47,11 +46,45 @@
       .join(separator)
       .replace(` ${separator}`, `${separator}`);
   };
+
+  const getParam = (name, defaultValue) => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const param = urlSearchParams.get(name);
+    if (param === null) {
+      return defaultValue;
+    }
+    return param;
+  };
+
+  const getOnOffParam = (name, defaultValue) => {
+    const onOffParam = getParam(name, undefined);
+    switch (onOffParam) {
+      case "on":
+        return true;
+      case "off":
+        return false;
+      default:
+        return defaultValue;
+    }
+  };
+
+  let lang = getParam("lang", "fr");
+  let censored = getOnOffParam("censored", false);
+  const printMode = getOnOffParam("print", true);
+  if (!printMode) {
+    document.querySelector("#print").removeAttribute("hidden");
+  }
+
+  const countriesBanningPicture = ["en"];
+
+  const shouldShowPicture = !countriesBanningPicture.includes(lang);
 </script>
 
 <div id="cv">
   <section id="header" class="block">
-    <img class="round shadow" src="images/profil.jpg" alt="profil" />
+    {#if shouldShowPicture}
+      <img class="round shadow" src="images/profil.jpg" alt="profil" />
+    {/if}
     <div class="">
       <h1 class="font-bold">
         {data["infos-perso"].prenom}
@@ -120,10 +153,19 @@
       {getTranslation(data.recherche.contexte)}<br />
       {getTranslation(structure.conjonctions.des)}
       {getLocaleDateString(data.recherche.dates.debut, "long")}<br />
-      {getList(data.recherche.lieux, ", ", getTranslation)}<br />
-      {getTranslation(data.recherche.permis.texte)} – {getTranslation(
+      {#if data.recherche.lieux.presentiel.length > 0}
+        {getList(data.recherche.lieux.presentiel, ", ", getTranslation)} ({getTranslation(
+          "#presentiel"
+        )})<br />
+      {/if}
+      {#if data.recherche.lieux.remote.length > 0}
+        {getList(data.recherche.lieux.remote, ", ", getTranslation)} ({getTranslation(
+          "#remote"
+        )})<br />
+      {/if}
+      <!-- {getTranslation(data.recherche.permis.texte)} – {getTranslation(
         data.recherche.vehicule.texte
-      )}
+      )} -->
     </div>
   </section>
 
@@ -135,7 +177,9 @@
       <fieldset id="soft-skills">
         <legend>{getTranslation(structure.competences.personnelles)}</legend>
         <div class="text-center">
-          {getList(data.competences.personnelles, " • ")}
+          {getList(data.competences.personnelles, " • ", (x) =>
+            getTranslation(x)
+          )}
         </div>
       </fieldset>
 
@@ -283,23 +327,23 @@
             </div>
           </div>
           <div class="data">
-            {formation.formation}
-            {formation.ecole}<br />
+            {getTranslation(formation.formation)}
+            {getTranslation(formation.ecole)}<br />
 
             {#if formation.departement}
-              {formation.departement}<br />
+              {getTranslation(formation.departement)}<br />
             {/if}
 
-            {formation.specialite}<br />
+            {getTranslation(formation.specialite)}<br />
 
             {#if formation.cours}
               <span class="font-italic">
-                {getList(formation.cours, " – ")}
+                {getList(formation.cours, " – ", (x) => getTranslation(x))}
               </span><br />
             {/if}
 
             {#if formation.mention}
-              {formation.mention}<br />
+              {getTranslation(formation.mention)}<br />
             {/if}
           </div>
         </div>
@@ -318,14 +362,14 @@
         />
 
         <div class="data">
-          {projet.projet}<br />
+          {getTranslation(projet.projet)}<br />
           <span class="font-italic">
             {#if projet.temps}
-              {projet.temps} –
+              {getTranslation(projet.temps)} –
             {/if}
 
             {#if projet.contexte}
-              {projet.contexte} –
+              {getTranslation(projet.contexte)} –
             {/if}
 
             {#if projet.employeur}
@@ -337,7 +381,9 @@
         </div>
       {/each}
     </div>
-    <div class="font-italic font-light">Et plein d'autres encore...</div>
+    <div class="font-italic font-light">
+      {getTranslation("#more")}
+    </div>
   </section>
 
   <section id="jobs" class="block">
@@ -377,15 +423,19 @@
           </div>
 
           <div class="data">
-            <List items={experience.experience} separator={"<br />"} /><br />
+            <List
+              items={experience.experience}
+              separator={"<br />"}
+              transformer={(x) => getTranslation(x)}
+            /><br />
             <span class="font-italic">
               {#if experience.duree}
-                {experience.duree}
+                {getTranslation(experience.duree)}
                 {#if experience.contexte} – {/if}
               {/if}
 
               {#if experience.contexte}
-                {experience.contexte} –
+                {getTranslation(experience.contexte)} –
               {/if}
 
               {#if experience.employeur}
@@ -393,7 +443,7 @@
               {/if}
 
               {#if experience.technos}
-                – {getList(experience.technos, " – ")}
+                – {getList(experience.technos, " – ", (x) => getTranslation(x))}
               {/if}
             </span><br />
           </div>
@@ -407,14 +457,16 @@
     <div class="title-data-grid">
       {#each data.interets as interest}
         <div class="title font-bold">
-          {interest.interet}
+          {getTranslation(interest.interet)}
         </div>
 
         <div class="data">
           {#each interest.liste as interet, i}
-            {interet.nom}
+            {getTranslation(interet.nom)}
             {#if interet.details}
-              <span class="font-italic font-light">({interet.details})</span>
+              <span class="font-italic font-light">
+                ({getTranslation(interet.details)})
+              </span>
             {/if}
             {#if i < interest.liste.length - 1} •&nbsp;{/if}
           {/each}
