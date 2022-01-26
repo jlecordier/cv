@@ -192,8 +192,8 @@
         "en": "10 months"
     },
     "#PROJETS.KVT.CONTEXTE": {
-        "fr": "Stage ingénieur puis Ingénieur Fullstack",
-        "en": "Engineering internship then Fullstack Engineer"
+        "fr": "Stage ingénieur puis Ingénieur Full Stack",
+        "en": "Engineering internship then Full Stack Engineer"
     },
     "#PROJETS.VR.PROJET": {
         "fr": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
@@ -284,8 +284,8 @@
         "en": "Electronics"
     },
     "#EXPERIENCES.KVT.EXPERIENCE": {
-        "fr": "Concepteur et Développeur Fullstack d'un éditeur en ligne de création de visite virtuelle",
-        "en": "Designer and Fullstack Developer of an online virtual tour editor"
+        "fr": "Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle",
+        "en": "Designer and Full Stack Developer of an online virtual tour editor"
     },
     "#EXPERIENCES.KVT.CONTEXTE": {
         "fr": "Stage ingénieur puis CDD",
