@@ -275,13 +275,6 @@
             "contexte": "#PROJETS.GENETIQUE.CONTEXTE",
             "technos": ["Python"],
             "annee": 2019
-        },
-        {
-            "id": "Arduino",
-            "projet": "#PROJETS.ARDUINO.PROJET",
-            "contexte": "#PROJETS.ARDUINO.CONTEXTE",
-            "technos": ["Arduino", "C"],
-            "annee": 2019
         }
     ],
     "vieux_projets": [
@@ -298,6 +291,13 @@
             "contexte": "Hackathon Hacking Health",
             "technos": ["Web Scrapping", "Python"],
             "annee": 2020
+        },
+        {
+            "id": "Arduino",
+            "projet": "#PROJETS.ARDUINO.PROJET",
+            "contexte": "#PROJETS.ARDUINO.CONTEXTE",
+            "technos": ["Arduino", "C"],
+            "annee": 2019
         },
         {
             "id": "Serveur",
