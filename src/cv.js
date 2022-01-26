@@ -9,12 +9,13 @@ var structure;
 var lang = 'fr';
 var censored = false;
 
-Handlebars.registerHelper('age', ddn => {
-  const date = new Date(ddn);
+const getAgeFromBirthday = birthday => {
+  const date = new Date(birthday);
   const today = new Date();
   const age = new Date(today.getTime() - date.getTime()).getFullYear() - 1970;
   return age;
-});
+};
+Handlebars.registerHelper('age', getAgeFromBirthday);
 
 const getTranslation = key => {
   try {
@@ -23,22 +24,17 @@ const getTranslation = key => {
     return key;
   }
 };
-
 Handlebars.registerHelper('i18n', getTranslation);
 
-Handlebars.registerHelper('sensible', info => {
-  if (censored) {
-    return '[Censuré]';
-  }
-  return info;
-});
+const getSensibleInformation = info => {
+  return censored ? '[Censuré]' : info;
+};
+Handlebars.registerHelper('sensible', getSensibleInformation);
 
-Handlebars.registerHelper('progress-width', value => {
-  if (!isNaN(value)) {
-    return 100 * value / 5;
-  }
-  return 0;
-});
+const getPercentageFromLevel = level => {
+  return isNaN(level) ? 0 : 100 * level / 5;
+};
+Handlebars.registerHelper('progress-width', getPercentageFromLevel);
 
 Handlebars.registerHelper('list', (items, options) => {
   return items
@@ -47,11 +43,12 @@ Handlebars.registerHelper('list', (items, options) => {
     .replace(' ,', ',');
 });
 
-Handlebars.registerHelper('date', (dateISO, options) => {
+const getLocaleDateString = (dateISO, options) => {
   const date = new Date(dateISO);
   const dateString = date.toLocaleDateString(lang ? lang : 'en', { dateStyle: lang ? options?.hash['dateStyle'] || 'medium' : 'short' });
   return dateString;
-});
+};
+Handlebars.registerHelper('date', getLocaleDateString);
 
 const getData = async () => {
   return await $.getJSON('data.json');

@@ -8,8 +8,8 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8080/docs/cv.html",
-      "webRoot": "${workspaceFolder}"
+      "url": "http://localhost:8000/docs/cv.html",
+      "webRoot": "${workspaceFolder}/src"
     }
   ]
 }

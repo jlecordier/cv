@@ -1,0 +1,494 @@
+{
+    "#RECHERCHE.DUREE.UNITE": {
+        "fr": "semaines",
+        "en": "weeks"
+    },
+    "#RECHERCHE.TITRE": {
+        "fr": "Ingénieur INSA en informatique",
+        "en": "Software engineer"
+    },
+    "#RECHERCHE.OBJET": {
+        "fr": "Recherche poste de concepteur développeur",
+        "en": "Searching for a software engineer job"
+    },
+    "#RECHERCHE.CONTEXTE": {
+        "fr": "À l'écoute de nouvelles opportunités",
+        "en": "Open to new opportunities"
+    },
+    "#RECHERCHE.DATES.DEBUT": {
+        "fr": "17 Février",
+        "en": "February 17th"
+    },
+    "#RECHERCHE.DATES.FIN": {
+        "fr": "31 Août",
+        "en": "August 31st"
+    },
+    "#RECHERCHE.LIEUX.ILE-DE-FRANCE": {
+        "fr": "Île-de-France",
+        "en": "Île-de-France"
+    },
+    "#RECHERCHE.LIEUX.HAUTE-NORMANDIE": {
+        "fr": "Haute-Normandie",
+        "en": "Haute-Normandie"
+    },
+    "#RECHERCHE.LIEUX.NA": {
+        "fr": "Amérique du Nord",
+        "en": "North America"
+    },
+    "#RECHERCHE.LIEUX.EUROPE": {
+        "fr": "Europe",
+        "en": "Europe"
+    },
+    "#RECHERCHE.PERMIS.TEXTE": {
+        "fr": "Permis B",
+        "en": "Driver's License"
+    },
+    "#RECHERCHE.VEHICULE.TEXTE": {
+        "fr": "Véhiculé",
+        "en": "Car Owner"
+    },
+    "#COMPETENCES.PERSONNELLES.PASSIONNE": {
+        "fr": "Passionné",
+        "en": "Passionate"
+    },
+    "#COMPETENCES.PERSONNELLES.CURIEUX": {
+        "fr": "Curieux",
+        "en": "Curious"
+    },
+    "#COMPETENCES.PERSONNELLES.PERSPICACE": {
+        "fr": "Perspicace",
+        "en": "Thoughtful"
+    },
+    "#COMPETENCES.PERSONNELLES.PEDAGOGUE": {
+        "fr": "Pédagogue",
+        "en": "Pedagogical"
+    },
+    "#COMPETENCES.PERSONNELLES.RIGOUREUX": {
+        "fr": "Rigoureux",
+        "en": "Rigorous"
+    },
+    "#COMPETENCES.PERSONNELLES.COMBATTANT": {
+        "fr": "Combattant",
+        "en": "Fighter"
+    },
+    "#COMPETENCES.PERSONNELLES.ETHIQUE": {
+        "fr": "Sens de l'éthique",
+        "en": "Ethical"
+    },
+    "#COMPETENCES.PERSONNELLES.EQUIPE": {
+        "fr": "Esprit d'équipe",
+        "en": "Team player"
+    },
+    "#COMPETENCES.PERSONNELLES.ORGANISE": {
+        "fr": "Organisé",
+        "en": "Organized"
+    },
+    "#COMPETENCES.TITRE": {
+        "fr": "Compétences",
+        "en": "Skills"
+    },
+    "#COMPETENCES.ENCOURS": {
+        "fr": "En cours",
+        "en": "In progress"
+    },
+    "#NOTIONS.RESEAU": {
+        "fr": "Réseau informatique",
+        "en": "Computer network"
+    },
+    "#NOTIONS.DONNEES": {
+        "fr": "Traitement des données",
+        "en": "Data processing"
+    },
+    "#NOTIONS.ELECTRO": {
+        "fr": "Électronique",
+        "en": "Electronics"
+    },
+    "#NOTIONS.SIGNAL": {
+        "fr": "Traitement du signal",
+        "en": "Signal processing"
+    },
+    "#NOTIONS.AGILES": {
+        "fr": "Méthodes Agiles",
+        "en": "Agile methodologies"
+    },
+    "#NOTIONS.ML": {
+        "fr": "Machine Learning",
+        "en": "Machine Learning"
+    },
+    "#NOTIONS.DEEP": {
+        "fr": "Deep Learning",
+        "en": "Deep Learning"
+    },
+    "#LANGUES.FR.NIVEAU": {
+        "fr": "Langue maternelle",
+        "en": "Native language"
+    },
+    "#LANGUES.EN.NIVEAU1": {
+        "fr": "C1 : Bon niveau – TOEIC : 965",
+        "en": "C1 : Good level – TOEIC : 965"
+    },
+    "#LANGUES.EN.NIVEAU2": {
+        "fr": "Section Internationale Bilingue",
+        "en": "International Bilingual Section"
+    },
+    "#LANGUES.ES.NIVEAU": {
+        "fr": "B2 : Niveau moyen",
+        "en": "B2 : Average level"
+    },
+    "#FORMATIONS.INSA.FORMATION": {
+        "fr": "Élève ingénieur",
+        "en": "Engineering student"
+    },
+    "#FORMATIONS.INSA.ECOLE": {
+        "fr": "à l'Institut National des Sciences Appliquées (INSA) de Rouen",
+        "en": "at the National Institute of Applied Sciences (INSA) of Rouen, France"
+    },
+    "#FORMATIONS.INSA.DEPARTEMENT": {
+        "fr": "Département ASI : Architecture des Systèmes d'Information",
+        "en": "Information Systems Architecture department"
+    },
+    "#FORMATIONS.INSA.SPECIALITE": {
+        "fr": "Spécialisation : Ingénierie de l'Information",
+        "en": "Specialization : Information Engineering "
+    },
+    "#FORMATIONS.INSA.VR": {
+        "fr": "Réalité Virtuelle",
+        "en": "Virtual Reality"
+    },
+    "#FORMATIONS.INSA.IHME": {
+        "fr": "Interactions Homme-Machine Évoluées",
+        "en": "Advanced Human-Machine Interactions"
+    },
+    "#FORMATIONS.INSA.WOS": {
+        "fr": "Web des Objets et des Services",
+        "en": "IOT"
+    },
+    "#FORMATIONS.INSA.DOC": {
+        "fr": "Document et Web Sémantique",
+        "en": "Semantic Web"
+    },
+    "#FORMATIONS.BAC.FORMATION": {
+        "fr": "Baccalauréat Filière S",
+        "en": "French “A-Level”"
+    },
+    "#FORMATIONS.BAC.ECOLE": {
+        "fr": "au lycée Pierre Corneille de Rouen",
+        "en": "at Pierre Corneille secondary school in Rouen, France"
+    },
+    "#FORMATIONS.BAC.SPECIALITE": {
+        "fr": "Spécialité Informatique et Sciences du Numérique (ISN)",
+        "en": "Specialization: Computer Science"
+    },
+    "#FORMATIONS.BAC.MENTION": {
+        "fr": "Mention Très Bien",
+        "en": "With honors"
+    },
+    "#PROJETS.KVT.PROJET": {
+        "fr": "Concepteur et Développeur d'un éditeur de visite virtuelle",
+        "en": "Designer and Developer of a virtual tour editor"
+    },
+    "#PROJETS.KVT.TEMPS": {
+        "fr": "10 mois",
+        "en": "10 months"
+    },
+    "#PROJETS.KVT.CONTEXTE": {
+        "fr": "Stage ingénieur puis Ingénieur Full Stack",
+        "en": "Engineering internship then Full Stack Engineer"
+    },
+    "#PROJETS.VR.PROJET": {
+        "fr": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
+        "en": "Designer and Developer of a Unity VR game"
+    },
+    "#PROJETS.VR.CONTEXTE": {
+        "fr": "Réalité Virtuelle",
+        "en": "Virtual Reality"
+    },
+    "#PROJETS.SPOTIFY.PROJET": {
+        "fr": "Concepteur et Développeur d'un lecteur de musique connecté à Spotify et Discord",
+        "en": "Designer and Developer of a Spotify and Discord music player"
+    },
+    "#PROJETS.SPOTIFY.CONTEXTE": {
+        "fr": "Web des Objets et des Services",
+        "en": "IOT"
+    },
+    "#PROJETS.TWITTER.PROJET": {
+        "fr": "Concepteur et Développeur d'un annotateur automatique de sentiments",
+        "en": "Designer and Developer of a sentiment analyzer"
+    },
+    "#PROJETS.TWITTER.CONTEXTE": {
+        "fr": "Interactions Homme-Machine Évoluées",
+        "en": "Advanced Human-Machine Interactions"
+    },
+    "#PROJETS.PIC.PROJET": {
+        "fr": "Responsable Qualité, Concepteur et Développeur d'un service web de gestion de patients",
+        "en": "Quality Analyst, Designer and Developer of a patient management web service"
+    },
+    "#PROJETS.PIC.TEMPS": {
+        "fr": "+18h/semaine",
+        "en": "+18h/week"
+    },
+    "#PROJETS.PIC.CONTEXTE": {
+        "fr": "Projet INSA Certifié",
+        "en": "INSA Certified Project"
+    },
+    "#PROJETS.COMPAGNON.PROJET": {
+        "fr": "Concepteur et Développeur d'une amélioration d'un assistant virtuel sous Android",
+        "en": "Designer and Developer of an Android virtual assistant improvement"
+    },
+    "#PROJETS.COMPAGNON.TEMPS": {
+        "fr": "+80h",
+        "en": "+80h"
+    },
+    "#PROJETS.COMPAGNON.CONTEXTE": {
+        "fr": "Développement mobile",
+        "en": "Mobile development"
+    },
+    "#PROJETS.DBPEDIA.PROJET": {
+        "fr": "Traitement de fichiers METS et ALTO, utilisation de DBpedia",
+        "en": "Processing of METS and ALTO files, use of DBpedia"
+    },
+    "#PROJETS.DBPEDIA.CONTEXTE": {
+        "fr": "Documents sémantiques",
+        "en": "Semantic documents"
+    },
+    "#PROJETS.POSTGRESQL.PROJET": {
+        "fr": "Concepteur et Développeur d'un service web de gestion de cinémas et d'un réseau social associé",
+        "en": "Designer and Developer of a movie theater web service and its social network"
+    },
+    "#PROJETS.POSTGRESQL.CONTEXTE": {
+        "fr": "Développement Web",
+        "en": "Web development"
+    },
+    "#PROJETS.VISAGE.PROJET": {
+        "fr": "Concepteur et Développeur d'un générateur de visage",
+        "en": "Designer and Developer of a face generator"
+    },
+    "#PROJETS.VISAGE.CONTEXTE": {
+        "fr": "Traitement des données",
+        "en": "Data processing"
+    },
+    "#PROJETS.GENETIQUE.PROJET": {
+        "fr": "Concepteur et Développeur d'un algorithme génétique",
+        "en": "Designer and Developer of a genetic algorithm"
+    },
+    "#PROJETS.GENETIQUE.CONTEXTE": {
+        "fr": "Machine Learning",
+        "en": "Machine Learning"
+    },
+    "#PROJETS.ARDUINO.PROJET": {
+        "fr": "Concepteur, Développeur et Assembleur d'un véhicule autonome miniature",
+        "en": "Designer, Developer and Maker of a miniature autonomous vehicle"
+    },
+    "#PROJETS.ARDUINO.CONTEXTE": {
+        "fr": "Électronique",
+        "en": "Electronics"
+    },
+    "#EXPERIENCES.KVT.EXPERIENCE": {
+        "fr": "Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle",
+        "en": "Designer and Full Stack Developer of an online virtual tour editor"
+    },
+    "#EXPERIENCES.KVT.CONTEXTE": {
+        "fr": "Stage ingénieur puis CDD",
+        "en": "Engineering internship then Employee"
+    },
+    "#EXPERIENCES.SEGAFREDO.EXPERIENCE.1": {
+        "fr": "Rédaction de documents de spécifications et de conception pour un changement d'ERP",
+        "en": "Writing specifications and design documents for an ERP change"
+    },
+    "#EXPERIENCES.SEGAFREDO.EXPERIENCE.2": {
+        "fr": "Automatisation et optimisation de tableaux Excel",
+        "en": "Automation and optimization of Excel Spreadsheets"
+    },
+    "#EXPERIENCES.SEGAFREDO.EXPERIENCE.3": {
+        "fr": "Création de formulaires Microsoft Access (base de données, interfaces et macros)",
+        "en": "Creation of Microsoft Access forms (databases, interfaces and macros)"
+    },
+    "#EXPERIENCES.SEGAFREDO.CONTEXTE": {
+        "fr": "Stage de 2 mois puis CDD de 8h/semaine",
+        "en": "2 months internship then Employed 8h/week"
+    },
+    "#EXPERIENCES.AJIR.EXPERIENCE": {
+        "fr": "Rédaction d'un état de l'art sur les technologies de traçabilité",
+        "en": "Writing of a State of the Art on Traceability technologies"
+    },
+    "#EXPERIENCES.AJIR.DUREE": {
+        "fr": "2 mois",
+        "en": "2 months"
+    },
+    "#EXPERIENCES.AJIR.CONTEXTE": {
+        "fr": "Consultant Junior Entreprise",
+        "en": "Junior Enterprise Consultant"
+    },
+    "#EXPERIENCES.EXECUTION.EXPERIENCE": {
+        "fr": "Immersion dans le travail quotidien d'un ouvrier",
+        "en": "Immersion in the daily work of a worker"
+    },
+    "#EXPERIENCES.EXECUTION.DUREE": {
+        "fr": "1 mois",
+        "en": "1 month"
+    },
+    "#EXPERIENCES.EXECUTION.CONTEXTE": {
+        "fr": "Stage d'exécution",
+        "en": "Worker internship"
+    },
+    "#EXPERIENCES.KARATE.EXPERIENCE": {
+        "fr": "Professeur-assistant de Karaté",
+        "en": "Karate Assistant-Teacher"
+    },
+    "#EXPERIENCES.KARATE.CONTEXTE": {
+        "fr": "Bénévolat",
+        "en": "Volunteering"
+    },
+    "#EXPERIENCES.MATHS.EXPERIENCE": {
+        "fr": "Cours particuliers de Mathématiques pour lycéens",
+        "en": "Math and Physics tutor"
+    },
+    "#EXPERIENCES.MATHS.DUREE": {
+        "fr": "3 à +6h/semaine",
+        "en": "3 to +6h/week"
+    },
+    "#EXPERIENCES.TURBULENCES.EXPERIENCE": {
+        "fr": "Participations à des spectacles chorégraphiques",
+        "en": "Participations to choreographic performances"
+    },
+    "#EXPERIENCES.TURBULENCES.COULISSES": {
+        "fr": "Coulisses",
+        "en": "Backstage"
+    },
+    "#EXPERIENCES.TURBULENCES.FIGURATIONS": {
+        "fr": "Figurations",
+        "en": "Extra"
+    },
+    "#EXPERIENCES.TURBULENCES.DOUBLAGE": {
+        "fr": "Doublage",
+        "en": "Dubbing"
+    },
+    "#INTERETS.SPORTS.KARATE": {
+        "fr": "Ceinture noire - 1er Dan",
+        "en": "Black belt - 1st Dan"
+    },
+    "#INTERETS.SPORTS.SKI": {
+        "fr": "Flèche de Vermeil",
+        "en": "Flèche de Vermeil"
+    },
+    "#INTERETS.SPORTS.SNOWBOARD": {
+        "fr": "Niveau 3",
+        "en": "Level 3"
+    },
+    "#INTERETS.SPORTS.BADMINTON": {
+        "fr": "6 ans - UNSS",
+        "en": "6 years"
+    },
+    "#INTERETS.SPORTS.TENNIS": {
+        "fr": "6 ans",
+        "en": "6 years"
+    },
+    "#INTERETS.SPORTS.VOLLEY": {
+        "fr": "6 ans - Compétitions inter-lycées et inter-collèges",
+        "en": "6 years - Inter-school competitions"
+    },
+    "#INTERETS.LOISIRS": {
+        "fr": "Loisirs",
+        "en": "Hobbies"
+    },
+    "#INTERETS.LOISIRS.JEUXVIDEO": {
+        "fr": "Jeux-vidéo",
+        "en": "Video games"
+    },
+    "#INTERETS.LOISIRS.JEUXVIDEO.DETAILS": {
+        "fr": "Réalité Virtuelle",
+        "en": "Virtual Reality"
+    },
+    "#INTERETS.LOISIRS.CINEMA": {
+        "fr": "Cinéma",
+        "en": "Cinema"
+    },
+    "#INTERETS.LOISIRS.MUSIQUE": {
+        "fr": "Musique",
+        "en": "Music"
+    },
+    "#age": {
+        "fr": "ans",
+        "en": "years old"
+    },
+    "#conjonctions.a": {
+        "fr": "à",
+        "en": "to"
+    },
+    "#conjonctions.au": {
+        "fr": "au",
+        "en": "to"
+    },
+    "#conjonctions.des": {
+        "fr": "Dès le",
+        "en": "Starting"
+    },
+    "#presentiel": {
+        "fr": "Présentiel",
+        "en": "In person"
+    },
+    "#remote": {
+        "fr": "À distance",
+        "en": "Remotely"
+    },
+    "#sections.competences": {
+        "fr": "Compétences",
+        "en": "Skills"
+    },
+    "#sections.formation": {
+        "fr": "Formation",
+        "en": "Education"
+    },
+    "#sections.projets": {
+        "fr": "Projets informatiques",
+        "en": "IT projects"
+    },
+    "#sections.experiences": {
+        "fr": "Expériences professionnelles",
+        "en": "Work experience"
+    },
+    "#sections.interets": {
+        "fr": "Centres d'intérêt",
+        "en": "Interets"
+    },
+    "#more": {
+        "fr": "Et plein d'autres encore...",
+        "en": "And many more..."
+    },
+    "#interesse": {
+        "fr": "Intéressé par",
+        "en": "Interested by"
+    },
+    "#competences.personnelles": {
+        "fr": "Personnelles",
+        "en": "Soft skills"
+    },
+    "#competences.dev": {
+        "fr": "Dev",
+        "en": "Coding skills"
+    },
+    "#competences.web": {
+        "fr": "Web",
+        "en": "Web skills"
+    },
+    "#competences.notions": {
+        "fr": "Notions",
+        "en": "Notions"
+    },
+    "#competences.outils": {
+        "fr": "Outils",
+        "en": "Tools"
+    },
+    "#competences.langues": {
+        "fr": "Linguistiques",
+        "en": "Language skills"
+    },
+    "#competences.os": {
+        "fr": "Systèmes d'exploitation",
+        "en": "Operating systems"
+    },
+    "#ID": {
+        "fr": "",
+        "en": ""
+    }
+}
