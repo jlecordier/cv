@@ -183,6 +183,18 @@
         "fr": "Mention Très Bien",
         "en": "With honors"
     },
+    "#PROJETS.SIMERROR.PROJET": {
+        "fr": "Concepteur et Développeur d'un Serious Game 2D pour le personnel hospitalier",
+        "en": "Designer and Developer of a 2D Serious Game for hospital personnel"
+    },
+    "#PROJETS.SIMERROR.TEMPS": {
+        "fr": "3 mois",
+        "en": "3 months"
+    },
+    "#PROJETS.SIMERROR.CONTEXTE": {
+        "fr": "Ingénieur Full Stack",
+        "en": "Full Stack Engineer"
+    },
     "#PROJETS.KVT.PROJET": {
         "fr": "Concepteur et Développeur d'un éditeur de visite virtuelle",
         "en": "Designer and Developer of a virtual tour editor"

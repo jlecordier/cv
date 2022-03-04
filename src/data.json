@@ -4,7 +4,7 @@
         "nom": "Lecordier",
         "tel": "0668018166",
         "email": "jeanlecordier@hotmail.fr",
-        "adresse": "4 Rue Lecarpentier, 76000, Rouen, France",
+        "adresse": "142 Rue Eau de Robec, 76000, Rouen, France",
         "linkedin": "linkedin.com/in/jean-lecordier/",
         "ddn": "1998-10-12"
     },
@@ -83,6 +83,10 @@
                 "niveau": 4
             },
             {
+                "technos": ["Svelte"],
+                "niveau": 4
+            },
+            {
                 "technos": ["PHP", "Laravel"],
                 "niveau": 4
             },
@@ -95,11 +99,7 @@
                 "niveau": 3
             },
             {
-                "technos": ["Svelte"],
-                "niveau": 3
-            },
-            {
-                "technos": ["Bootstrap"],
+                "technos": ["Bulma", "Bootstrap"],
                 "niveau": 3
             },
             {
@@ -143,6 +143,7 @@
         ],
         "outils": [
             "Git",
+            "Docker",
             "PostgreSQL",
             "Unity",
             "Blender",
@@ -201,6 +202,15 @@
         }
     ],
     "projets": [
+        {
+            "id": "SimError",
+            "projet": "#PROJETS.SIMERROR.PROJET",
+            "temps": "#PROJETS.SIMERROR.TEMPS",
+            "contexte": "#PROJETS.SIMERROR.CONTEXTE",
+            "employeur": "Keyveo",
+            "technos": ["Svelte", "SnapSVG", "NestJS", "TypeScript"],
+            "annee": 2022
+        },
         {
             "id": "KVT",
             "projet": "#PROJETS.KVT.PROJET",
@@ -344,7 +354,10 @@
             "contexte": "#EXPERIENCES.KVT.CONTEXTE",
             "employeur": "Keyveo",
             "technos": ["Angular", "A-Frame", "Three.js", "Express", "Node.js", "SQL Server"],
-            "annee": 2021
+            "annees": {
+                "debut": 2021,
+                "fin": 2022
+            }
         },
         {
             "id": "Segafredo",
@@ -402,7 +415,7 @@
             ],
             "annees": {
                 "debut": 2009,
-                "fin": 2019
+                "fin": 2022
             }
         }
     ],
