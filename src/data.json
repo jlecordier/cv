@@ -4,7 +4,7 @@
         "nom": "Lecordier",
         "tel": "0668018166",
         "email": "jeanlecordier@hotmail.fr",
-        "adresse": "142 Rue Eau de Robec, 76000, Rouen, France",
+        "adresse": "76300, Sotteville-lès-Rouen, France",
         "linkedin": "linkedin.com/in/jean-lecordier/",
         "ddn": "1998-10-12"
     },
@@ -12,11 +12,11 @@
         "titre": "#RECHERCHE.TITRE",
         "ecole": "INSA Rouen",
         "objet": "#RECHERCHE.OBJET",
-        "interets": ["VR/AR/MR/XR", "3D", "UX/UI"],
+        "interets": ["VR/AR/MR/XR", "3D", "UX/UI", "Clean Code", "Software Craftsmanship"],
         "contexte": "#RECHERCHE.CONTEXTE",
         "dates": {
-            "debut": "2022-06-30",
-            "annee": "2022"
+            "debut": "2026-10-01",
+            "annee": "2026"
         },
         "lieux": {
             "presentiel": ["#RECHERCHE.LIEUX.HAUTE-NORMANDIE"],
@@ -35,17 +35,22 @@
         "personnelles": [
             "#COMPETENCES.PERSONNELLES.PASSIONNE",
             "#COMPETENCES.PERSONNELLES.CURIEUX",
+            "#COMPETENCES.PERSONNELLES.ATYPIQUE",
             "#COMPETENCES.PERSONNELLES.PERSPICACE",
             "#COMPETENCES.PERSONNELLES.PEDAGOGUE",
             "#COMPETENCES.PERSONNELLES.RIGOUREUX",
-            "#COMPETENCES.PERSONNELLES.COMBATTANT",
+            "#COMPETENCES.PERSONNELLES.CRITIQUE",
             "#COMPETENCES.PERSONNELLES.ETHIQUE",
-            "#COMPETENCES.PERSONNELLES.EQUIPE",
-            "#COMPETENCES.PERSONNELLES.ORGANISE"
+            "#COMPETENCES.PERSONNELLES.BIENVEILLANT",
+            "#COMPETENCES.PERSONNELLES.EQUIPE"
         ],
         "dev": [
             {
-                "langage": "Java",
+                "langage": "PHP",
+                "niveau": 4
+            },
+            {
+                "langage": "TS/JS",
                 "niveau": 4
             },
             {
@@ -53,41 +58,17 @@
                 "niveau": 4
             },
             {
-                "langage": "SQL",
+                "langage": "Java",
                 "niveau": 4
             },
             {
-                "langage": "C",
-                "niveau": 3
-            },
-            {
-                "langage": "Pascal",
-                "niveau": 3
-            },
-            {
-                "langage": "C#",
-                "niveau": 2
-            },
-            {
-                "langage": "Prolog",
-                "niveau": 2
+                "langage": "SQL",
+                "niveau": 4
             }
         ],
         "web": [
             {
-                "technos": ["TypeScript", "Angular"],
-                "niveau": 4
-            },
-            {
-                "technos": ["JavaScript", "Node.js"],
-                "niveau": 4
-            },
-            {
-                "technos": ["Svelte"],
-                "niveau": 4
-            },
-            {
-                "technos": ["PHP", "Laravel"],
+                "technos": ["Node.js"],
                 "niveau": 4
             },
             {
@@ -95,67 +76,69 @@
                 "niveau": 4
             },
             {
+                "technos": ["Laravel"],
+                "niveau": 3
+            },
+            {
+                "technos": ["NestJS"],
+                "niveau": 3
+            },
+            {
+                "technos": ["Vue.js"],
+                "niveau": 3
+            },
+            {
+                "technos": ["Angular"],
+                "niveau": 3
+            },
+            {
+                "technos": ["Django", "DRF"],
+                "niveau": 3
+            },
+            {
                 "technos": ["A-Frame", "Three.js"],
                 "niveau": 3
             },
             {
-                "technos": ["Bulma", "Bootstrap"],
+                "technos": ["Svelte", "SvelteKit"],
                 "niveau": 3
             },
             {
-                "technos": ["XML", "DTD", "XSD", "XSLT"],
+                "technos": ["NGINX"],
                 "niveau": 3
-            },
-            {
-                "technos": ["SPARQL", "Turtle"],
-                "niveau": 2
             }
         ],
         "notions": [
+            {
+                "notion": "#NOTIONS.SOFTWARECRAFTSMANSHIP",
+                "niveau": 4
+            },
             {
                 "notion": "#NOTIONS.AGILES",
                 "niveau": 4
             },
             {
-                "notion": "#NOTIONS.RESEAU",
+                "notion": "#NOTIONS.DEVOPS",
                 "niveau": 4
             },
             {
-                "notion": "#NOTIONS.DONNEES",
-                "niveau": 3
-            },
-            {
-                "notion": "#NOTIONS.ELECTRO",
-                "niveau": 3
-            },
-            {
-                "notion": "#NOTIONS.SIGNAL",
-                "niveau": 2
-            },
-            {
-                "notion": "#NOTIONS.ML",
-                "niveau": 2
-            },
-            {
-                "notion": "#NOTIONS.DEEP",
-                "niveau": 1
+                "notion": "#NOTIONS.CLEANCODE",
+                "niveau": 4
             }
         ],
         "outils": [
+            "Suite JetBrains (PHPStorm, PyCharm)",
+            "VSCode",
+            "Claude Code",
+            "GitHub Copilot",
             "Git",
             "Docker",
-            "PostgreSQL",
-            "Unity",
-            "Blender",
+            "PhpMyAdmin",
+            "Adminer",
             "Android Studio",
-            "MATLAB",
             "Gimp",
-            "Adobe Premiere Pro",
-            "Audacity",
-            "Excel",
-            "Suite Libre Office",
-            "Microsoft Access",
-            "LaTeX"
+            "DaVinci Resolve",
+            "Audacity"
         ],
         "langues": [
             {
@@ -174,7 +157,7 @@
                 "niveau": ["#LANGUES.ES.NIVEAU"]
             }
         ],
-        "os": ["Windows", "macOS", "Linux"]
+        "os": ["macOS", "Linux", "Windows"]
     },
     "formations": [
         {
@@ -203,7 +186,46 @@
     ],
     "projets": [
         {
+            "id": "Infoclimat",
+            "photo": "Infoclimat.jpg",
+            "projet": "#PROJETS.INFOCLIMAT.PROJET",
+            "temps": "#PROJETS.INFOCLIMAT.TEMPS",
+            "contexte": "#PROJETS.INFOCLIMAT.CONTEXTE",
+            "employeur": "Infoclimat",
+            "lien": "https://www.infoclimat.fr/",
+            "technos": ["PHP", "JavaScript", "Python", "MariaDB (MySQL)", "TimescaleDB (PostgreSQL)"],
+            "annees": {
+                "debut": 2022,
+                "fin": 2026
+            }
+        },
+        {
+            "id": "DataClimat",
+            "photo": "DataForGood.jpeg",
+            "projet": "#PROJETS.DATACLIMAT.PROJET",
+            "temps": "#PROJETS.DATACLIMAT.TEMPS",
+            "contexte": "#PROJETS.DATACLIMAT.CONTEXTE",
+            "employeur": "Infoclimat",
+            "lien": "https://www.dataclimat.fr/",
+            "technos": ["TypeScript", "Vue.js", "Python", "Django", "TimescaleDB (PostgreSQL)"],
+            "annee": 2026
+        },
+        {
+            "id": "KVT",
+            "photo": "KVT.png",
+            "projet": "#PROJETS.KVT.PROJET",
+            "temps": "#PROJETS.KVT.TEMPS",
+            "contexte": "#PROJETS.KVT.CONTEXTE",
+            "employeur": "Keyveo",
+            "technos": ["Angular", "A-Frame", "Three.js", "TypeScript", "Node.js"],
+            "annees": {
+                "debut": 2021,
+                "fin": 2022
+            }
+        },
+        {
             "id": "SimError",
+            "photo": "SimError.png",
             "projet": "#PROJETS.SIMERROR.PROJET",
             "temps": "#PROJETS.SIMERROR.TEMPS",
             "contexte": "#PROJETS.SIMERROR.CONTEXTE",
@@ -212,37 +234,8 @@
             "annee": 2022
         },
         {
-            "id": "KVT",
-            "projet": "#PROJETS.KVT.PROJET",
-            "temps": "#PROJETS.KVT.TEMPS",
-            "contexte": "#PROJETS.KVT.CONTEXTE",
-            "employeur": "Keyveo",
-            "technos": ["Angular", "A-Frame", "Three.js", "TypeScript", "Node.js"],
-            "annee": 2021
-        },
-        {
-            "id": "VR",
-            "projet": "#PROJETS.VR.PROJET",
-            "contexte": "#PROJETS.VR.CONTEXTE",
-            "technos": ["Unity", "Blender", "C#"],
-            "annee": 2021
-        },
-        {
-            "id": "Spotify",
-            "projet": "#PROJETS.SPOTIFY.PROJET",
-            "contexte": "#PROJETS.SPOTIFY.CONTEXTE",
-            "technos": ["Raspberry Pi", "Spotify", "Discord", "Node.js", "API REST"],
-            "annee": 2020
-        },
-        {
-            "id": "Twitter",
-            "projet": "#PROJETS.TWITTER.PROJET",
-            "contexte": "#PROJETS.TWITTER.CONTEXTE",
-            "technos": ["Machine Learning", "Python"],
-            "annee": 2020
-        },
-        {
             "id": "PIC",
+            "photo": "PIC.png",
             "projet": "#PROJETS.PIC.PROJET",
             "temps": "#PROJETS.PIC.TEMPS",
             "contexte": "#PROJETS.PIC.CONTEXTE",
@@ -251,7 +244,8 @@
             "annee": 2020
         },
         {
-            "id": "Android Studio",
+            "id": "Compagnon Virtuel",
+            "photo": "Android Studio.png",
             "projet": "#PROJETS.COMPAGNON.PROJET",
             "temps": "#PROJETS.COMPAGNON.TEMPS",
             "contexte": "#PROJETS.COMPAGNON.CONTEXTE",
@@ -259,21 +253,77 @@
             "annee": 2020
         },
         {
+            "id": "Études2Lignes",
+            "photo": "Études2Lignes.png",
+            "projet": "#PROJETS.ETUDES2LIGNES.PROJET",
+            "contexte": "#PROJETS.ETUDES2LIGNES.CONTEXTE",
+            "lien": "https://jlecordier.github.io/etudes2lignes/",
+            "technos": ["Claude Code"],
+            "annee": 2026
+        },
+        {
+            "id": "Hackathon",
+            "photo": "Hackathon.png",
+            "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
+            "contexte": "Hackathon Hacking Health",
+            "technos": ["Web Scrapping", "Python"],
+            "annee": 2020
+        },
+        {
+            "id": "Java",
+            "photo": "Java.png",
+            "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
+            "contexte": "Informatique Répartie",
+            "technos": ["API REST", "Java"],
+            "annee": 2020
+        },
+        {
+            "id": "Student Simulator",
+            "photo": "Student Simulator.png",
+            "projet": "Concepteur et Développeur d'un petit jeu-vidéo pour smartphones sous Android",
+            "temps": "+100h",
+            "contexte": "Développement mobile",
+            "employeur": "Student Simulator",
+            "technos": ["Android Studio", "Java"],
+            "annee": 2018
+        }
+    ],
+    "vieux_projets": [
+        {
+            "id": "VR",
+            "photo": "VR.png",
+            "projet": "#PROJETS.VR.PROJET",
+            "contexte": "#PROJETS.VR.CONTEXTE",
+            "technos": ["Unity", "Blender", "C#"],
+            "annee": 2021
+        },
+        {
+            "id": "Spotify",
+            "photo": "Spotify.png",
+            "projet": "#PROJETS.SPOTIFY.PROJET",
+            "contexte": "#PROJETS.SPOTIFY.CONTEXTE",
+            "technos": ["Raspberry Pi", "Spotify", "Discord", "Node.js", "API REST"],
+            "annee": 2020
+        },
+        {
+            "id": "Twitter",
+            "photo": "Twitter.png",
+            "projet": "#PROJETS.TWITTER.PROJET",
+            "contexte": "#PROJETS.TWITTER.CONTEXTE",
+            "technos": ["Machine Learning", "Python"],
+            "annee": 2020
+        },
+        {
             "id": "DBpedia",
+            "photo": "DBpedia.png",
             "projet": "#PROJETS.DBPEDIA.PROJET",
             "contexte": "#PROJETS.DBPEDIA.CONTEXTE",
             "technos": ["Python", "XML", "SPARQL"],
             "annee": 2020
         },
         {
-            "id": "PostgreSQL",
-            "projet": "#PROJETS.POSTGRESQL.PROJET",
-            "contexte": "#PROJETS.POSTGRESQL.CONTEXTE",
-            "technos": ["Java Servlet", "PostgreSQL"],
-            "annee": 2019
-        },
-        {
             "id": "Python",
+            "photo": "Python.png",
             "projet": "#PROJETS.VISAGE.PROJET",
             "contexte": "#PROJETS.VISAGE.CONTEXTE",
             "technos": ["Python"],
@@ -281,29 +331,23 @@
         },
         {
             "id": "ADN",
+            "photo": "ADN.png",
             "projet": "#PROJETS.GENETIQUE.PROJET",
             "contexte": "#PROJETS.GENETIQUE.CONTEXTE",
             "technos": ["Python"],
             "annee": 2019
-        }
-    ],
-    "vieux_projets": [
-        {
-            "id": "Java",
-            "projet": "Concepteur et Développeur d'un jeu de poker en ligne sur terminal",
-            "contexte": "Informatique Répartie",
-            "technos": ["API REST", "Java"],
-            "annee": 2020
         },
         {
-            "id": "Hackathon",
-            "projet": "Concepteur et Développeur d'un agrégateur de données médicales",
-            "contexte": "Hackathon Hacking Health",
-            "technos": ["Web Scrapping", "Python"],
-            "annee": 2020
+            "id": "PostgreSQL",
+            "photo": "PostgreSQL.png",
+            "projet": "#PROJETS.POSTGRESQL.PROJET",
+            "contexte": "#PROJETS.POSTGRESQL.CONTEXTE",
+            "technos": ["Java Servlet", "PostgreSQL"],
+            "annee": 2019
         },
         {
             "id": "Arduino",
+            "photo": "Arduino.png",
             "projet": "#PROJETS.ARDUINO.PROJET",
             "contexte": "#PROJETS.ARDUINO.CONTEXTE",
             "technos": ["Arduino", "C"],
@@ -311,6 +355,7 @@
         },
         {
             "id": "Serveur",
+            "photo": "Serveur.png",
             "projet": "Développeur d'un mini serveur Web",
             "contexte": "Réseau informatique",
             "technos": ["HTTP", "C"],
@@ -318,6 +363,7 @@
         },
         {
             "id": "JavaCC",
+            "photo": "JavaCC.png",
             "projet": "Développeur d'un interpréteur SQL",
             "contexte": "Théorie des languages",
             "technos": ["JavaCC"],
@@ -325,22 +371,15 @@
         },
         {
             "id": "Ruzzle",
+            "photo": "Ruzzle.png",
             "projet": "Concepteur et Développeur d'un solutionneur du jeu Ruzzle",
             "contexte": "Algorithmique avancée",
             "technos": ["C"],
             "annee": 2019
         },
         {
-            "id": "Student Simulator",
-            "projet": "Concepteur et Développeur d'un petit jeu-vidéo pour smartphones sous Android",
-            "temps": "+100h",
-            "contexte": "Développement mobile",
-            "employeur": "Student Simulator",
-            "technos": ["Android Studio", "Java"],
-            "annee": 2018
-        },
-        {
             "id": "MATLAB",
+            "photo": "MATLAB.png",
             "projet": "Concepteur et Développeur d'un classifieur de Spam",
             "contexte": "Traitement des données",
             "technos": ["MATLAB"],
@@ -349,7 +388,28 @@
     ],
     "experiences": [
         {
+            "id": "Infoclimat",
+            "photo": "Infoclimat.jpg",
+            "experience": [
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.1",
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.2",
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.3",
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.4",
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.5",
+                "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.6"
+            ],
+            "contexte": "#EXPERIENCES.INFOCLIMAT.CONTEXTE",
+            "employeur": "Infoclimat",
+            "technos": ["PHP", "JavaScript", "Python", "MariaDB (MySQL)", "TimescaleDB (PostgreSQL)"],
+            "annees": {
+                "debut": 2022,
+                "fin": 2026
+            }
+
+        },
+        {
             "id": "Keyveo",
+            "photo": "Keyveo.png",
             "experience": ["#EXPERIENCES.KVT.EXPERIENCE"],
             "contexte": "#EXPERIENCES.KVT.CONTEXTE",
             "employeur": "Keyveo",
@@ -361,6 +421,7 @@
         },
         {
             "id": "Segafredo",
+            "photo": "Segafredo.png",
             "experience": [
                 "#EXPERIENCES.SEGAFREDO.EXPERIENCE.1",
                 "#EXPERIENCES.SEGAFREDO.EXPERIENCE.2",
@@ -370,9 +431,12 @@
             "employeur": "Segafredo Zanetti France",
             "technos": ["Excel", "Access"],
             "annee": 2020
-        },
+        }
+    ],
+    "vieilles_experiences": [
         {
             "id": "AJIR",
+            "photo": "AJIR.png",
             "experience": ["#EXPERIENCES.AJIR.EXPERIENCE"],
             "duree": "#EXPERIENCES.AJIR.DUREE",
             "contexte": "#EXPERIENCES.AJIR.CONTEXTE",
@@ -382,6 +446,7 @@
         },
         {
             "id": "Segafredo",
+            "photo": "Segafredo.png",
             "experience": ["#EXPERIENCES.EXECUTION.EXPERIENCE"],
             "duree": "#EXPERIENCES.EXECUTION.DUREE",
             "contexte": "#EXPERIENCES.EXECUTION.CONTEXTE",
@@ -390,6 +455,7 @@
         },
         {
             "id": "Karate",
+            "photo": "Karate.png",
             "experience": ["#EXPERIENCES.KARATE.EXPERIENCE"],
             "contexte": "#EXPERIENCES.KARATE.CONTEXTE",
             "employeur": "Sandra Lecourt",
@@ -397,15 +463,17 @@
         },
         {
             "id": "Maths",
+            "photo": "Maths.png",
             "experience": ["#EXPERIENCES.MATHS.EXPERIENCE"],
             "duree": "#EXPERIENCES.MATHS.DUREE",
             "annees": {
                 "debut": 2016,
-                "fin": 2022
+                "fin": 2026
             }
         },
         {
             "id": "Turbulences",
+            "photo": "Turbulences.png",
             "experience": ["#EXPERIENCES.TURBULENCES.EXPERIENCE"],
             "employeur": "Opéra de Rouen / Zénith",
             "technos": [

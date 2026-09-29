@@ -97,7 +97,7 @@
           alt="adresse"
         />
         <div class="info">
-          {getSensibleInformation(data["infos-perso"].adresse)}
+          {data["infos-perso"].adresse}
         </div>
 
         <img
@@ -106,7 +106,7 @@
           alt="telephone"
         />
         <div class="info">
-          {getSensibleInformation(data["infos-perso"].tel)}
+          {data["infos-perso"].tel}
         </div>
 
         <img
@@ -355,11 +355,21 @@
     <h4 class="block-header">{getTranslation(structure.sections.projets)}</h4>
     <div class="icon-data-grid">
       {#each data.projets as projet}
-        <img
-          src="images/{projet.id}.png"
-          alt={projet.id}
-          class="icon round shadow-sm"
-        />
+        {#if projet.lien}
+          <a href={projet.lien} target="_blank" rel="noopener noreferrer">
+            <img
+              src="images/{projet.photo}"
+              alt={projet.id}
+              class="icon round shadow-sm"
+            />
+          </a>
+        {:else}
+          <img
+            src="images/{projet.photo}"
+            alt={projet.id}
+            class="icon round shadow-sm"
+          />
+        {/if}
 
         <div class="data">
           {getTranslation(projet.projet)}<br />
@@ -415,7 +425,7 @@
 
             <div class="icon">
               <img
-                src="images/{experience.id}.png"
+                src="images/{experience.photo}"
                 alt={experience.id}
                 class="round shadow-sm"
               />
