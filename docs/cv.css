@@ -1,3 +1,8 @@
+:root {
+    --block-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06), 0 4px 4px rgba(0, 0, 0, 0.06), 0 6px 8px rgba(0, 0, 0, 0.06), 0 8px 16px rgba(0, 0, 0, 0.06);
+    --shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06);
+}
+
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,9 +39,7 @@ h6 {
   padding: 1rem;
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
-    0 4px 4px rgba(0, 0, 0, 0.06), 0 6px 8px rgba(0, 0, 0, 0.06),
-    0 8px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--block-shadow);
 }
 
 .block .block-header {
@@ -58,7 +61,7 @@ h6 {
 
 .shadow,
 .shadow-sm {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
 }
 
 .text-center {
@@ -363,6 +366,16 @@ a {
   #dev-skills,
   #languages-skills {
     padding-left: 15px;
+  }
+
+  :root {
+    --block-shadow: 0 1px 0px rgba(0, 0, 0, 0.06);
+    --shadow: 0 1px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  #cv {
+    padding-top: 4rem;
+    padding-bottom: 9rem;
   }
 }
 
