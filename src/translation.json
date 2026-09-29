@@ -8,16 +8,16 @@
         "en": "Software engineer"
     },
     "#RECHERCHE.OBJET": {
-        "fr": "Recherche poste de concepteur développeur",
-        "en": "Searching for a software engineer job"
+        "fr": "Recherche poste d'ingénieur fullstack",
+        "en": "Searching for a fullstack engineer job"
     },
     "#RECHERCHE.CONTEXTE": {
         "fr": "À l'écoute de nouvelles opportunités",
         "en": "Open to new opportunities"
     },
     "#RECHERCHE.DATES.DEBUT": {
-        "fr": "17 Février",
-        "en": "February 17th"
+        "fr": "1er Octobre",
+        "en": "October 1st"
     },
     "#RECHERCHE.DATES.FIN": {
         "fr": "31 Août",
@@ -55,6 +55,10 @@
         "fr": "Curieux",
         "en": "Curious"
     },
+    "#COMPETENCES.PERSONNELLES.ATYPIQUE": {
+        "fr": "Atypique",
+        "en": "Atypical"
+    },
     "#COMPETENCES.PERSONNELLES.PERSPICACE": {
         "fr": "Perspicace",
         "en": "Thoughtful"
@@ -67,21 +71,21 @@
         "fr": "Rigoureux",
         "en": "Rigorous"
     },
-    "#COMPETENCES.PERSONNELLES.COMBATTANT": {
-        "fr": "Combattant",
-        "en": "Fighter"
+    "#COMPETENCES.PERSONNELLES.CRITIQUE": {
+        "fr": "Esprit critique",
+        "en": "Critical thinking"
     },
     "#COMPETENCES.PERSONNELLES.ETHIQUE": {
         "fr": "Sens de l'éthique",
         "en": "Ethical"
     },
+    "#COMPETENCES.PERSONNELLES.BIENVEILLANT": {
+        "fr": "Bienveillant",
+        "en": "Kind"
+    },
     "#COMPETENCES.PERSONNELLES.EQUIPE": {
         "fr": "Esprit d'équipe",
         "en": "Team player"
-    },
-    "#COMPETENCES.PERSONNELLES.ORGANISE": {
-        "fr": "Organisé",
-        "en": "Organized"
     },
     "#COMPETENCES.TITRE": {
         "fr": "Compétences",
@@ -107,9 +111,21 @@
         "fr": "Traitement du signal",
         "en": "Signal processing"
     },
+    "#NOTIONS.SOFTWARECRAFTSMANSHIP": {
+        "fr": "Software Craftsmanship",
+        "en": "Software Craftsmanship"
+    },
     "#NOTIONS.AGILES": {
         "fr": "Méthodes Agiles",
         "en": "Agile methodologies"
+    },
+    "#NOTIONS.DEVOPS": {
+        "fr": "DevOps",
+        "en": "DevOps"
+    },
+    "#NOTIONS.CLEANCODE": {
+        "fr": "Clean Code",
+        "en": "Clean Code"
     },
     "#NOTIONS.ML": {
         "fr": "Machine Learning",
@@ -183,6 +199,30 @@
         "fr": "Mention Très Bien",
         "en": "With honors"
     },
+    "#PROJETS.INFOCLIMAT.PROJET": {
+        "fr": "Infoclimat : Conception, développement et maintenance de cartes et graphiques météorologiques et climatiques",
+        "en": "Infoclimat: Design, development and maintenance of weather and climate maps and charts"
+    },
+    "#PROJETS.INFOCLIMAT.TEMPS": {
+        "fr": "4 ans",
+        "en": "4 years"
+    },
+    "#PROJETS.INFOCLIMAT.CONTEXTE": {
+        "fr": "Premier salarié et seul ingénieur fullstack",
+        "en": "First employee and only fullstack engineer"
+    },
+    "#PROJETS.DATACLIMAT.PROJET": {
+        "fr": "DataClimat : Tech Lead (Format, Lint, Tests, CI/CD), review de 90% du code des bénévoles",
+        "en": "DataClimat : Tech Lead (Format, Lint, Tests, CI/CD), review of 90% of the volunteers' code"
+    },
+    "#PROJETS.DATACLIMAT.TEMPS": {
+        "fr": "6 mois",
+        "en": "6 months"
+    },
+    "#PROJETS.DATACLIMAT.CONTEXTE": {
+        "fr": "Projet de la saison 14 de DataForGood",
+        "en": "Project of the 14th season of DataForGood"
+    },
     "#PROJETS.SIMERROR.PROJET": {
         "fr": "Concepteur et Développeur d'un Serious Game 2D pour le personnel hospitalier",
         "en": "Designer and Developer of a 2D Serious Game for hospital personnel"
@@ -192,8 +232,8 @@
         "en": "3 months"
     },
     "#PROJETS.SIMERROR.CONTEXTE": {
-        "fr": "Ingénieur Full Stack",
-        "en": "Full Stack Engineer"
+        "fr": "Ingénieur fullstack",
+        "en": "fullstack Engineer"
     },
     "#PROJETS.KVT.PROJET": {
         "fr": "Concepteur et Développeur d'un éditeur de visite virtuelle",
@@ -204,8 +244,16 @@
         "en": "10 months"
     },
     "#PROJETS.KVT.CONTEXTE": {
-        "fr": "Stage ingénieur puis Ingénieur Full Stack",
-        "en": "Engineering internship then Full Stack Engineer"
+        "fr": "Stage ingénieur puis Ingénieur fullstack",
+        "en": "Engineering internship then fullstack Engineer"
+    },
+    "#PROJETS.ETUDES2LIGNES.PROJET": {
+        "fr": "Concepteur d'un outil de suivi automatique de trajet de conducteur de train",
+        "en": "Designer of an automatic train driver route tracking tool"
+    },
+    "#PROJETS.ETUDES2LIGNES.CONTEXTE": {
+        "fr": "Expérimentation du Vibe Coding avec bonnes pratiques",
+        "en": "Experimentation of Vibe Coding with best practices"
     },
     "#PROJETS.VR.PROJET": {
         "fr": "Concepteur et Développeur d'un mini-jeu en Réalité Virtuelle sous Unity",
@@ -295,9 +343,37 @@
         "fr": "Électronique",
         "en": "Electronics"
     },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.1": {
+        "fr": "Conception, développement et maintenance du site Infoclimat",
+        "en": "Design, development and maintenance of the Infoclimat website"
+    },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.2": {
+        "fr": "Mise en place des bonnes pratiques de programmation : Format, Lint, Tests unitaires, Tests d'intégration, Tests End-to-End, CI/CD",
+        "en": "Implementation of programming best practices: Format, Lint, Unit Tests, Integration Tests, End-to-End Tests, CI/CD"
+    },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.3": {
+        "fr": "Tests de comportement (Approval/GoldenMaster/Snapshot), Refactoring",
+        "en": "Behavioral testing (Approval/GoldenMaster/Snapshot), Refactoring"
+    },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.4": {
+        "fr": "Supervision du projet DataClimat en collaboration avec DataForGood",
+        "en": "Supervision of the DataClimat project in collaboration with DataForGood"
+    },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.5": {
+        "fr": "Supervision et montée en compétences de 2 stagiaires de 4e année d'école d'ingénieur",
+        "en": "Supervision and skills development of 2 4th-year engineering school interns"
+    },
+    "#EXPERIENCES.INFOCLIMAT.EXPERIENCE.6": {
+        "fr": "Recrutement et montée en compétences du 2e développeur fullstack",
+        "en": "Recruitment and skills development of the 2nd fullstack developer"
+    },
+    "#EXPERIENCES.INFOCLIMAT.CONTEXTE": {
+        "fr": "Premier et seul salarié de l'association pendant 4 ans",
+        "en": "First and only employee of the association for 4 years"
+    },
     "#EXPERIENCES.KVT.EXPERIENCE": {
-        "fr": "Concepteur et Développeur Full Stack d'un éditeur en ligne de création de visite virtuelle",
-        "en": "Designer and Full Stack Developer of an online virtual tour editor"
+        "fr": "Concepteur et Développeur fullstack d'un éditeur en ligne de création de visite virtuelle",
+        "en": "Designer and fullstack Developer of an online virtual tour editor"
     },
     "#EXPERIENCES.KVT.CONTEXTE": {
         "fr": "Stage ingénieur puis CDD",
@@ -388,8 +464,8 @@
         "en": "Level 3"
     },
     "#INTERETS.SPORTS.BADMINTON": {
-        "fr": "6 ans - UNSS",
-        "en": "6 years"
+        "fr": "10 ans - UNSS, Asso",
+        "en": "10 years"
     },
     "#INTERETS.SPORTS.TENNIS": {
         "fr": "6 ans",
@@ -408,8 +484,8 @@
         "en": "Video games"
     },
     "#INTERETS.LOISIRS.JEUXVIDEO.DETAILS": {
-        "fr": "Réalité Virtuelle",
-        "en": "Virtual Reality"
+        "fr": "Réalité Virtuelle, Simulation automobile",
+        "en": "Virtual Reality, Car Simulation"
     },
     "#INTERETS.LOISIRS.CINEMA": {
         "fr": "Cinéma",

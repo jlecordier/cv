@@ -182,6 +182,8 @@ h6 {
 
 .icon-data-grid .icon {
   width: 2rem;
+  height: 2rem;
+  object-fit: cover;
   grid-column: 1/2;
 }
 
@@ -243,6 +245,8 @@ h6 {
 
 #languages-skills .icon-data-grid .icon {
   width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
 }
 
 #os {
@@ -266,6 +270,8 @@ h6 {
 
 #jobs img {
   width: 2rem;
+  height: 2rem;
+  object-fit: cover;
 }
 
 fieldset {
@@ -316,8 +322,8 @@ a {
     grid-template-areas:
       "header header"
       "skills education"
-      "skills projects"
       "skills jobs"
+      "skills projects"
       "skills interests";
   }
 
