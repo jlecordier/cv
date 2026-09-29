@@ -137,10 +137,7 @@
           alt="date de naissance"
         />
         <div class="info">
-          {getLocaleDateString(data["infos-perso"].ddn, "long")} ({getAgeFromBirthday(
-            data["infos-perso"].ddn
-          )}
-          {getTranslation(structure.age)})
+          {getAgeFromBirthday(data["infos-perso"].ddn)} {getTranslation(structure.age)}
         </div>
       </div>
     </div>
